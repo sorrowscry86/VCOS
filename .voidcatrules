@@ -1,0 +1,182 @@
+# VoidCat Project Development Rules
+
+## Core Principles
+
+### 1. Zero-Compromise Quality Standards
+All code, documentation, and deliverables must meet the highest quality standards. No shortcuts, technical debt, or "good enough" solutions are acceptable.
+
+### 2. Test-Driven Development (TDD)
+- Write tests before implementation where possible
+- All new code must have comprehensive test coverage
+- Tests must be deterministic and reliable (no flaky tests)
+
+### 3. 5-Gate Progressive System
+All work follows a gate-based validation system:
+- **Gate 0**: Project setup and planning
+- **Gate 1**: Requirements and architecture defined
+- **Gate 2**: Development environment ready, CI baseline established
+- **Gate 3**: Code complete with tests, static analysis passing
+- **Gate 4**: Full validation, security scans clear, ready for merge
+
+## Testing & Coverage Requirements
+
+### Coverage Thresholds
+- **Line coverage**: >= 90% (minimum)
+- **Branch coverage**: >= 85% (minimum)
+- **New plugins**: 100% coverage (mandatory)
+- **Critical business logic**: 100% coverage (mandatory)
+
+### Test Requirements
+- Unit tests for all functions and modules
+- Integration tests for component interactions
+- End-to-end tests for critical workflows
+- Security/penetration tests for permission boundaries
+- Performance tests for critical paths
+- Use deterministic fixtures, mocks, and recorded integration fixtures
+- No flaky tests - all tests must be reliable and reproducible
+
+## Code Quality Standards
+
+### Static Analysis
+- Strict typing enforcement - no use of `any` or unsafe types in public APIs
+- All static analysis warnings treated as errors in CI
+- Linting rules must be followed strictly
+- Code formatting must be consistent (enforced by prettier/formatter)
+
+### Security
+- SAST (Static Application Security Testing) scans required
+- Dependency scanning for vulnerabilities (weekly minimum)
+- No critical or high vulnerabilities allowed
+- Secrets management: no hard-coded secrets, use environment variables
+- Security context injection for all agent operations
+- Capability-based permissions for all resource access
+- Audit logging for all permission grants/denials
+
+### Error Handling & Logging
+- Structured logging with configurable log levels
+- Centralized error handling with explicit result/failure patterns
+- Comprehensive error propagation semantics
+- Meaningful error messages and stack traces
+
+## Development Workflow
+
+### Branching Strategy
+- `main`: Protected branch, production-ready code only
+- `develop`: Integration branch for feature merging
+- Feature branches: `feat/<component>-<short-desc>`
+- Keep changes small and focused
+- Prefer multiple small PRs over large monolithic changes
+
+### Pull Request Requirements
+- [ ] Tests added/updated with coverage reports attached
+- [ ] Build and static checks passed (locally and in CI)
+- [ ] Documentation updated (where relevant)
+- [ ] Security scans passed or documented mitigation
+- [ ] At least one peer review completed
+- [ ] One maintainer approval required for merge
+- [ ] All CI checks green
+- [ ] Coverage thresholds met
+- [ ] No merge conflicts with target branch
+
+### CI/CD Requirements
+- Build step must succeed
+- Static analysis/lint step must pass
+- Unit tests with coverage must pass
+- SAST & dependency scanning must pass
+- Format and type checks must pass
+- Pre-commit hooks: formatter, linter, license header checks
+
+## Absolute Stop Conditions
+
+Development must **HALT IMMEDIATELY** if any of the following occur:
+1. Build errors that cannot be resolved quickly
+2. Static analysis errors that indicate fundamental issues
+3. Failing tests that indicate broken functionality
+4. Coverage dropping below 90% line / 85% branch
+5. Critical or high security vulnerabilities discovered
+6. Performance regressions beyond acceptable thresholds
+7. Memory leaks detected
+8. Data corruption or loss scenarios identified
+
+When a stop condition is encountered:
+1. Stop all development work immediately
+2. Document the issue in detail
+3. Notify project lead/owner
+4. Create incident report with root cause analysis
+5. Develop and execute remediation plan
+6. Verify fix before resuming normal development
+
+## Documentation Requirements
+
+### Code Documentation
+- All public functions/types must have documentation comments (JSDoc/Docstrings)
+- API documentation for all public endpoints (OpenAPI specs preferred)
+- Architecture diagrams for system components
+- Plugin authoring guides and templates
+- Migration guides for breaking changes
+
+### Operational Documentation
+- Developer setup and CI instructions (setup.md)
+- Operational runbooks for common scenarios
+- Emergency procedures for critical failures
+- Troubleshooting guides
+- Release notes and changelogs (per PR)
+
+## Security & Permissions
+
+### Permission Model
+- Fine-grained capability-based permissions
+- Permission tokens bound to agent identity and lifespan
+- Enforcement at AgentRuntime and plugin adapter levels
+- Explicit permission grants required
+- Default deny for all resource access
+- Audit trail for all permission operations
+
+### Plugin Security
+- Plugin sandboxing required
+- Permissions metadata declaration mandatory
+- Permission validation tests required
+- Mock external services in unit tests
+- Use recorded fixtures for integration tests
+
+## Naming & Migration Conventions
+
+### Naming Standards
+- Replace "eliza" with "voidcatos" for fully-qualified product names
+- Use "vcos" for short internal identifiers and environment variables
+- camelCase for variables and functions
+- PascalCase for types and components
+- kebab-case for package folders
+- Provide deprecation mapping for any changed public API names
+
+### Environment Variables
+- `ELIZA_*` → `VCOS_*` (environment variables)
+- Document all environment variable changes
+- Maintain backward compatibility where possible with deprecation notices
+
+## Release & Versioning
+
+- Semantic versioning (SemVer) for all releases
+- Release notes with migration guidance required
+- Tag and publish releases from protected `main` branch only
+- All gate checks must pass before release
+- Integration testing completed on `develop` before release branch
+- QA sign-off required for production releases
+
+## Daily Reporting
+
+End-of-day summary must include:
+1. What was completed (commits/PRs)
+2. Status of tests and CI
+3. Any blockers or issues encountered
+4. Plan for next day
+5. Risk updates (if any)
+
+## Enforcement
+
+These rules are **non-negotiable** and must be followed at all times. Violations will result in:
+1. PR rejection
+2. Code review request for remediation
+3. Escalation to project lead if patterns persist
+
+The quality and security of VoidCat Operating System depends on strict adherence to these development rules.
