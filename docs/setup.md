@@ -17,11 +17,11 @@ This guide will help you set up your development environment for VoidCat Operati
 
 ### Required Software
 
-| Tool | Version | Download |
-|------|---------|----------|
-| **Node.js** | 23.3.0+ | https://nodejs.org/ |
-| **Bun** | 1.2.21+ | https://bun.sh/docs/installation |
-| **Git** | Latest | https://git-scm.com/ |
+| Tool        | Version | Download                         |
+| ----------- | ------- | -------------------------------- |
+| **Node.js** | 23.3.0+ | https://nodejs.org/              |
+| **Bun**     | 1.2.21+ | https://bun.sh/docs/installation |
+| **Git**     | Latest  | https://git-scm.com/             |
 
 ### Operating System Support
 
@@ -144,6 +144,7 @@ bun install
 ```
 
 **Expected output:**
+
 ```
 bun install v1.2.21 (...)
 Resolving dependencies
@@ -165,10 +166,12 @@ bun run build
 ```
 
 **Build times:**
+
 - Fresh build: ~2-5 minutes
 - Incremental build: ~30-60 seconds
 
 **Expected output:**
+
 ```
 turbo run build --filter=!./packages/app ...
 ✓ Built core
@@ -259,11 +262,13 @@ code .
 ### Alternative IDEs
 
 **WebStorm:**
+
 - Built-in TypeScript support
 - Excellent refactoring tools
 - Git integration
 
 **Vim/Neovim:**
+
 - Use with coc.nvim or native LSP
 - TypeScript language server
 
@@ -393,13 +398,13 @@ GITHUB_API_KEY=ghp_...
 
 ### Environment Variables Reference
 
-| Variable | Required | Description | Default |
-|----------|----------|-------------|---------|
-| `OPENAI_API_KEY` | Recommended | OpenAI API key | - |
-| `ANTHROPIC_API_KEY` | Recommended | Anthropic API key | - |
-| `LOG_LEVEL` | No | Logging level (debug, info, warn, error) | info |
-| `NODE_ENV` | No | Environment (development, production, test) | development |
-| `PORT` | No | Server port | 3000 |
+| Variable            | Required    | Description                                 | Default     |
+| ------------------- | ----------- | ------------------------------------------- | ----------- |
+| `OPENAI_API_KEY`    | Recommended | OpenAI API key                              | -           |
+| `ANTHROPIC_API_KEY` | Recommended | Anthropic API key                           | -           |
+| `LOG_LEVEL`         | No          | Logging level (debug, info, warn, error)    | info        |
+| `NODE_ENV`          | No          | Environment (development, production, test) | development |
+| `PORT`              | No          | Server port                                 | 3000        |
 
 ---
 

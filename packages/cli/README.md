@@ -568,13 +568,13 @@ Deploy ElizaOS projects to AWS ECS (Elastic Container Service) with automatic mu
 
 The deploy command automatically detects your system architecture and deploys to the appropriate AWS instance type:
 
-| Your System | Docker Platform | AWS Instance | Monthly Cost |
-|-------------|----------------|--------------|--------------|
-| macOS Apple Silicon | `linux/arm64` | t4g.small (Graviton) | $15.76 |
-| macOS Intel | `linux/amd64` | t3.small (Intel/AMD) | $18.68 |
-| Ubuntu/Linux x64 | `linux/amd64` | t3.small (Intel/AMD) | $18.68 |
-| Ubuntu/Linux ARM64 | `linux/arm64` | t4g.small (Graviton) | $15.76 |
-| Windows x64 | `linux/amd64` | t3.small (Intel/AMD) | $18.68 |
+| Your System         | Docker Platform | AWS Instance         | Monthly Cost |
+| ------------------- | --------------- | -------------------- | ------------ |
+| macOS Apple Silicon | `linux/arm64`   | t4g.small (Graviton) | $15.76       |
+| macOS Intel         | `linux/amd64`   | t3.small (Intel/AMD) | $18.68       |
+| Ubuntu/Linux x64    | `linux/amd64`   | t3.small (Intel/AMD) | $18.68       |
+| Ubuntu/Linux ARM64  | `linux/arm64`   | t4g.small (Graviton) | $15.76       |
+| Windows x64         | `linux/amd64`   | t3.small (Intel/AMD) | $18.68       |
 
 **Examples:**
 

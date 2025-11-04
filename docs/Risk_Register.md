@@ -13,11 +13,13 @@ This document tracks identified risks, their probability, impact, mitigation str
 ### Risk Scoring
 
 **Probability:**
+
 - **High (H)**: >66% likelihood
 - **Medium (M)**: 33-66% likelihood
 - **Low (L)**: <33% likelihood
 
 **Impact:**
+
 - **Critical (C)**: Project failure or major delay (>4 weeks)
 - **High (H)**: Significant delay (2-4 weeks) or major scope reduction
 - **Medium (M)**: Moderate delay (1-2 weeks) or minor scope reduction
@@ -32,6 +34,7 @@ This document tracks identified risks, their probability, impact, mitigation str
 ### Technical Risks
 
 #### R-1: Breaking Existing Tests During Rename
+
 - **ID**: R-1
 - **Category**: Technical - Quality
 - **Description**: Find-and-replace operations during Phase 1 transmutation may break existing ElizaOS tests due to unintended side effects or semantic changes.
@@ -56,6 +59,7 @@ This document tracks identified risks, their probability, impact, mitigation str
 ---
 
 #### R-2: Third-Party Dependency Vulnerabilities
+
 - **ID**: R-2
 - **Category**: Technical - Security
 - **Description**: Dependencies may contain known security vulnerabilities that block production deployment.
@@ -80,6 +84,7 @@ This document tracks identified risks, their probability, impact, mitigation str
 ---
 
 #### R-3: Test Flakiness in Integration Tests
+
 - **ID**: R-3
 - **Category**: Technical - Quality
 - **Description**: Integration tests (especially for plugins with external services) may be flaky, causing false failures in CI.
@@ -104,6 +109,7 @@ This document tracks identified risks, their probability, impact, mitigation str
 ---
 
 #### R-4: Performance Regression from Permission Checks
+
 - **ID**: R-4
 - **Category**: Technical - Performance
 - **Description**: Adding permission checks on every operation may introduce unacceptable latency (>10ms per operation).
@@ -128,6 +134,7 @@ This document tracks identified risks, their probability, impact, mitigation str
 ---
 
 #### R-5: Plugin API Breaking Changes
+
 - **ID**: R-5
 - **Category**: Technical - Compatibility
 - **Description**: Changes to plugin API during development may break existing plugins or integrations.
@@ -152,6 +159,7 @@ This document tracks identified risks, their probability, impact, mitigation str
 ---
 
 #### R-6: Memory Leaks in Long-Running Agents
+
 - **ID**: R-6
 - **Category**: Technical - Reliability
 - **Description**: Agents running for extended periods may have memory leaks, causing OOM crashes.
@@ -178,6 +186,7 @@ This document tracks identified risks, their probability, impact, mitigation str
 ### Resource Risks
 
 #### R-7: Insufficient Security Review Bandwidth
+
 - **ID**: R-7
 - **Category**: Resource - Security
 - **Description**: Security engineer may be overallocated (50% across multiple phases), causing delays in security reviews and approvals.
@@ -202,6 +211,7 @@ This document tracks identified risks, their probability, impact, mitigation str
 ---
 
 #### R-8: Tech Writer Availability for Documentation
+
 - **ID**: R-8
 - **Category**: Resource - Documentation
 - **Description**: Tech writer is allocated at 50% across multiple phases, risking incomplete or delayed documentation.
@@ -228,6 +238,7 @@ This document tracks identified risks, their probability, impact, mitigation str
 ### External Dependencies
 
 #### R-9: VoidCat Universe API Specification Delay
+
 - **ID**: R-9
 - **Category**: External - Dependency
 - **Description**: VoidCat Universe team may not provide API specification on time, blocking plugin-voidcat-universe development (Milestone C).
@@ -255,6 +266,7 @@ This document tracks identified risks, their probability, impact, mitigation str
 ---
 
 #### R-10: GitHub API Rate Limits
+
 - **ID**: R-10
 - **Category**: External - Service
 - **Description**: GitHub API has rate limits (5000 requests/hour authenticated) that may be exceeded during plugin-github development and testing.
@@ -281,6 +293,7 @@ This document tracks identified risks, their probability, impact, mitigation str
 ### Scope & Requirements Risks
 
 #### R-11: Incomplete ElizaOS Backward Compatibility
+
 - **ID**: R-11
 - **Category**: Scope - Compatibility
 - **Description**: Maintaining 90% backward compatibility with ElizaOS may be infeasible without significant complexity.
@@ -308,6 +321,7 @@ This document tracks identified risks, their probability, impact, mitigation str
 ---
 
 #### R-12: Scope Creep from Stakeholder Requests
+
 - **ID**: R-12
 - **Category**: Scope - Requirements
 - **Description**: Stakeholders may request additional features beyond defined scope, causing timeline delays.
@@ -334,6 +348,7 @@ This document tracks identified risks, their probability, impact, mitigation str
 ### Schedule Risks
 
 #### R-13: Unrealistic Timeline Estimates
+
 - **ID**: R-13
 - **Category**: Schedule - Estimation
 - **Description**: Effort estimates may be optimistic, causing milestone delays.
@@ -358,6 +373,7 @@ This document tracks identified risks, their probability, impact, mitigation str
 ---
 
 #### R-14: Key Personnel Unavailability
+
 - **ID**: R-14
 - **Category**: Schedule - Resource
 - **Description**: Key engineers (e.g., Core Engineer, Security Engineer) may become unavailable due to illness, vacation, or attrition.
@@ -384,6 +400,7 @@ This document tracks identified risks, their probability, impact, mitigation str
 ### Quality Risks
 
 #### R-15: Failing to Meet Coverage Targets
+
 - **ID**: R-15
 - **Category**: Quality - Testing
 - **Description**: Achieving 90% line / 85% branch coverage may be difficult for complex or legacy code.
@@ -408,6 +425,7 @@ This document tracks identified risks, their probability, impact, mitigation str
 ---
 
 #### R-16: Security Vulnerabilities Discovered Late
+
 - **ID**: R-16
 - **Category**: Quality - Security
 - **Description**: Critical security vulnerabilities discovered during Milestone G (Buffer & QA) may require significant rework.
@@ -433,12 +451,12 @@ This document tracks identified risks, their probability, impact, mitigation str
 
 ## Risk Summary Dashboard
 
-| Risk Level | Count | Risk IDs |
-|-----------|-------|----------|
-| 🔴 **CRITICAL** | 2 | R-1, R-9 |
-| 🟠 **HIGH** | 5 | R-2, R-6, R-7, R-12, R-15 |
-| 🟡 **MEDIUM** | 7 | R-3, R-4, R-5, R-8, R-11, R-13, R-16 |
-| 🟢 **LOW** | 2 | R-4, R-10 |
+| Risk Level      | Count | Risk IDs                             |
+| --------------- | ----- | ------------------------------------ |
+| 🔴 **CRITICAL** | 2     | R-1, R-9                             |
+| 🟠 **HIGH**     | 5     | R-2, R-6, R-7, R-12, R-15            |
+| 🟡 **MEDIUM**   | 7     | R-3, R-4, R-5, R-8, R-11, R-13, R-16 |
+| 🟢 **LOW**      | 2     | R-4, R-10                            |
 
 **Total Risks:** 16
 
@@ -468,12 +486,14 @@ This document tracks identified risks, their probability, impact, mitigation str
 ## Escalation Criteria
 
 Escalate to Project Lead if:
+
 - Any risk moves to 🔴 CRITICAL level
 - Multiple 🟠 HIGH risks materialize simultaneously
 - Timeline slips by >1 week for any milestone
 - Budget overrun by >10%
 
 Escalate to Executive Sponsor if:
+
 - Project delivery at risk (>4 week delay)
 - Scope reduction >20% required
 - Budget overrun by >25%
@@ -494,16 +514,17 @@ Escalate to Executive Sponsor if:
 
 ## Revision History
 
-| Version | Date | Author | Changes |
-|---------|------|--------|---------|
-| 1.0 | 2025-11-04 | Project Lead | Initial risk identification |
+| Version | Date       | Author       | Changes                     |
+| ------- | ---------- | ------------ | --------------------------- |
+| 1.0     | 2025-11-04 | Project Lead | Initial risk identification |
 
 ---
 
-**Document Control**  
-- **Created**: 2025-11-04  
-- **Last Updated**: 2025-11-04  
-- **Version**: 1.0  
+**Document Control**
+
+- **Created**: 2025-11-04
+- **Last Updated**: 2025-11-04
+- **Version**: 1.0
 - **Next Review**: Weekly (every Monday)
 - **Owner**: Project Lead
 
@@ -512,27 +533,32 @@ Escalate to Executive Sponsor if:
 ## Appendix: Risk Management Process
 
 ### Risk Identification
+
 - Weekly team meetings with "what could go wrong?" discussions
 - Retrospectives after each milestone
 - Input from stakeholders and subject matter experts
 
 ### Risk Assessment
+
 - Evaluate probability and impact using defined criteria
 - Calculate risk level (Priority Matrix)
 - Assign owner and document in register
 
 ### Risk Response Planning
+
 - Develop mitigation strategies (reduce probability)
 - Develop contingency plans (reduce impact)
 - Assign action items with deadlines
 
 ### Risk Monitoring & Control
+
 - Weekly review of active risks
 - Update status and probability/impact as needed
 - Track effectiveness of mitigation strategies
 - Close risks that are no longer relevant
 
 ### Communication
+
 - Include risk summary in weekly status reports
 - Escalate critical risks immediately
 - Maintain transparency with stakeholders

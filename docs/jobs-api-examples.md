@@ -14,6 +14,7 @@ curl -X POST http://localhost:3000/api/messaging/jobs \
 ```
 
 **Response:**
+
 ```json
 {
   "jobId": "abc123...",
@@ -75,9 +76,9 @@ echo "Created job: $JOB_ID"
 for i in {1..30}; do
   STATUS=$(curl -s http://localhost:3000/api/messaging/jobs/$JOB_ID)
   STATE=$(echo $STATUS | jq -r '.status')
-  
+
   echo "[$i] Status: $STATE"
-  
+
   if [ "$STATE" = "completed" ]; then
     echo "Response: $(echo $STATUS | jq -r '.result.message.content')"
     exit 0
@@ -85,7 +86,7 @@ for i in {1..30}; do
     echo "Error: $(echo $STATUS | jq -r '.error')"
     exit 1
   fi
-  
+
   sleep 1
 done
 
@@ -101,33 +102,33 @@ async function askAgent(content, userId = 'default-user-uuid') {
   const createRes = await fetch('http://localhost:3000/api/messaging/jobs', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ userId, content })
+    body: JSON.stringify({ userId, content }),
   });
-  
+
   const { jobId } = await createRes.json();
   console.log('Job created:', jobId);
-  
+
   // Poll for result
   for (let i = 0; i < 30; i++) {
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
     const statusRes = await fetch(`http://localhost:3000/api/messaging/jobs/${jobId}`);
     const status = await statusRes.json();
-    
+
     if (status.status === 'completed') {
       return status.result.message.content;
     } else if (status.status === 'failed' || status.status === 'timeout') {
       throw new Error(status.error);
     }
   }
-  
+
   throw new Error('Polling timeout');
 }
 
 // Usage
 askAgent('What is the DeFi TVL?')
-  .then(response => console.log('Agent:', response))
-  .catch(err => console.error('Error:', err));
+  .then((response) => console.log('Agent:', response))
+  .catch((err) => console.error('Error:', err));
 ```
 
 ## Example 6: Python
@@ -145,7 +146,7 @@ def ask_agent(content, user_id='default-user-uuid', agent_id=None):
     }
     if agent_id:
         payload['agentId'] = agent_id
-    
+
     response = requests.post(
         'http://localhost:3000/api/messaging/jobs',
         json=payload
@@ -153,20 +154,20 @@ def ask_agent(content, user_id='default-user-uuid', agent_id=None):
     job = response.json()
     job_id = job['jobId']
     print(f'Job created: {job_id}')
-    
+
     # Poll for result
     for attempt in range(30):
         time.sleep(1)
-        
+
         status = requests.get(
             f'http://localhost:3000/api/messaging/jobs/{job_id}'
         ).json()
-        
+
         if status['status'] == 'completed':
             return status['result']['message']['content']
         elif status['status'] in ['failed', 'timeout']:
             raise Exception(status.get('error', 'Job failed'))
-    
+
     raise Exception('Polling timeout')
 
 # Usage
@@ -202,12 +203,7 @@ async function askAgentWithRetry(
     timeout?: number;
   } = {}
 ): Promise<string> {
-  const {
-    agentId,
-    maxAttempts = 30,
-    pollInterval = 1000,
-    timeout = 30000,
-  } = options;
+  const { agentId, maxAttempts = 30, pollInterval = 1000, timeout = 30000 } = options;
 
   // Create job
   const createRes = await fetch('http://localhost:3000/api/messaging/jobs', {
@@ -237,9 +233,7 @@ async function askAgentWithRetry(
 
     await new Promise((resolve) => setTimeout(resolve, pollInterval));
 
-    const statusRes = await fetch(
-      `http://localhost:3000/api/messaging/jobs/${jobId}`
-    );
+    const statusRes = await fetch(`http://localhost:3000/api/messaging/jobs/${jobId}`);
     const status: JobResponse = await statusRes.json();
 
     if (status.status === 'completed') {
@@ -267,38 +261,38 @@ askAgentWithRetry('Explain Uniswap V3', 'user-uuid', {
 ```javascript
 async function askMultipleQuestions(questions, userId) {
   const jobIds = [];
-  
+
   // Create all jobs
   for (const question of questions) {
     const res = await fetch('http://localhost:3000/api/messaging/jobs', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ userId, content: question })
+      body: JSON.stringify({ userId, content: question }),
     });
     const { jobId } = await res.json();
     jobIds.push({ jobId, question });
   }
-  
+
   // Poll all jobs
   const results = [];
   for (const { jobId, question } of jobIds) {
     for (let i = 0; i < 30; i++) {
-      await new Promise(r => setTimeout(r, 1000));
-      
-      const status = await fetch(
-        `http://localhost:3000/api/messaging/jobs/${jobId}`
-      ).then(r => r.json());
-      
+      await new Promise((r) => setTimeout(r, 1000));
+
+      const status = await fetch(`http://localhost:3000/api/messaging/jobs/${jobId}`).then((r) =>
+        r.json()
+      );
+
       if (status.status === 'completed') {
         results.push({
           question,
-          answer: status.result.message.content
+          answer: status.result.message.content,
         });
         break;
       }
     }
   }
-  
+
   return results;
 }
 
@@ -306,11 +300,10 @@ async function askMultipleQuestions(questions, userId) {
 const questions = [
   'What is Bitcoin price?',
   'What is Ethereum price?',
-  'What is the total DeFi TVL?'
+  'What is the total DeFi TVL?',
 ];
 
-askMultipleQuestions(questions, 'user-uuid')
-  .then(results => console.log(results));
+askMultipleQuestions(questions, 'user-uuid').then((results) => console.log(results));
 ```
 
 ## Example 9: Error Handling
@@ -322,62 +315,59 @@ async function robustAskAgent(content, userId) {
     const createRes = await fetch('http://localhost:3000/api/messaging/jobs', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ userId, content })
+      body: JSON.stringify({ userId, content }),
     });
-    
+
     if (!createRes.ok) {
       const error = await createRes.json();
       throw new Error(error.error || 'Failed to create job');
     }
-    
+
     const { jobId } = await createRes.json();
-    
+
     // Poll with exponential backoff
     let interval = 500; // Start with 500ms
     for (let i = 0; i < 20; i++) {
-      await new Promise(r => setTimeout(r, interval));
-      
-      const statusRes = await fetch(
-        `http://localhost:3000/api/messaging/jobs/${jobId}`
-      );
-      
+      await new Promise((r) => setTimeout(r, interval));
+
+      const statusRes = await fetch(`http://localhost:3000/api/messaging/jobs/${jobId}`);
+
       if (!statusRes.ok) {
         throw new Error('Failed to fetch job status');
       }
-      
+
       const status = await statusRes.json();
-      
+
       if (status.status === 'completed') {
         return {
           success: true,
           content: status.result.message.content,
-          processingTime: status.result.processingTimeMs
+          processingTime: status.result.processingTimeMs,
         };
       } else if (status.status === 'failed') {
         return {
           success: false,
-          error: status.error
+          error: status.error,
         };
       } else if (status.status === 'timeout') {
         return {
           success: false,
-          error: 'Job timed out waiting for agent response'
+          error: 'Job timed out waiting for agent response',
         };
       }
-      
+
       // Exponential backoff (up to 5 seconds)
       interval = Math.min(interval * 1.5, 5000);
     }
-    
+
     return {
       success: false,
-      error: 'Polling timeout exceeded'
+      error: 'Polling timeout exceeded',
     };
-    
   } catch (error) {
     return {
       success: false,
-      error: error.message
+      error: error.message,
     };
   }
 }
@@ -472,4 +462,3 @@ function ChatComponent({ userId }: { userId: string }) {
   );
 }
 ```
-

@@ -1,4 +1,5 @@
 # Product Requirements Document (PRD)
+
 # VoidCat Operating System (VCOS)
 
 **Version:** 1.0  
@@ -17,9 +18,11 @@ VoidCat Operating System (VCOS) is a secure, enterprise-grade multi-agent AI pla
 ## 1. Project Overview
 
 ### 1.1 Vision
+
 Transform ElizaOS into a production-ready, security-hardened operating system for AI agents that meets enterprise standards for reliability, security, and extensibility.
 
 ### 1.2 Goals
+
 1. **Transmutation**: Complete rebranding from ElizaOS to VoidCat Operating System
 2. **Security Hardening**: Implement capability-based permissions and security context
 3. **Plugin Ecosystem**: Develop VoidCat Universe plugin and Ryuzu Covenant Suite
@@ -27,8 +30,9 @@ Transform ElizaOS into a production-ready, security-hardened operating system fo
 5. **Production Readiness**: Achieve 90%+ test coverage, zero critical vulnerabilities, comprehensive documentation
 
 ### 1.3 Success Metrics
+
 - 100% test coverage for all new plugins
-- >= 90% line coverage, >= 85% branch coverage for core system
+- > = 90% line coverage, >= 85% branch coverage for core system
 - Zero critical or high security vulnerabilities
 - All builds pass in CI/CD pipeline
 - Complete API documentation coverage
@@ -41,6 +45,7 @@ Transform ElizaOS into a production-ready, security-hardened operating system fo
 ### 2.1 In Scope
 
 #### Phase 1: Transmutation (Branding & Core Configuration)
+
 - Rename all "eliza" references to "voidcatos" or "vcos"
 - Update package names, module paths, CLI executable names
 - Enhance AgentRuntime with logging, error handling, security hooks
@@ -48,17 +53,20 @@ Transform ElizaOS into a production-ready, security-hardened operating system fo
 - Maintain backward compatibility where practical
 
 #### Phase 2: Integration (Plugin Development)
+
 - **plugin-voidcat-universe**: Custom knowledge base with Model Context Protocol
 - **plugin-github**: GitHub operations with permission controls
 - **plugin-web-selenium**: Web automation with security boundaries
 - **plugin-filesystem**: File system operations with sandboxing
 
 #### Phase 3: Refinement (Agent & Interface Customization)
+
 - Agent blueprints: "Guardian", "Scribe", and blueprint generator tool
 - VoidCat RDC Command Center: Enhanced CLI/UI experience
 - Telemetry and diagnostics (opt-in, privacy-respecting)
 
 #### Phase 4: Fortification (Security & Documentation)
+
 - Fine-grained capability-based permissions layer
 - Audit logging for security events
 - Complete architecture documentation
@@ -67,6 +75,7 @@ Transform ElizaOS into a production-ready, security-hardened operating system fo
 - Operational runbooks
 
 ### 2.2 Out of Scope (Future Releases)
+
 - Multi-tenancy features
 - Distributed agent orchestration across multiple nodes
 - Visual agent workflow builder
@@ -230,34 +239,43 @@ Transform ElizaOS into a production-ready, security-hardened operating system fo
 ### 5.1 Developer/Builder Personas
 
 **US-1**: As a developer, I want to install VCOS via CLI so I can quickly start building agents
+
 - Acceptance: `bun install -g @voidcatos/cli && vcos init` completes in < 5 minutes
 
 **US-2**: As a developer, I want to create agents from blueprints so I don't have to configure everything manually
+
 - Acceptance: `vcos create agent --blueprint guardian` generates working agent with tests
 
 **US-3**: As a developer, I want comprehensive docs and examples so I can learn how to use plugins
+
 - Acceptance: All plugins have README with examples; `vcos docs` opens documentation
 
 **US-4**: As a developer, I want clear error messages when permissions are missing so I can fix configuration
+
 - Acceptance: Permission errors include which permission is needed and how to grant it
 
 ### 5.2 Operations Personas
 
 **US-5**: As an operator, I want to monitor agent health and performance so I can ensure system reliability
+
 - Acceptance: `vcos status` shows health metrics; logs are structured and searchable
 
 **US-6**: As an operator, I want to audit security events so I can detect unauthorized access attempts
+
 - Acceptance: Audit log includes all permission events with timestamps, agent IDs, outcomes
 
 **US-7**: As a security admin, I want granular control over agent permissions so I can enforce least-privilege
+
 - Acceptance: `vcos permissions grant/revoke` commands work; permissions are enforced at runtime
 
 ### 5.3 Enterprise Personas
 
 **US-8**: As an enterprise architect, I want to understand system architecture so I can integrate VCOS
+
 - Acceptance: Architecture.md includes diagrams of runtime, plugins, permissions, data flow
 
 **US-9**: As a compliance officer, I want proof of security scanning and test coverage so I can approve deployment
+
 - Acceptance: CI artifacts include SAST reports, dependency scans, coverage reports
 
 ---
@@ -265,6 +283,7 @@ Transform ElizaOS into a production-ready, security-hardened operating system fo
 ## 6. Acceptance Criteria
 
 ### Phase 1 Acceptance
+
 - [ ] Zero "eliza" references remain (validated by automated tests)
 - [ ] All original ElizaOS tests pass without modification
 - [ ] AgentRuntime includes logging, error handling, security hooks
@@ -272,17 +291,20 @@ Transform ElizaOS into a production-ready, security-hardened operating system fo
 - [ ] Line coverage >= 90%, branch coverage >= 85%
 
 ### Phase 2 Acceptance
+
 - [ ] plugin-voidcat-universe operational with Model Context Protocol tests passing
 - [ ] All Ryuzu suite plugins implemented with 100% coverage
 - [ ] Permission checks validated for each plugin
 - [ ] Plugin documentation complete with examples
 
 ### Phase 3 Acceptance
+
 - [ ] Agent blueprints instantiate and run successfully in test harness
 - [ ] VoidCat RDC Command Center functional with positive UX feedback
 - [ ] Telemetry integration complete (opt-in, privacy-compliant)
 
 ### Phase 4 Acceptance
+
 - [ ] Permissions layer enforced across runtime and all plugins
 - [ ] Zero critical vulnerabilities in dependency and SAST scans
 - [ ] Documentation complete: Architecture.md, API docs, setup.md, migration guides
@@ -293,6 +315,7 @@ Transform ElizaOS into a production-ready, security-hardened operating system fo
 ## 7. Dependencies & Constraints
 
 ### 7.1 Technical Dependencies
+
 - Node.js 23.3.0+
 - Bun 1.2.21+
 - TypeScript 5.9.2
@@ -300,11 +323,13 @@ Transform ElizaOS into a production-ready, security-hardened operating system fo
 - Lerna (package management)
 
 ### 7.2 External Services
+
 - GitHub API (for plugin-github)
 - VoidCat Universe knowledge base API (authentication TBD)
 
 ### 7.3 Constraints
-- Must maintain monorepo structure (packages/*)
+
+- Must maintain monorepo structure (packages/\*)
 - Must preserve ElizaOS plugin compatibility where possible
 - Development in forked private repository (security requirement)
 - All work must pass 5-Gate validation before merge
@@ -313,29 +338,29 @@ Transform ElizaOS into a production-ready, security-hardened operating system fo
 
 ## 8. Risk Register
 
-| Risk ID | Description | Probability | Impact | Mitigation |
-|---------|-------------|-------------|--------|------------|
-| R-1 | Breaking existing tests during rename | High | High | Run tests after each atomic change; preserve semantics |
-| R-2 | Third-party dependency vulnerabilities | Medium | High | Pin versions, weekly scans, replace vulnerable deps |
-| R-3 | Test flakiness in integration tests | Medium | Medium | Use mocks/fixtures; isolate non-deterministic tests |
-| R-4 | Performance regression from permission checks | Low | Medium | Performance tests in CI; optimize hot paths |
-| R-5 | Incomplete documentation delays adoption | Medium | Medium | Doc requirements in PR checklist; tech writer assigned |
-| R-6 | Plugin API breaking changes | Low | High | Semantic versioning; deprecation notices; migration guides |
-| R-7 | Security vulnerabilities in custom code | Medium | Critical | SAST on every PR; security review for sensitive code |
+| Risk ID | Description                                   | Probability | Impact   | Mitigation                                                 |
+| ------- | --------------------------------------------- | ----------- | -------- | ---------------------------------------------------------- |
+| R-1     | Breaking existing tests during rename         | High        | High     | Run tests after each atomic change; preserve semantics     |
+| R-2     | Third-party dependency vulnerabilities        | Medium      | High     | Pin versions, weekly scans, replace vulnerable deps        |
+| R-3     | Test flakiness in integration tests           | Medium      | Medium   | Use mocks/fixtures; isolate non-deterministic tests        |
+| R-4     | Performance regression from permission checks | Low         | Medium   | Performance tests in CI; optimize hot paths                |
+| R-5     | Incomplete documentation delays adoption      | Medium      | Medium   | Doc requirements in PR checklist; tech writer assigned     |
+| R-6     | Plugin API breaking changes                   | Low         | High     | Semantic versioning; deprecation notices; migration guides |
+| R-7     | Security vulnerabilities in custom code       | Medium      | Critical | SAST on every PR; security review for sensitive code       |
 
 ---
 
 ## 9. Milestones & Timeline
 
-| Milestone | Duration | Deliverables |
-|-----------|----------|--------------|
-| A - Project Setup | 1 week | Forked repo, PRD, architecture, CI skeleton |
-| B - Phase 1 Complete | 2-3 weeks | Branding, AgentRuntime changes, Phase 1 PR |
-| C - plugin-voidcat-universe | 2-3 weeks | Plugin implementation, 100% coverage, PR |
-| D - Ryuzu Suite Plugins | 3-6 weeks | GitHub, Web/Selenium, Filesystem plugins |
-| E - Blueprints & RDC Client | 2-4 weeks | Agent blueprints, Command Center, tests |
-| F - Permissions & Docs | 2-3 weeks | Permissions layer, documentation, QA |
-| G - Buffer & QA | 2 weeks | Address findings, performance tests |
+| Milestone                   | Duration  | Deliverables                                |
+| --------------------------- | --------- | ------------------------------------------- |
+| A - Project Setup           | 1 week    | Forked repo, PRD, architecture, CI skeleton |
+| B - Phase 1 Complete        | 2-3 weeks | Branding, AgentRuntime changes, Phase 1 PR  |
+| C - plugin-voidcat-universe | 2-3 weeks | Plugin implementation, 100% coverage, PR    |
+| D - Ryuzu Suite Plugins     | 3-6 weeks | GitHub, Web/Selenium, Filesystem plugins    |
+| E - Blueprints & RDC Client | 2-4 weeks | Agent blueprints, Command Center, tests     |
+| F - Permissions & Docs      | 2-3 weeks | Permissions layer, documentation, QA        |
+| G - Buffer & QA             | 2 weeks   | Address findings, performance tests         |
 
 **Total Estimated Duration:** 12-20 weeks
 
@@ -359,12 +384,12 @@ Transform ElizaOS into a production-ready, security-hardened operating system fo
 
 ## 11. Approval & Sign-off
 
-| Role | Name | Date | Signature |
-|------|------|------|-----------|
-| Product Owner | TBD | | |
-| Technical Lead | TBD | | |
-| Security Lead | TBD | | |
-| QA Lead | TBD | | |
+| Role           | Name | Date | Signature |
+| -------------- | ---- | ---- | --------- |
+| Product Owner  | TBD  |      |           |
+| Technical Lead | TBD  |      |           |
+| Security Lead  | TBD  |      |           |
+| QA Lead        | TBD  |      |           |
 
 ---
 
@@ -389,8 +414,9 @@ Transform ElizaOS into a production-ready, security-hardened operating system fo
 
 ---
 
-**Document Control**  
-- **Created**: 2025-11-04  
-- **Last Updated**: 2025-11-04  
-- **Version**: 1.0 (Draft)  
+**Document Control**
+
+- **Created**: 2025-11-04
+- **Last Updated**: 2025-11-04
+- **Version**: 1.0 (Draft)
 - **Next Review**: Upon Phase 1 completion

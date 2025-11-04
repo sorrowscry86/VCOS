@@ -109,6 +109,7 @@ We follow [Conventional Commits](https://www.conventionalcommits.org/):
 ```
 
 **Types:**
+
 - `feat`: New feature
 - `fix`: Bug fix
 - `docs`: Documentation changes
@@ -118,6 +119,7 @@ We follow [Conventional Commits](https://www.conventionalcommits.org/):
 - `chore`: Build process or auxiliary tool changes
 
 **Examples:**
+
 ```
 feat(runtime): add security context injection to AgentRuntime
 fix(plugin-github): handle rate limiting correctly
@@ -183,6 +185,7 @@ packages/
 ### Coverage Targets
 
 **MANDATORY:**
+
 - Line coverage: >= 90%
 - Branch coverage: >= 85%
 - New plugins: 100% coverage
@@ -285,6 +288,7 @@ When you open a PR, include this checklist in the description:
 ### PR Review Process
 
 1. **Automated Checks**
+
    - CI build must pass
    - All tests must pass
    - Coverage thresholds must be met
@@ -292,11 +296,13 @@ When you open a PR, include this checklist in the description:
    - No critical or high vulnerabilities
 
 2. **Peer Review**
+
    - At least 1 peer reviewer approval required
    - Address all review comments
    - Resolve all conversations
 
 3. **Maintainer Approval**
+
    - 1 maintainer approval required for merge
    - Maintainers verify architectural alignment
 
@@ -309,14 +315,17 @@ When you open a PR, include this checklist in the description:
 Our CI pipeline enforces the 5-Gate Progressive System:
 
 **Gate 2**: Development environment ready
+
 - Dependencies install successfully
 - Build completes without errors
 
 **Gate 3**: Code complete with tests
+
 - All tests pass
 - Static analysis passes (linting, type checking)
 
 **Gate 4**: Security and quality validation
+
 - Coverage >= 90% lines, >= 85% branches
 - CodeQL scan passes (no critical/high issues)
 - Dependency scan passes
@@ -328,6 +337,7 @@ Our CI pipeline enforces the 5-Gate Progressive System:
 **DO NOT** open public issues for security vulnerabilities.
 
 Instead:
+
 1. Email security@voidcat.example (placeholder - to be updated)
 2. Include detailed description and reproduction steps
 3. Wait for acknowledgment before public disclosure
@@ -343,6 +353,7 @@ Instead:
 ### SAST and Dependency Scanning
 
 All PRs are automatically scanned:
+
 - CodeQL for code vulnerabilities
 - Dependency scanning for vulnerable packages
 - Critical/High findings block merge
@@ -352,6 +363,7 @@ All PRs are automatically scanned:
 ### When to Update Docs
 
 Update documentation when you:
+
 - Add new features or APIs
 - Change existing behavior
 - Add configuration options
@@ -364,7 +376,7 @@ Update documentation when you:
 ```typescript
 /**
  * Spawns a new agent with security context.
- * 
+ *
  * @param config - Agent configuration
  * @returns Promise resolving to spawned agent
  * @throws {PermissionError} If insufficient permissions
@@ -398,12 +410,14 @@ bun run --inspect start
 ### IDE Setup
 
 **VSCode Recommended Extensions:**
+
 - TypeScript and JavaScript Language Features
 - Prettier - Code formatter
 - ESLint
 - Bun for Visual Studio Code
 
 **Settings:**
+
 ```json
 {
   "editor.formatOnSave": true,
@@ -433,6 +447,7 @@ bun run --inspect start
 
 **Issue**: Build fails with dependency errors  
 **Solution**: Clear cache and reinstall
+
 ```bash
 rm -rf node_modules bun.lock
 bun install
@@ -440,6 +455,7 @@ bun install
 
 **Issue**: Tests timeout  
 **Solution**: Increase timeout in test
+
 ```typescript
 it('long running test', async () => {
   // test code
@@ -452,6 +468,7 @@ it('long running test', async () => {
 ## Recognition
 
 Contributors will be recognized in:
+
 - Release notes
 - Contributors list in README
 - Project changelog
