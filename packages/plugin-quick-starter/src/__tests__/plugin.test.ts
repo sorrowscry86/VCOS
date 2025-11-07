@@ -10,7 +10,7 @@ import {
   logger,
   EventType,
   Action,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import dotenv from 'dotenv';
 import {
   createMockRuntime,

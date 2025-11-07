@@ -1,4 +1,4 @@
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { bunExecSimple } from '@/src/utils/bun-exec';
 import * as semver from 'semver';
 import { UserEnvironment } from '@/src/utils/user-environment';

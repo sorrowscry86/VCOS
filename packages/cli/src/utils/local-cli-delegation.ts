@@ -1,6 +1,6 @@
 import { existsSync } from 'node:fs';
 import path from 'node:path';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 
 /**
  * Local CLI delegation utility for enforcing local CLI usage across all commands

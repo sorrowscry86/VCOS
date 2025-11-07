@@ -3,7 +3,7 @@
 
 import { describe, it, expect, beforeEach } from 'bun:test';
 import { UserSimulator } from '../UserSimulator';
-import { AgentRuntime, ModelType } from '@elizaos/core';
+import { AgentRuntime, ModelType } from '@voidcatos/core';
 import type {
   ConversationTurn,
   SimulationContext,

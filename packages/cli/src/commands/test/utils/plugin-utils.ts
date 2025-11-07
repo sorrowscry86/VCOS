@@ -1,6 +1,6 @@
 import { loadProject } from '@/src/project';
 import { type DirectoryInfo } from '@/src/utils/directory-detection';
-import { logger, type Plugin } from '@elizaos/core';
+import { logger, type Plugin } from '@voidcatos/core';
 import * as fs from 'node:fs';
 import path from 'node:path';
 

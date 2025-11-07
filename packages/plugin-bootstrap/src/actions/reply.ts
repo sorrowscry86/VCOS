@@ -10,7 +10,7 @@ import {
   type ActionResult,
   logger,
   parseKeyValueXml,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 /**
  * Template for generating dialog and actions for a character.

@@ -8,7 +8,7 @@ import {
   withEmoji,
   initializeEmojiSupport,
 } from '../../../src/utils/emoji-handler';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 
 // Mock logger
 mock.module('@elizaos/core', () => ({

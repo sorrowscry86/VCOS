@@ -1,6 +1,6 @@
 import { drizzle, type NodePgDatabase } from 'drizzle-orm/node-postgres';
 import { Pool, type PoolClient, type PoolConfig } from 'pg';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 
 export class PostgresConnectionManager {
   private pool: Pool;

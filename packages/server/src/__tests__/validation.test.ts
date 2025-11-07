@@ -11,8 +11,8 @@ import {
   validateWorldId,
   getRuntime,
 } from '../api/shared/validation';
-import { logger } from '@elizaos/core';
-import type { IAgentRuntime, UUID } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
+import type { IAgentRuntime, UUID } from '@voidcatos/core';
 
 // Mock the logger to capture security logs
 mock.module('@elizaos/core', async () => {

@@ -1,4 +1,4 @@
-import type { ElizaOS } from '@elizaos/core';
+import type { ElizaOS } from '@voidcatos/core';
 import {
   logger,
   customLevels,
@@ -7,7 +7,7 @@ import {
   ChannelType,
   type UUID,
   EventType,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import type { Socket, Server as SocketIOServer } from 'socket.io';
 import type { AgentServer } from '../index';
 import { attachmentsToApiUrls } from '../utils/media-transformer';

@@ -1,5 +1,5 @@
 import { type Subprocess } from 'bun';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 
 // Constants
 const COMMAND_EXISTS_TIMEOUT_MS = 5000; // 5 seconds timeout for command existence checks

@@ -5,8 +5,8 @@
  * to create a custom agent server without the CLI dependency.
  */
 
-import { AgentServer, ServerOptions, ServerMiddleware } from '@elizaos/server';
-import { logger } from '@elizaos/core';
+import { AgentServer, ServerOptions, ServerMiddleware } from '@voidcatos/server';
+import { logger } from '@voidcatos/core';
 import { Request, Response, NextFunction } from 'express';
 
 // Custom middleware example

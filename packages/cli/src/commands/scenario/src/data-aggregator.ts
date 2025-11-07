@@ -6,7 +6,7 @@
  * validated ScenarioRunResult object for serialization.
  */
 
-import { type IAgentRuntime, type UUID } from '@elizaos/core';
+import { type IAgentRuntime, type UUID } from '@voidcatos/core';
 import { TrajectoryReconstructor, type TrajectoryStep } from './TrajectoryReconstructor';
 import { EvaluationEngine } from './EvaluationEngine';
 import {

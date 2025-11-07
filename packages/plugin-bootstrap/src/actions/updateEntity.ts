@@ -21,7 +21,7 @@ import {
   type UUID,
   type ActionResult,
   parseKeyValueXml,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import { v4 as uuidv4 } from 'uuid';
 
 /**

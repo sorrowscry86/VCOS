@@ -11,7 +11,7 @@ import {
   ModelType,
   asUUID,
   logger,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 /**
  * Creates a UUID for testing

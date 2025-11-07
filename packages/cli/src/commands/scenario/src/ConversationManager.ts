@@ -1,8 +1,8 @@
 // File: packages/cli/src/commands/scenario/src/ConversationManager.ts
 // Orchestrates multi-turn conversations with user simulation and evaluation
 
-import { AgentRuntime, UUID, ModelType } from '@elizaos/core';
-import { AgentServer } from '@elizaos/server';
+import { AgentRuntime, UUID, ModelType } from '@voidcatos/core';
+import { AgentServer } from '@voidcatos/server';
 import { askAgentViaApi } from './runtime-factory';
 import { UserSimulator } from './UserSimulator';
 import { EvaluationEngine } from './EvaluationEngine';

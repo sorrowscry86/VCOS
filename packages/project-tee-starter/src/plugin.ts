@@ -1,5 +1,5 @@
-import type { Plugin } from '@elizaos/core';
-import { type IAgentRuntime, logger, Service } from '@elizaos/core';
+import type { Plugin } from '@voidcatos/core';
+import { type IAgentRuntime, logger, Service } from '@voidcatos/core';
 import { z } from 'zod';
 import { type DeriveKeyResponse, TappdClient } from '@phala/dstack-sdk';
 import { type PrivateKeyAccount, privateKeyToAccount } from 'viem/accounts';

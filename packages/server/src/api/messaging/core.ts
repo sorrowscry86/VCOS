@@ -1,4 +1,4 @@
-import { logger, validateUuid, type UUID } from '@elizaos/core';
+import { logger, validateUuid, type UUID } from '@voidcatos/core';
 import express from 'express';
 import internalMessageBus from '../../bus'; // Import the bus
 import type { AgentServer } from '../../index';

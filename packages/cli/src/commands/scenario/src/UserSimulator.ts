@@ -1,7 +1,7 @@
 // File: packages/cli/src/commands/scenario/src/UserSimulator.ts
 // User simulator for generating realistic user responses in multi-turn conversations
 
-import { AgentRuntime, ModelType } from '@elizaos/core';
+import { AgentRuntime, ModelType } from '@voidcatos/core';
 import { ConversationTurn, SimulationContext, UserSimulatorConfig } from './conversation-types';
 
 /**

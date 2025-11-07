@@ -1,7 +1,7 @@
-import type { IAgentRuntime, IDatabaseAdapter, UUID, Character, Memory } from '@elizaos/core';
+import type { IAgentRuntime, IDatabaseAdapter, UUID, Character, Memory } from '@voidcatos/core';
 import { createTestRuntime } from './realRuntime';
-import { stringToUuid } from '@elizaos/core';
-import { createUniqueUuid as _createUniqueUuid } from '@elizaos/core';
+import { stringToUuid } from '@voidcatos/core';
+import { createUniqueUuid as _createUniqueUuid } from '@voidcatos/core';
 
 export interface TestEnvironmentConfig {
   /** Test isolation level */

@@ -1,4 +1,4 @@
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { getAgentRuntimeUrl } from '../commands/agent';
 import { OptionValues } from 'commander';
 import colors from 'yoctocolors';

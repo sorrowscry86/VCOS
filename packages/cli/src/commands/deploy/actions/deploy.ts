@@ -2,7 +2,7 @@
  * Deploy Action - Main deployment logic
  */
 
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import type { DeployOptions, DeploymentResult } from '../types';
 import { deployWithECS } from './deploy-ecs';
 

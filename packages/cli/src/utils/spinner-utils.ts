@@ -1,7 +1,7 @@
 import { bunExec } from './bun-exec.js';
 import * as clack from '@clack/prompts';
 import colors from 'yoctocolors';
-import { parseBooleanFromText, logger } from '@elizaos/core';
+import { parseBooleanFromText, logger } from '@voidcatos/core';
 
 /**
  * Check if quiet mode is enabled

@@ -14,7 +14,7 @@ import {
   World,
   type ActionResult,
   parseKeyValueXml,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 /**
  * Determines if the user with the current role can modify the role to the new role.

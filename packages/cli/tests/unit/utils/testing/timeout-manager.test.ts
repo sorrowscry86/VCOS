@@ -1,6 +1,6 @@
 import { describe, it, expect, mock, beforeEach, afterEach, spyOn } from 'bun:test';
 import { TestTimeoutManager } from '../../../../src/utils/testing/timeout-manager';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 
 // Mock logger
 mock.module('@elizaos/core', () => ({

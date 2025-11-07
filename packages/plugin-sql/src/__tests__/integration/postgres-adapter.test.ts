@@ -4,7 +4,7 @@ import { PGliteClientManager } from '../../pglite/manager';
 import { PgliteDatabaseAdapter } from '../../pglite/adapter';
 import { DatabaseMigrationService } from '../../migration-service';
 import * as schema from '../../schema';
-import type { UUID } from '@elizaos/core';
+import type { UUID } from '@voidcatos/core';
 import { v4 as uuidv4 } from 'uuid';
 
 describe('PostgreSQL Adapter Integration Tests', () => {

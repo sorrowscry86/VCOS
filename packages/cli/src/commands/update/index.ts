@@ -1,6 +1,6 @@
 import { displayBanner, handleError, isRunningViaBunx, isRunningViaNpx } from '@/src/utils';
 import { detectDirectoryType, isValidForUpdates } from '@/src/utils/directory-detection';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { Command } from 'commander';
 import { performCliUpdate } from './actions/cli-update';
 import { updateDependencies } from './actions/dependency-update';

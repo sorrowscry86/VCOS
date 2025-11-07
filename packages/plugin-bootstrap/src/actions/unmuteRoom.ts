@@ -10,7 +10,7 @@ import {
   ModelType,
   type State,
   type ActionResult,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 /**
  * Template for determining if an agent should unmute a previously muted room.

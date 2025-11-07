@@ -1,4 +1,4 @@
-import { type IAgentRuntime, type UUID } from '@elizaos/core';
+import { type IAgentRuntime, type UUID } from '@voidcatos/core';
 import { TestSuite } from '../utils/test-suite';
 import * as fs from 'fs/promises';
 import * as path from 'path';

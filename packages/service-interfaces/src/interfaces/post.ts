@@ -1,4 +1,4 @@
-import { Service, ServiceType, type UUID } from '@elizaos/core';
+import { Service, ServiceType, type UUID } from '@voidcatos/core';
 
 export interface PostMedia {
   id: UUID;

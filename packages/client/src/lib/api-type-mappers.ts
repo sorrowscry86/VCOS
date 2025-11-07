@@ -5,8 +5,8 @@ import {
   MessageChannel as ApiMessageChannel,
   MessageServer as ApiMessageServer,
   Memory as ApiMemory,
-} from '@elizaos/api-client';
-import { Agent, AgentStatus, UUID, ChannelType, Memory } from '@elizaos/core';
+} from '@voidcatos/api-client';
+import { Agent, AgentStatus, UUID, ChannelType, Memory } from '@voidcatos/core';
 import type {
   AgentWithStatus,
   MessageChannel as ClientMessageChannel,

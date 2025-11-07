@@ -1,5 +1,5 @@
-import type { Plugin, UUID } from '@elizaos/core';
-import { AgentRuntime } from '@elizaos/core';
+import type { Plugin, UUID } from '@voidcatos/core';
+import { AgentRuntime } from '@voidcatos/core';
 import { sql } from 'drizzle-orm';
 import fs from 'node:fs';
 import os from 'node:os';

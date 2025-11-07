@@ -1,4 +1,4 @@
-import { logger, validateUuid, type IDatabaseAdapter } from '@elizaos/core';
+import { logger, validateUuid, type IDatabaseAdapter } from '@voidcatos/core';
 import { sql, eq } from 'drizzle-orm';
 import { ownersTable } from './schema/owners';
 import { agentTable } from './schema/agent';

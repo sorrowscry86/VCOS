@@ -1,7 +1,7 @@
 /**
  * Seed data for log integration tests
  */
-import { type UUID, type Log, ChannelType, AgentStatus, type Agent } from '@elizaos/core';
+import { type UUID, type Log, ChannelType, AgentStatus, type Agent } from '@voidcatos/core';
 import { v4 } from 'uuid';
 
 /**

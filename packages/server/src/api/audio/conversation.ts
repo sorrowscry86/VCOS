@@ -1,4 +1,4 @@
-import type { ElizaOS, UUID, Content, Memory } from '@elizaos/core';
+import type { ElizaOS, UUID, Content, Memory } from '@voidcatos/core';
 import {
   validateUuid,
   logger,
@@ -7,7 +7,7 @@ import {
   createUniqueUuid,
   composePrompt,
   messageHandlerTemplate,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import express from 'express';
 import { sendError } from '../shared/response-utils';
 import { convertToAudioBuffer } from './audioBuffer';

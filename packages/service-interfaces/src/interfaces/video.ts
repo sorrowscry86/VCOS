@@ -1,4 +1,4 @@
-import { Service, ServiceType } from '@elizaos/core';
+import { Service, ServiceType } from '@voidcatos/core';
 
 export interface VideoInfo {
   title?: string;

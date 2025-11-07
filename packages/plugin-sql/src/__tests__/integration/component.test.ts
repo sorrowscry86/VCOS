@@ -7,7 +7,7 @@ import {
   type UUID,
   type World,
   stringToUuid,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import { v4 as uuidv4 } from 'uuid';
 import { describe, it, expect, beforeAll, afterAll } from 'bun:test';
 import { PgDatabaseAdapter } from '../../pg/adapter';

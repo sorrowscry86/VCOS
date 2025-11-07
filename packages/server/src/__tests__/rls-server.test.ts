@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'bun:test';
-import { stringToUuid } from '@elizaos/core';
+import { stringToUuid } from '@voidcatos/core';
 
 /**
  * RLS Server Integration Tests

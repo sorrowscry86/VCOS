@@ -1,4 +1,4 @@
-import { AgentRuntime, Service } from '@elizaos/core';
+import { AgentRuntime, Service } from '@voidcatos/core';
 import { Scenario } from './schema';
 // @ts-ignore - lodash types not available
 import _ from 'lodash';

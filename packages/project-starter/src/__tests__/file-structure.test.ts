@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'bun:test';
 import fs from 'node:fs';
 import path from 'node:path';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 
 // Helper function to check if a file exists
 function fileExists(filePath: string): boolean {

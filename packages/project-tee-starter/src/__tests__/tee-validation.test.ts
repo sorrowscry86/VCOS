@@ -1,5 +1,5 @@
 import { describe, test, expect, beforeEach, afterEach } from 'bun:test';
-import { logger, type IAgentRuntime } from '@elizaos/core';
+import { logger, type IAgentRuntime } from '@voidcatos/core';
 
 // Mock logger to avoid console noise during tests
 const mockLogger = {

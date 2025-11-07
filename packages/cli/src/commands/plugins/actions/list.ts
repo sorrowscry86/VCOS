@@ -1,7 +1,7 @@
 import { fetchPluginRegistry } from '@/src/utils/plugin-discovery';
 import { logHeader } from '@/src/utils';
 import { detectDirectoryType } from '@/src/utils/directory-detection';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { ListPluginsOptions } from '../types';
 import { getDependenciesFromDirectory } from '../utils/directory';
 

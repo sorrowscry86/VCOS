@@ -1,4 +1,4 @@
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 
 /**
  * Cross-platform emoji handler that provides fallbacks for terminals that don't support emojis

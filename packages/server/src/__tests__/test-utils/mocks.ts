@@ -11,8 +11,8 @@ import type {
   Service,
   State,
   UUID,
-} from '@elizaos/core';
-import { ServiceType } from '@elizaos/core';
+} from '@voidcatos/core';
+import { ServiceType } from '@voidcatos/core';
 import type { NextFunction, Request, Response } from 'express';
 import { mock, jest } from 'bun:test';
 

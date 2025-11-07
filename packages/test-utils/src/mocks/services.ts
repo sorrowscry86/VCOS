@@ -6,8 +6,8 @@
  */
 
 import { mock } from './mockUtils';
-import type { Service } from '@elizaos/core';
-import { ServiceType, ServiceTypeName } from '@elizaos/core';
+import type { Service } from '@voidcatos/core';
+import { ServiceType, ServiceTypeName } from '@voidcatos/core';
 /**
  * Type representing overrides for Service mock creation
  */
@@ -25,7 +25,7 @@ export type MockServiceOverrides = Partial<Service>;
  *
  * @example
  * ```typescript
- * import { createMockService } from '@elizaos/core/test-utils';
+ * import { createMockService } from '@voidcatos/core/test-utils';
  * import { mock } from 'bun:test';
  *
  * const mockService = createMockService(ServiceType.UNKNOWN, {

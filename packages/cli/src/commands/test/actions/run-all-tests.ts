@@ -1,4 +1,4 @@
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { TestCommandOptions } from '../types';
 import { getProjectType } from '../utils/project-utils';
 import { runComponentTests } from './component-tests';

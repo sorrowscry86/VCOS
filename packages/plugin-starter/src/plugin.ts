@@ -10,8 +10,8 @@ import type {
   Provider,
   ProviderResult,
   State,
-} from '@elizaos/core';
-import { ModelType, Service, logger } from '@elizaos/core';
+} from '@voidcatos/core';
+import { ModelType, Service, logger } from '@voidcatos/core';
 import { z } from 'zod';
 
 /**

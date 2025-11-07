@@ -1,7 +1,7 @@
 /**
  * Seed data for cache integration tests
  */
-import { type UUID, AgentStatus, type Agent } from '@elizaos/core';
+import { type UUID, AgentStatus, type Agent } from '@voidcatos/core';
 import { v4 } from 'uuid';
 
 /**

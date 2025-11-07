@@ -2,7 +2,7 @@
  * Delete Container Action
  */
 
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import * as path from 'node:path';
 import * as readline from 'node:readline';
 import type { DeleteContainerOptions, Container } from '../types';

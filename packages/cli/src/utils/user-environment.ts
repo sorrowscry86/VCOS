@@ -2,7 +2,7 @@ import os from 'node:os';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import * as semver from 'semver';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { existsSync, statSync, readFileSync } from 'node:fs';
 import { resolveEnvFile } from './resolve-utils';
 import { emoji } from './emoji-handler';

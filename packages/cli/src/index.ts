@@ -20,7 +20,7 @@ import { test } from '@/src/commands/test';
 import { update } from '@/src/commands/update';
 import { displayBanner, getVersion, checkAndShowUpdateNotification } from '@/src/utils';
 import { tryDelegateToLocalCli } from '@/src/utils/local-cli-delegation';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { Command } from 'commander';
 import { configureEmojis } from '@/src/utils/emoji-handler';
 import { stopServer } from '@/src/commands/dev/utils/server-manager';

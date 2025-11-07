@@ -1,9 +1,9 @@
-import { ChannelType, validateUuid } from '@elizaos/core';
+import { ChannelType, validateUuid } from '@voidcatos/core';
 import { Separator } from '@/components/ui/separator';
 import { GROUP_CHAT_SOURCE } from '@/constants';
 import { useAgentsWithDetails, useChannels } from '@/hooks/use-query-hooks';
 import { createElizaClient } from '@/lib/api-client-config';
-import { type Agent, AgentStatus, type UUID } from '@elizaos/core';
+import { type Agent, AgentStatus, type UUID } from '@voidcatos/core';
 import { useQueryClient, useQuery, useMutation, type UseQueryResult } from '@tanstack/react-query';
 import { Loader2, Trash, X } from 'lucide-react';
 import { useEffect, useState, useMemo, useCallback, useRef } from 'react';

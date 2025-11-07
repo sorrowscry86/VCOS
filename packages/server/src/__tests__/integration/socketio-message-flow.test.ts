@@ -5,8 +5,8 @@
 import { describe, it, expect, beforeAll, afterAll, beforeEach, afterEach } from 'bun:test';
 import { io as ioClient, Socket as ClientSocket } from 'socket.io-client';
 import { AgentServer } from '../../index';
-import type { IAgentRuntime, UUID, Character } from '@elizaos/core';
-import { SOCKET_MESSAGE_TYPE, ChannelType } from '@elizaos/core';
+import type { IAgentRuntime, UUID, Character } from '@voidcatos/core';
+import { SOCKET_MESSAGE_TYPE, ChannelType } from '@voidcatos/core';
 import path from 'node:path';
 import fs from 'node:fs';
 

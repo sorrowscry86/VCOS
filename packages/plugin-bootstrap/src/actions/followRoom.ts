@@ -10,7 +10,7 @@ import {
   ModelType,
   type State,
   type ActionResult,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 /**
  * Template for deciding if {{agentName}} should start following a room.

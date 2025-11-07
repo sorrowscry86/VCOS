@@ -1,4 +1,4 @@
-import { type Agent, stringToUuid, type UUID } from '@elizaos/core';
+import { type Agent, stringToUuid, type UUID } from '@voidcatos/core';
 import { v4 as uuidv4 } from 'uuid';
 import { describe, it, expect, beforeEach, beforeAll, afterAll } from 'bun:test';
 import { PgDatabaseAdapter } from '../../pg/adapter';

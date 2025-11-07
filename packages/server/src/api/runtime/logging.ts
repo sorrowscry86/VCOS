@@ -1,4 +1,4 @@
-import { logger, recentLogs } from '@elizaos/core';
+import { logger, recentLogs } from '@voidcatos/core';
 import express from 'express';
 
 // Custom levels from @elizaos/core logger

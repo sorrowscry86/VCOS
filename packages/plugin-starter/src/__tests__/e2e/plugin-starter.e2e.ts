@@ -3,7 +3,7 @@ import {
   type HandlerCallback,
   type IAgentRuntime,
   type TestSuite,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 /**
  * E2E (End-to-End) Test Suite for ElizaOS Plugins

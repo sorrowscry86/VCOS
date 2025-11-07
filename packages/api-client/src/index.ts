@@ -1,5 +1,7 @@
 // Main client
-export { ElizaClient } from './client';
+export { VoidCatClient } from './client';
+// Export ElizaClient as alias for backward compatibility
+export { VoidCatClient as ElizaClient } from './client';
 
 // Base types
 export * from './types/base';

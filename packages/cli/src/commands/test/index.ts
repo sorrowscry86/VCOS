@@ -1,5 +1,5 @@
 import { handleError } from '@/src/utils';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { Command, Option, InvalidOptionArgumentError } from 'commander';
 import { runAllTests } from './actions/run-all-tests';
 import { runComponentTests } from './actions/component-tests';

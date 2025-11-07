@@ -6,7 +6,7 @@ import type {
   InputOutputData,
   TraceRecord,
 } from '@evilmartians/agent-prism-types';
-import type { RunDetail, RunEvent, RunSummary } from '@elizaos/api-client';
+import type { RunDetail, RunEvent, RunSummary } from '@voidcatos/api-client';
 
 /**
  * Adapter to convert ElizaOS RunDetail data to Agent Prism TraceSpan format

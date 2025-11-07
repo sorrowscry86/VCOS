@@ -10,7 +10,7 @@ import type {
   Content,
   AgentRuntime,
   ChannelType,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import { PgDatabaseAdapter } from '../../pg/adapter';
 import { PgliteDatabaseAdapter } from '../../pglite/adapter';
 

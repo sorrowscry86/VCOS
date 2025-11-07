@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach, afterEach, mock } from 'bun:test';
 import { EmbeddingGenerationService } from '../services/embedding';
-import { EventType, type IAgentRuntime, type UUID } from '@elizaos/core';
+import { EventType, type IAgentRuntime, type UUID } from '@voidcatos/core';
 
 describe('EmbeddingGenerationService - Queue Management', () => {
   let service: EmbeddingGenerationService;

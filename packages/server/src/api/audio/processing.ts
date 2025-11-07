@@ -1,5 +1,5 @@
-import type { ElizaOS } from '@elizaos/core';
-import { logger, ModelType, validateUuid } from '@elizaos/core';
+import type { ElizaOS } from '@voidcatos/core';
+import { logger, ModelType, validateUuid } from '@voidcatos/core';
 import express from 'express';
 import { cleanupUploadedFile } from '../shared/file-utils.js';
 import { sendError, sendSuccess } from '../shared/response-utils.js';

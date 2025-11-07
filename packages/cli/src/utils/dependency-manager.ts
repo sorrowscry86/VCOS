@@ -1,6 +1,6 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { bunExec } from './bun-exec';
 import { runBunWithSpinner } from './spinner-utils';
 import { detectDirectoryType } from './directory-detection';

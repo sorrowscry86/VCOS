@@ -1,4 +1,4 @@
-import type { Agent, MessageExample } from '@elizaos/core';
+import type { Agent, MessageExample } from '@voidcatos/core';
 import colors from 'yoctocolors';
 import path from 'node:path';
 

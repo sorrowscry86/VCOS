@@ -3,7 +3,7 @@
  * Deploys ElizaOS projects using Docker containers to AWS ECS
  */
 
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import * as path from 'node:path';
 import * as fs from 'node:fs';
 import dotenv from 'dotenv';

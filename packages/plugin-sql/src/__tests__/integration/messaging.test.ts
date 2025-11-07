@@ -1,4 +1,4 @@
-import { ChannelType, type UUID } from '@elizaos/core';
+import { ChannelType, type UUID } from '@voidcatos/core';
 import { v4 as uuidv4 } from 'uuid';
 import { describe, it, expect, beforeAll, afterAll } from 'bun:test';
 import { PgDatabaseAdapter } from '../../pg/adapter';

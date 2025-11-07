@@ -13,8 +13,8 @@ import type {
   MemoryMetadata,
   MemoryType,
   UUID,
-} from '@elizaos/core';
-import { ContentType } from '@elizaos/core';
+} from '@voidcatos/core';
+import { ContentType } from '@voidcatos/core';
 
 /**
  * Type representing overrides for Memory mock creation
@@ -37,7 +37,7 @@ export type MockContentOverrides = Partial<Content>;
  *
  * @example
  * ```typescript
- * import { createMockMemory } from '@elizaos/core/test-utils';
+ * import { createMockMemory } from '@voidcatos/core/test-utils';
  *
  * const mockMessage = createMockMemory({
  *   content: { text: 'Hello, world!' },
@@ -85,7 +85,7 @@ export function createMockMemory(overrides: MockMemoryOverrides = {}): Memory {
  *
  * @example
  * ```typescript
- * import { createMockContent } from '@elizaos/core/test-utils';
+ * import { createMockContent } from '@voidcatos/core/test-utils';
  *
  * const mockContent = createMockContent({
  *   text: 'Custom message',

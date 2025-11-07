@@ -1,4 +1,4 @@
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { emoji } from './emoji-handler';
 import { bunExec, commandExists } from './bun-exec';
 

@@ -1,5 +1,5 @@
 import { type Request, type Response, type NextFunction } from 'express';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 
 /**
  * Express middleware for validating API Key authentication based on an environment variable.

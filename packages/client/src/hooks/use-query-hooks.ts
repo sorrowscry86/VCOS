@@ -8,7 +8,7 @@ import type {
   UUID,
   Memory as CoreMemory,
   AgentStatus,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import {
   useQuery,
   useMutation,
@@ -43,7 +43,7 @@ import {
   apiDateToTimestamp,
   type AgentLog,
 } from '@/lib/api-type-mappers';
-import type { ListRunsParams, RunDetail, RunSummary } from '@elizaos/api-client';
+import type { ListRunsParams, RunDetail, RunSummary } from '@voidcatos/api-client';
 
 // Create ElizaClient instance for direct API calls
 const elizaClient = createElizaClient();

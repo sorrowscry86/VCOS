@@ -1,6 +1,6 @@
 import { describe, it, expect, mock, spyOn, beforeEach, afterEach } from 'bun:test';
 import { displayAgent, logHeader } from '../../../src/utils/helpers';
-import type { Agent } from '@elizaos/core';
+import type { Agent } from '@voidcatos/core';
 import colors from 'yoctocolors';
 
 // Mock dependencies

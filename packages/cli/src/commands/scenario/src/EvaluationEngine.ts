@@ -1,8 +1,8 @@
-import { AgentRuntime, ModelType } from '@elizaos/core';
+import { AgentRuntime, ModelType } from '@voidcatos/core';
 import { ExecutionResult } from './providers';
 import { Evaluation as EvaluationSchema } from './schema';
 import { z } from 'zod';
-import type { ObjectGenerationParams } from '@elizaos/core';
+import type { ObjectGenerationParams } from '@voidcatos/core';
 import {
   ConversationLengthEvaluator,
   ConversationFlowEvaluator,

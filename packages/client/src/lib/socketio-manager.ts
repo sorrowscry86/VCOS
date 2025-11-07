@@ -1,5 +1,5 @@
 import { USER_NAME } from '@/constants';
-import { SOCKET_MESSAGE_TYPE } from '@elizaos/core';
+import { SOCKET_MESSAGE_TYPE } from '@voidcatos/core';
 import { Evt } from 'evt';
 import { io, type Socket } from 'socket.io-client';
 import { randomUUID } from './utils';

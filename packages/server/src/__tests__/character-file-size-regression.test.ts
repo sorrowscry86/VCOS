@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'bun:test';
-import type { Agent } from '@elizaos/core';
+import type { Agent } from '@voidcatos/core';
 
 describe('Character File Size Limits - Issue #5268 Regression Test', () => {
   function generateLargeCharacter(targetSizeKB: number): Agent {

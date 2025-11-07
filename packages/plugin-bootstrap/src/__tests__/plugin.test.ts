@@ -1,6 +1,6 @@
 import { describe, expect, it, mock, beforeEach, afterEach } from 'bun:test';
 import { bootstrapPlugin } from '../index';
-import { IAgentRuntime, UUID, EventType, Memory, Content } from '@elizaos/core';
+import { IAgentRuntime, UUID, EventType, Memory, Content } from '@voidcatos/core';
 import { MockRuntime, createMockRuntime } from './test-utils';
 
 // Create a mock function for bootstrapPlugin.init since it might not actually exist on the plugin

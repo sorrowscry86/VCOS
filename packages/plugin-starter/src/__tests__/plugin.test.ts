@@ -12,7 +12,7 @@ import {
   type UUID,
   ModelType,
   logger,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import dotenv from 'dotenv';
 import { z } from 'zod';
 import {

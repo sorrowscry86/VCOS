@@ -1,4 +1,4 @@
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { buildProject } from './build-project';

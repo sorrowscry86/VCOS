@@ -5,7 +5,7 @@
  * supporting both unit and integration testing scenarios.
  */
 
-import type { IDatabaseAdapter, UUID } from '@elizaos/core';
+import type { IDatabaseAdapter, UUID } from '@voidcatos/core';
 import { mock } from './mockUtils';
 
 /**
@@ -24,7 +24,7 @@ export type MockDatabaseOverrides = Partial<IDatabaseAdapter>;
  *
  * @example
  * ```typescript
- * import { createMockDatabase } from '@elizaos/core/test-utils';
+ * import { createMockDatabase } from '@voidcatos/core/test-utils';
  * import { mock } from 'bun:test';
  *
  * const mockDb = createMockDatabase({

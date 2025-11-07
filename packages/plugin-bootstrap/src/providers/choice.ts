@@ -1,5 +1,5 @@
-import type { IAgentRuntime, Memory, Provider, ProviderResult, State } from '@elizaos/core';
-import { logger } from '@elizaos/core';
+import type { IAgentRuntime, Memory, Provider, ProviderResult, State } from '@voidcatos/core';
+import { logger } from '@voidcatos/core';
 
 // Define an interface for option objects
 /**

@@ -1,5 +1,5 @@
-import type { Agent, UUID } from '@elizaos/core';
-import { AgentStatus } from '@elizaos/core';
+import type { Agent, UUID } from '@voidcatos/core';
+import { AgentStatus } from '@voidcatos/core';
 import * as crypto from 'crypto';
 
 // Helper function to generate a secure random string

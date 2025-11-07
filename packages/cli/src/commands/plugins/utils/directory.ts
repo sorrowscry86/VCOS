@@ -1,5 +1,5 @@
 import { detectDirectoryType } from '@/src/utils/directory-detection';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { Dependencies } from '../types';

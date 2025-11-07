@@ -1,4 +1,4 @@
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { bunExec } from '../bun-exec.js';
 import path from 'node:path';
 import { existsSync } from 'node:fs';

@@ -1,5 +1,5 @@
-import type { IAgentRuntime, Memory, Provider } from '@elizaos/core';
-import { addHeader, ChannelType } from '@elizaos/core';
+import type { IAgentRuntime, Memory, Provider } from '@voidcatos/core';
+import { addHeader, ChannelType } from '@voidcatos/core';
 /**
  * Represents an anxiety provider that provides examples and guidance for an AI roleplaying as a character.
  * The anxiety provider offers suggestions on how to reduce verbosity and eagerness in responses based on the channel type.

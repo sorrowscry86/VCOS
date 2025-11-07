@@ -5,7 +5,7 @@
 import { describe, it, expect, beforeEach, afterEach, jest } from 'bun:test';
 import express from 'express';
 import { createJobsRouter, type JobsRouter } from '../jobs';
-import type { IAgentRuntime, UUID, ElizaOS } from '@elizaos/core';
+import type { IAgentRuntime, UUID, ElizaOS } from '@voidcatos/core';
 import type { AgentServer } from '../../../index';
 import { JobStatus, JobValidation } from '../../../types/jobs';
 import internalMessageBus from '../../../bus';

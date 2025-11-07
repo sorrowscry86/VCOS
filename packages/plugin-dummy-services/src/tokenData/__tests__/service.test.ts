@@ -1,6 +1,6 @@
 import { describe, expect, it, beforeEach } from 'bun:test';
 import { DummyTokenDataService } from '../service';
-import { type IAgentRuntime } from '@elizaos/core';
+import { type IAgentRuntime } from '@voidcatos/core';
 
 describe('DummyTokenDataService', () => {
   let service: DummyTokenDataService;

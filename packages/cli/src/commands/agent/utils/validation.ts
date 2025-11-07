@@ -2,7 +2,7 @@ import type { OptionValues } from 'commander';
 import { z } from 'zod';
 import type { AgentBasic } from '../../shared';
 import { createApiClientConfig } from '../../shared';
-import { AgentsService } from '@elizaos/api-client';
+import { AgentsService } from '@voidcatos/api-client';
 
 // Zod schemas for validation
 export const AgentBasicSchema = z

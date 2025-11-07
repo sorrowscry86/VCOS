@@ -3,7 +3,7 @@
 
 import React from 'react';
 import type { AgentWithStatus } from '@/types';
-import { AgentStatus } from '@elizaos/core';
+import { AgentStatus } from '@voidcatos/core';
 
 // Create a minimal test component that represents AgentCard functionality
 const TestAgentCard: React.FC<{

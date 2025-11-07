@@ -1,4 +1,4 @@
-import type { Agent, UUID } from '@elizaos/core';
+import type { Agent, UUID } from '@voidcatos/core';
 import { useQueryClient } from '@tanstack/react-query';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';

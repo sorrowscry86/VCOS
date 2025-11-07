@@ -8,7 +8,7 @@ import {
   ChannelType,
   AgentStatus as CoreAgentStatusEnum,
   type UUID,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import { Loader2, Play, Settings } from 'lucide-react';
 import { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router';

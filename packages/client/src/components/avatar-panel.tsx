@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import type { Agent } from '@elizaos/core';
+import type { Agent } from '@voidcatos/core';
 import { Image as ImageIcon, Upload, X, Info } from 'lucide-react';
 import { useRef, useState, useEffect } from 'react';
 import { compressImage } from '@/lib/utils';

@@ -1,5 +1,5 @@
 import express from 'express';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 
 /**
  * Security middleware to add additional API protection

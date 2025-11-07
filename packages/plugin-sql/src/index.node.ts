@@ -1,5 +1,5 @@
-import type { IDatabaseAdapter, UUID } from '@elizaos/core';
-import { type IAgentRuntime, type Plugin, logger, stringToUuid } from '@elizaos/core';
+import type { IDatabaseAdapter, UUID } from '@voidcatos/core';
+import { type IAgentRuntime, type Plugin, logger, stringToUuid } from '@voidcatos/core';
 import { PgliteDatabaseAdapter } from './pglite/adapter';
 import { PGliteClientManager } from './pglite/manager';
 import { PgDatabaseAdapter } from './pg/adapter';

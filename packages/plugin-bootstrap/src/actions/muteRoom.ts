@@ -10,7 +10,7 @@ import {
   ModelType,
   type State,
   type ActionResult,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 /**
  * Template string for deciding if the agent should mute a room and stop responding unless explicitly mentioned.

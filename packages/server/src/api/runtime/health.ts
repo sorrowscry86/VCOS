@@ -1,5 +1,5 @@
-import type { ElizaOS } from '@elizaos/core';
-import { logger } from '@elizaos/core';
+import type { ElizaOS } from '@voidcatos/core';
+import { logger } from '@voidcatos/core';
 import express from 'express';
 import type { AgentServer } from '../../index';
 

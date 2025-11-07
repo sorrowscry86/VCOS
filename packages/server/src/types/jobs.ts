@@ -1,4 +1,4 @@
-import type { UUID } from '@elizaos/core';
+import type { UUID } from '@voidcatos/core';
 
 /**
  * Job status enumeration

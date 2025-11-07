@@ -1,5 +1,5 @@
 import { bunExec, bunExecInherit } from '@/src/utils/bun-exec';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import {
   branchExists,
   createBranch,

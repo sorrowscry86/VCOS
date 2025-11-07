@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach, afterEach, mock } from 'bun:test';
 import { JobsService } from '../../services/jobs';
 import { ApiClientConfig } from '../../types/base';
 import { JobStatus } from '../../types/jobs';
-import type { UUID } from '@elizaos/core';
+import type { UUID } from '@voidcatos/core';
 
 describe('JobsService', () => {
   let jobsService: JobsService;

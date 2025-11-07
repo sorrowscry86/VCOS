@@ -10,7 +10,7 @@ import {
   parseBooleanFromText,
   type State,
   type ActionResult,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 /**
  * Template for deciding if an agent should stop closely following a previously followed room

@@ -1,6 +1,6 @@
 import { describe, expect, it, beforeEach, mock } from 'bun:test';
-import type { Agent, Character, UUID } from '@elizaos/core';
-import { stringToUuid } from '@elizaos/core';
+import type { Agent, Character, UUID } from '@voidcatos/core';
+import { stringToUuid } from '@voidcatos/core';
 import { v4 as uuidv4 } from 'uuid';
 import { jsonToCharacter } from '../../../loader';
 

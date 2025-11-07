@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach, afterEach, mock } from 'bun:test';
 import { TestRunner } from '../../../src/utils/test-runner';
-import type { IAgentRuntime, Plugin, ProjectAgent, Character } from '@elizaos/core';
+import type { IAgentRuntime, Plugin, ProjectAgent, Character } from '@voidcatos/core';
 
 // Mock the logger
 mock.module('@elizaos/core', () => ({

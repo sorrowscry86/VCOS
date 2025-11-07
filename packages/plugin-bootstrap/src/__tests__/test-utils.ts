@@ -15,7 +15,7 @@ import {
   Service,
   State,
   UUID,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 /**
  * Creates a comprehensive mock of the IAgentRuntime interface with sensible defaults

@@ -4,7 +4,7 @@
 
 import { describe, it, expect, beforeEach, afterEach, jest, mock } from 'bun:test';
 import { AgentServer } from '../index';
-import type { UUID, ChannelType } from '@elizaos/core';
+import type { UUID, ChannelType } from '@voidcatos/core';
 
 // Mock logger to avoid console output during tests
 mock.module('@elizaos/core', () => ({

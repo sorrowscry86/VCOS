@@ -1,4 +1,4 @@
-import type { Character } from '@elizaos/core';
+import type { Character } from '@voidcatos/core';
 import dotenv from 'dotenv';
 import path from 'node:path';
 import fs from 'node:fs';

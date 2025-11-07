@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useToast } from './use-toast';
 import { useQueryClient } from '@tanstack/react-query';
 import { createElizaClient } from '@/lib/api-client-config';
-import type { Agent } from '@elizaos/core';
+import type { Agent } from '@voidcatos/core';
 
 export function useDeleteAgent(targetAgentData: Agent) {
   const [isDeleting, setIsDeleting] = useState(false);

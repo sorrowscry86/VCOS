@@ -1,4 +1,4 @@
-import type { Plugin, Character } from '@elizaos/core';
+import type { Plugin, Character } from '@voidcatos/core';
 import { pgTable, varchar, timestamp, uuid } from 'drizzle-orm/pg-core';
 import { sql } from 'drizzle-orm';
 

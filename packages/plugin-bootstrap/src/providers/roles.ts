@@ -8,7 +8,7 @@ import {
   type ProviderResult,
   type State,
   type UUID,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 /**
  * Role provider that retrieves roles in the server based on the provided runtime, message, and state.

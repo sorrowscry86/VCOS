@@ -1,5 +1,5 @@
 import { PluginReference } from './schema';
-import { Plugin } from '@elizaos/core';
+import { Plugin } from '@voidcatos/core';
 
 export interface ParsedPlugin {
   name: string;

@@ -7,7 +7,7 @@
 
 import { describe, expect, it, beforeEach, mock } from 'bun:test';
 import { TrajectoryReconstructor, TrajectoryStep } from '../TrajectoryReconstructor';
-import { UUID } from '@elizaos/core';
+import { UUID } from '@voidcatos/core';
 
 describe('Ticket #5785 Acceptance Criteria Validation', () => {
   let reconstructor: TrajectoryReconstructor;

@@ -1,5 +1,5 @@
-import type { ElizaOS, IAgentRuntime } from '@elizaos/core';
-import { validateUuid, logger, createUniqueUuid } from '@elizaos/core';
+import type { ElizaOS, IAgentRuntime } from '@voidcatos/core';
+import { validateUuid, logger, createUniqueUuid } from '@voidcatos/core';
 import express from 'express';
 import { sendError, sendSuccess } from '../shared/response-utils';
 

@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, mock } from 'bun:test';
-import { type IAgentRuntime, type Memory, type Content, type UUID, ModelType } from '@elizaos/core';
+import { type IAgentRuntime, type Memory, type Content, type UUID, ModelType } from '@voidcatos/core';
 import { createMockRuntime } from './test-utils';
 
 // Mock the internal functions we need to test

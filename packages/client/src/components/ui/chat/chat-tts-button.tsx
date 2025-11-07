@@ -1,6 +1,6 @@
 import { useToast } from '@/hooks/use-toast';
 import { createElizaClient } from '@/lib/api-client-config';
-import { UUID } from '@elizaos/core';
+import { UUID } from '@voidcatos/core';
 import { useMutation } from '@tanstack/react-query';
 import { Ellipsis, StopCircle, Volume2 } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Avatar } from '@/components/ui/avatar';
-import type { UUID, Agent } from '@elizaos/core';
+import type { UUID, Agent } from '@voidcatos/core';
 import type { MessageChannel as ClientMessageChannel } from '@/types';
 import { Settings } from 'lucide-react';
 import { formatAgentName, generateGroupName, getEntityId } from '@/lib/utils';

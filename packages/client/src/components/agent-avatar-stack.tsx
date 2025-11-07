@@ -1,4 +1,4 @@
-import { UUID } from '@elizaos/core';
+import { UUID } from '@voidcatos/core';
 import { Avatar, AvatarImage } from './ui/avatar';
 import { formatAgentName } from '@/lib/utils';
 import { useState } from 'react';

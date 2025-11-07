@@ -1,7 +1,7 @@
 import { describe, expect, it, spyOn, beforeAll, afterAll } from 'bun:test';
 import plugin from '../plugin';
-import type { IAgentRuntime, Memory, State, Provider } from '@elizaos/core';
-import { logger } from '@elizaos/core';
+import type { IAgentRuntime, Memory, State, Provider } from '@voidcatos/core';
+import { logger } from '@voidcatos/core';
 import { v4 as uuidv4 } from 'uuid';
 import dotenv from 'dotenv';
 import teeStarterPlugin from '../plugin';

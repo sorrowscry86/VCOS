@@ -1,4 +1,4 @@
-import { type Character } from '@elizaos/core';
+import { type Character } from '@voidcatos/core';
 
 /**
  * Represents the default character (Eliza) with her specific attributes and behaviors.

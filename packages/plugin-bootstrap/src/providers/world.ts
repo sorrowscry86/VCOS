@@ -5,7 +5,7 @@ import {
   logger,
   addHeader,
   ChannelType,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 /**
  * Provider that exposes relevant world/environment information to agents.

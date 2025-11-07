@@ -9,7 +9,7 @@ import {
   getGeneratedDir,
   getUploadsAgentsDir,
   ElizaOS,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import cors from 'cors';
 import express, { Request, Response } from 'express';
 import rateLimit from 'express-rate-limit';
@@ -39,8 +39,8 @@ import sqlPlugin, {
   assignAgentToOwner,
   applyRLSToNewTables,
   uninstallRLS,
-} from '@elizaos/plugin-sql';
-import { encryptedCharacter, stringToUuid, type Plugin } from '@elizaos/core';
+} from '@voidcatos/plugin-sql';
+import { encryptedCharacter, stringToUuid, type Plugin } from '@voidcatos/core';
 import { sql } from 'drizzle-orm';
 
 import internalMessageBus from './bus.js';
@@ -1880,4 +1880,4 @@ export {
 export * from './types';
 
 // Export ElizaOS from core (re-export for convenience)
-export { ElizaOS } from '@elizaos/core';
+export { ElizaOS } from '@voidcatos/core';

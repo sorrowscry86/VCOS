@@ -20,7 +20,7 @@ import {
   type AgentRunSummaryResult,
   type RunStatus,
   type AgentRunCounts,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import type { DatabaseMigrationService } from './migration-service';
 import {
   and,

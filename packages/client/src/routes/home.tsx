@@ -4,7 +4,7 @@ import GroupPanel from '@/components/group-panel';
 import ProfileOverlay from '@/components/profile-overlay';
 import { useAgentsWithDetails, useChannels, useServers } from '@/hooks/use-query-hooks';
 import clientLogger from '@/lib/logger';
-import { type Agent, type UUID, ChannelType as CoreChannelType, AgentStatus } from '@elizaos/core';
+import { type Agent, type UUID, ChannelType as CoreChannelType, AgentStatus } from '@voidcatos/core';
 import type { MessageChannel, MessageServer } from '@/types';
 import { Plus } from 'lucide-react';
 import React, { useEffect, useMemo, useState } from 'react';

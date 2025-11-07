@@ -1,7 +1,7 @@
 import { describe, expect, it, spyOn, beforeAll, afterAll } from 'bun:test';
 import * as fs from 'node:fs';
 import * as path from 'node:path';
-import { logger, IAgentRuntime, Plugin } from '@elizaos/core';
+import { logger, IAgentRuntime, Plugin } from '@voidcatos/core';
 import { character } from '../index';
 import plugin from '../plugin';
 import { createMockRuntime } from './test-utils';

@@ -2,7 +2,7 @@ import { describe, expect, it, beforeEach, afterEach, mock, spyOn } from 'bun:te
 import plugin from '../plugin';
 import { z } from 'zod';
 import { createMockRuntime } from './utils/core-test-utils';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 
 // Access the plugin's init function
 const initPlugin = plugin.init;

@@ -4,7 +4,7 @@ import AgentSettings from '@/components/agent-settings';
 import { useAgent } from '@/hooks/use-query-hooks';
 import { ArrowLeft } from 'lucide-react';
 import { Loader2 } from 'lucide-react';
-import type { UUID, Agent } from '@elizaos/core';
+import type { UUID, Agent } from '@voidcatos/core';
 
 export default function AgentSettingsRoute() {
   const { agentId } = useParams<{ agentId: string }>();

@@ -1,4 +1,4 @@
-import { Service, type Metadata } from '@elizaos/core';
+import { Service, type Metadata } from '@voidcatos/core';
 import type { TokenBalance } from './token';
 
 /**

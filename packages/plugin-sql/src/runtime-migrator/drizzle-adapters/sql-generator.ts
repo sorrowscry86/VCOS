@@ -1,6 +1,6 @@
 import type { SchemaSnapshot } from '../types';
 import type { SchemaDiff } from './diff-calculator';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 
 /**
  * Data loss detection result

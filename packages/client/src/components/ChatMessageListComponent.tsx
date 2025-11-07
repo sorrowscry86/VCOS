@@ -3,7 +3,7 @@ import { Avatar, AvatarImage } from '@/components/ui/avatar';
 import { ChatMessageList } from '@/components/ui/chat/chat-message-list';
 import { ChatBubble } from '@/components/ui/chat/chat-bubble';
 import { MemoizedMessageContent } from './chat';
-import { UUID, Agent, ChannelType } from '@elizaos/core';
+import { UUID, Agent, ChannelType } from '@voidcatos/core';
 import type { UiMessage } from '@/hooks/use-query-hooks';
 import { cn } from '@/lib/utils';
 import { getAgentAvatar } from '@/lib/utils';

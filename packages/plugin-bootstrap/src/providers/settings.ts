@@ -14,7 +14,7 @@ import {
   type Setting,
   type State,
   type WorldSettings,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 /**
  * Formats a setting value for display, respecting privacy flags

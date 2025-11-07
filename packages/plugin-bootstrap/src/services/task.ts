@@ -8,7 +8,7 @@ import {
   type Memory,
   type State,
   type Task,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 /**
  * TaskService class representing a service that schedules and executes tasks.

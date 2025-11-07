@@ -1,4 +1,4 @@
-import { logger, type IAgentRuntime, type Project, type ProjectAgent } from '@elizaos/core';
+import { logger, type IAgentRuntime, type Project, type ProjectAgent } from '@voidcatos/core';
 import teeStarterPlugin, { StarterService } from './plugin';
 import { mrTeeCharacter as character } from './character';
 

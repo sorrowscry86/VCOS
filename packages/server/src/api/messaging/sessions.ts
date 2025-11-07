@@ -5,7 +5,7 @@ import {
   type ElizaOS,
   type IAgentRuntime,
   ChannelType,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import express from 'express';
 import { v4 as uuidv4 } from 'uuid';
 import type { AgentServer, CentralRootMessage } from '../../index';

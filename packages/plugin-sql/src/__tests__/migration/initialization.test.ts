@@ -3,7 +3,7 @@ import { sql } from 'drizzle-orm';
 import { RuntimeMigrator } from '../../runtime-migrator';
 import type { DrizzleDatabase } from '../../types';
 import { createIsolatedTestDatabaseForMigration } from '../test-helpers';
-import type { UUID } from '@elizaos/core';
+import type { UUID } from '@voidcatos/core';
 import * as originalSchema from '../../schema';
 
 describe('Runtime Migrator - Initialization Tests', () => {

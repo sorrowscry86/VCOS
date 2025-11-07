@@ -1,6 +1,6 @@
 import { useMemo, useRef, useEffect, useState } from 'react';
 import ForceGraph2D from 'react-force-graph-2d';
-import type { Memory } from '@elizaos/core';
+import type { Memory } from '@voidcatos/core';
 import { computePca } from '@/lib/pca';
 
 export default function MemoryGraph({

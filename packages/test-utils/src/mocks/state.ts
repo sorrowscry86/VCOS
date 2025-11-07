@@ -5,7 +5,7 @@
  * provider results, and state composition utilities.
  */
 
-import type { ActionResult, ProviderResult, State } from '@elizaos/core';
+import type { ActionResult, ProviderResult, State } from '@voidcatos/core';
 
 /**
  * Type representing overrides for State mock creation
@@ -33,7 +33,7 @@ export type MockActionResultOverrides = Partial<ActionResult>;
  *
  * @example
  * ```typescript
- * import { createMockState } from '@elizaos/core/test-utils';
+ * import { createMockState } from '@voidcatos/core/test-utils';
  *
  * const mockState = createMockState({
  *   values: { currentUser: 'john_doe' },
@@ -94,7 +94,7 @@ Recent conversation context available.
  *
  * @example
  * ```typescript
- * import { createMockProviderResult } from '@elizaos/core/test-utils';
+ * import { createMockProviderResult } from '@voidcatos/core/test-utils';
  *
  * const providerResult = createMockProviderResult({
  *   text: '[WEATHER] Current weather is sunny',
@@ -131,7 +131,7 @@ export function createMockProviderResult(
  *
  * @example
  * ```typescript
- * import { createMockActionResult } from '@elizaos/core/test-utils';
+ * import { createMockActionResult } from '@voidcatos/core/test-utils';
  *
  * const actionResult = createMockActionResult({
  *   text: 'Action completed successfully',

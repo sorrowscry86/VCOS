@@ -1,5 +1,5 @@
 import { describe, test, expect, mock } from 'bun:test';
-import type { UUID } from '@elizaos/core';
+import type { UUID } from '@voidcatos/core';
 
 // Mock the client creation
 const mockCreateGroupChannel = mock(() =>

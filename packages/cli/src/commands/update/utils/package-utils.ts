@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import { bunExecInherit } from '@/src/utils/bun-exec';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { getPackageManager } from '@/src/utils';
 import { UpdateCheckResult, PackageUpdate } from '../types';
 import {

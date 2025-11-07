@@ -1,4 +1,4 @@
-import { UUID } from '@elizaos/core';
+import { UUID } from '@voidcatos/core';
 import { BaseApiClient } from '../lib/base-client';
 import { ListRunsParams, RunDetail, RunSummary } from '../types/runs';
 

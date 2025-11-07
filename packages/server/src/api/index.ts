@@ -1,5 +1,5 @@
-import type { IAgentRuntime, UUID, ElizaOS } from '@elizaos/core';
-import { logger, validateUuid } from '@elizaos/core';
+import type { IAgentRuntime, UUID, ElizaOS } from '@voidcatos/core';
+import { logger, validateUuid } from '@voidcatos/core';
 import cors from 'cors';
 import express from 'express';
 import helmet from 'helmet';

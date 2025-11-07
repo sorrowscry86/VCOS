@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach, afterEach, mock } from 'bun:test';
 import { MediaService } from '../../services/media';
 import { ApiClientConfig } from '../../types/base';
-import { UUID } from '@elizaos/core';
+import { UUID } from '@voidcatos/core';
 
 // Test UUIDs in proper format
 const TEST_AGENT_ID = '550e8400-e29b-41d4-a716-446655440001' as UUID;

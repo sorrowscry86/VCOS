@@ -1,4 +1,4 @@
-import { ElizaClient, type ApiClientConfig } from '@elizaos/api-client';
+import { ElizaClient, type ApiClientConfig } from '@voidcatos/api-client';
 
 export function createApiClientConfig(): ApiClientConfig {
   const getLocalStorageApiKey = () => `eliza-api-key-${window.location.origin}`;

@@ -1,5 +1,5 @@
-import { type IAgentRuntime, Memory, ModelType, Provider, State } from '@elizaos/core';
-import { logger } from '@elizaos/core';
+import { type IAgentRuntime, Memory, ModelType, Provider, State } from '@voidcatos/core';
+import { logger } from '@voidcatos/core';
 
 /**
  * Formats an array of memories into a single string with each memory content text separated by a new line.

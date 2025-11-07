@@ -9,7 +9,7 @@ import {
   asUUID,
   ChannelType,
   type World,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import { v4 as uuid } from 'uuid';
 import { strict as assert } from 'node:assert';
 

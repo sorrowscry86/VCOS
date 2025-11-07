@@ -1,4 +1,4 @@
-import { UUID } from '@elizaos/core';
+import { UUID } from '@voidcatos/core';
 
 export interface MediaUploadParams {
   file: File | Blob;

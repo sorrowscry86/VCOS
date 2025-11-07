@@ -18,7 +18,7 @@ import {
   type HandlerCallback,
   ModelType,
   logger,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 // Spy on commonly used methods for logging
 beforeEach(() => {

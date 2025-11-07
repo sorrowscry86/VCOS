@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import type { UUID } from '@elizaos/core';
+import type { UUID } from '@voidcatos/core';
 import clientLogger from '@/lib/logger';
 
 // Key for storing agent tab states in localStorage

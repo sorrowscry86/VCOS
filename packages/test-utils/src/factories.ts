@@ -16,7 +16,7 @@ import type {
   UUID,
   ActionResult,
   HandlerCallback,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 import { createMockRuntime } from './mocks/runtime';
 import { createMockMemory, createMockConversation } from './mocks/memory';
@@ -31,7 +31,7 @@ import { createMockCharacter } from './mocks/character';
  *
  * @example
  * ```typescript
- * import { createTestEnvironment } from '@elizaos/core/test-utils';
+ * import { createTestEnvironment } from '@voidcatos/core/test-utils';
  *
  * const { runtime, character, conversation } = createTestEnvironment({
  *   characterName: 'TestBot',

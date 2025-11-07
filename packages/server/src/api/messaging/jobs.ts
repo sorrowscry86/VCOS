@@ -16,7 +16,7 @@
  * All state (jobs, metrics, timeouts) is scoped per-router instance to prevent
  * memory leaks and cross-instance contamination.
  */
-import { logger, validateUuid, type UUID, type ElizaOS, ChannelType } from '@elizaos/core';
+import { logger, validateUuid, type UUID, type ElizaOS, ChannelType } from '@voidcatos/core';
 import express from 'express';
 import { v4 as uuidv4 } from 'uuid';
 import type { AgentServer } from '../../index';

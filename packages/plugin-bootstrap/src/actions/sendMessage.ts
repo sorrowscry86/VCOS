@@ -14,7 +14,7 @@ import {
   parseKeyValueXml,
   type State,
   type ActionResult,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 /**
  * Task: Extract Target and Source Information

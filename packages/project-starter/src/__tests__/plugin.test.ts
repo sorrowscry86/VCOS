@@ -1,6 +1,6 @@
 import { describe, expect, it, spyOn, beforeEach, afterEach, beforeAll, afterAll } from 'bun:test';
 import plugin from '../plugin';
-import { ModelType, logger } from '@elizaos/core';
+import { ModelType, logger } from '@voidcatos/core';
 import { StarterService } from '../plugin';
 import dotenv from 'dotenv';
 

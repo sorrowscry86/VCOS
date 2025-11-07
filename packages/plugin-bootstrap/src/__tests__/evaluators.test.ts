@@ -7,7 +7,7 @@ import {
   State,
   ChannelType,
   composePrompt,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import { MockRuntime, setupActionTest } from './test-utils';
 
 // Import the actual module first

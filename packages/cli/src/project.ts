@@ -5,9 +5,9 @@ import {
   logger,
   type ProjectAgent,
   type UUID,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import { getDefaultCharacter } from '@/src/characters/eliza';
-import { stringToUuid } from '@elizaos/core';
+import { stringToUuid } from '@voidcatos/core';
 import * as fs from 'node:fs';
 import path from 'node:path';
 import { detectDirectoryType } from '@/src/utils/directory-detection';

@@ -5,7 +5,7 @@
 
 import * as fs from 'node:fs';
 import * as path from 'node:path';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { execa } from 'execa';
 import crypto from 'node:crypto';
 import ora from 'ora';

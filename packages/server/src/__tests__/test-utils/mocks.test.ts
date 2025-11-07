@@ -9,7 +9,7 @@ import {
   createMockService,
   createMockUploadedFile,
 } from './mocks';
-import { ServiceType } from '@elizaos/core';
+import { ServiceType } from '@voidcatos/core';
 
 describe('Mock Factory Functions', () => {
   describe('createMockAgentRuntime', () => {

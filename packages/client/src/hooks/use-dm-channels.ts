@@ -1,7 +1,7 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { createElizaClient } from '@/lib/api-client-config';
 import { useToast } from '@/hooks/use-toast';
-import { type UUID, ChannelType } from '@elizaos/core';
+import { type UUID, ChannelType } from '@voidcatos/core';
 import type { MessageChannel } from '@/types';
 import { mapApiChannelToClient } from '@/lib/api-type-mappers';
 import clientLogger from '@/lib/logger';

@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import { asUUID, getEntityDetails, logger, parseKeyValueXml } from '@elizaos/core';
-import { composePrompt } from '@elizaos/core';
+import { asUUID, getEntityDetails, logger, parseKeyValueXml } from '@voidcatos/core';
+import { composePrompt } from '@voidcatos/core';
 import {
   type Entity,
   type Evaluator,
@@ -9,7 +9,7 @@ import {
   ModelType,
   type State,
   type UUID,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import { v4 } from 'uuid';
 
 // Schema definitions for the reflection output

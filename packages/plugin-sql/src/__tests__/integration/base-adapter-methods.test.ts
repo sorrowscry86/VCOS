@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeAll, afterAll, beforeEach } from 'bun:test';
 import { createIsolatedTestDatabase } from '../test-helpers';
 import { v4 as uuidv4 } from 'uuid';
-import type { Entity, Memory, Component, Room, UUID, Content, ChannelType } from '@elizaos/core';
+import type { Entity, Memory, Component, Room, UUID, Content, ChannelType } from '@voidcatos/core';
 import { PgDatabaseAdapter } from '../../pg/adapter';
 import { PgliteDatabaseAdapter } from '../../pglite/adapter';
 

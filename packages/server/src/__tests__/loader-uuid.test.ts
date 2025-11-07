@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'bun:test';
 import { jsonToCharacter } from '../loader';
-import type { Character } from '@elizaos/core';
+import type { Character } from '@voidcatos/core';
 
 /**
  * Test suite to verify that the character loader generates deterministic UUIDs from names.

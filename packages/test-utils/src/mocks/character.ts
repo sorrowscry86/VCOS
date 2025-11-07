@@ -5,7 +5,7 @@
  * agent configurations, and personality definitions.
  */
 
-import type { Character, MessageExample, UUID } from '@elizaos/core';
+import type { Character, MessageExample, UUID } from '@voidcatos/core';
 
 /**
  * Type representing overrides for Character mock creation
@@ -23,7 +23,7 @@ export type MockCharacterOverrides = Partial<Character>;
  *
  * @example
  * ```typescript
- * import { createMockCharacter } from '@elizaos/core/test-utils';
+ * import { createMockCharacter } from '@voidcatos/core/test-utils';
  *
  * const mockCharacter = createMockCharacter({
  *   name: 'CustomAgent',

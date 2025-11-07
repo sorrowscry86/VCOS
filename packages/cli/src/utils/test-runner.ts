@@ -4,7 +4,7 @@ import {
   type ProjectAgent,
   type TestSuite,
   logger,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 import { pathToFileURL } from 'node:url';

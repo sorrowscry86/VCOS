@@ -1,6 +1,6 @@
 import { Command } from 'commander';
 import { spawn } from 'node:child_process';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { emoji } from '../../utils/emoji-handler';
 
 /**

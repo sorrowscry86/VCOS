@@ -1,6 +1,6 @@
 // Note: AgentRuntime is imported dynamically to avoid circular dependencies
-import type { Character, IAgentRuntime, Memory, Plugin, UUID } from '@elizaos/core';
-import { AgentRuntime, logger, stringToUuid } from '@elizaos/core';
+import type { Character, IAgentRuntime, Memory, Plugin, UUID } from '@voidcatos/core';
+import { AgentRuntime, logger, stringToUuid } from '@voidcatos/core';
 import { v4 as uuidv4 } from 'uuid';
 import { TestDatabaseManager } from './testDatabase';
 import {

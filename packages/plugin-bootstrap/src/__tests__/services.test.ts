@@ -1,8 +1,8 @@
 import { describe, expect, it, mock, beforeEach, afterEach, spyOn } from 'bun:test';
 import { TaskService } from '../services/task';
-import { IAgentRuntime, logger, Service } from '@elizaos/core';
+import { IAgentRuntime, logger, Service } from '@voidcatos/core';
 import { bootstrapPlugin } from '../index';
-import { ServiceType } from '@elizaos/core';
+import { ServiceType } from '@voidcatos/core';
 import { MockRuntime, setupActionTest } from './test-utils';
 
 // Define service interface for plugin services

@@ -1,5 +1,5 @@
 import type { OptionValues } from 'commander';
-import type { ApiClientConfig } from '@elizaos/api-client';
+import type { ApiClientConfig } from '@voidcatos/api-client';
 import { getAgentRuntimeUrl } from './url-utils';
 
 /**

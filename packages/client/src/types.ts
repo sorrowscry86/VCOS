@@ -1,14 +1,14 @@
 // Update the IAttachment interface
 
-import { Agent, UUID } from '@elizaos/core';
+import { Agent, UUID } from '@voidcatos/core';
 import type {
   Agent as CoreAgent,
   Character as CoreCharacter,
   Room as CoreRoom,
   AgentStatus as CoreAgentStatus,
   ChannelType as CoreChannelType,
-} from '@elizaos/core';
-import type { ServerMetadata, ChannelMetadata, MessageMetadata } from '@elizaos/api-client';
+} from '@voidcatos/core';
+import type { ServerMetadata, ChannelMetadata, MessageMetadata } from '@voidcatos/api-client';
 
 /**
  * Interface representing an attachment.

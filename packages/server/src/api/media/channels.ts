@@ -1,4 +1,4 @@
-import { validateUuid, logger, getUploadsChannelsDir } from '@elizaos/core';
+import { validateUuid, logger, getUploadsChannelsDir } from '@voidcatos/core';
 import express from 'express';
 import rateLimit from 'express-rate-limit';
 import { ALLOWED_MEDIA_MIME_TYPES, MAX_FILE_SIZE } from '../shared/constants';

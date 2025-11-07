@@ -1,5 +1,5 @@
-import { type Character, type IAgentRuntime, type Plugin } from '@elizaos/core';
-import { type AgentServer } from '@elizaos/server';
+import { type Character, type IAgentRuntime, type Plugin } from '@voidcatos/core';
+import { type AgentServer } from '@voidcatos/server';
 
 /**
  * Start command options and interfaces

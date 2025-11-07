@@ -1,5 +1,5 @@
-import type { IDatabaseAdapter, UUID } from '@elizaos/core';
-import { logger } from '@elizaos/core';
+import type { IDatabaseAdapter, UUID } from '@voidcatos/core';
+import { logger } from '@voidcatos/core';
 import { v4 as uuidv4 } from 'uuid';
 
 /**

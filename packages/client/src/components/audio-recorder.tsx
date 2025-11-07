@@ -3,7 +3,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip
 import { useToast } from '@/hooks/use-toast';
 import { createElizaClient } from '@/lib/api-client-config';
 import { cn } from '@/lib/utils';
-import type { UUID } from '@elizaos/core';
+import type { UUID } from '@voidcatos/core';
 import { useMutation } from '@tanstack/react-query';
 import { Ellipsis, Mic, Send, Trash } from 'lucide-react';
 import React, { useEffect, useMemo, useRef, useState } from 'react';

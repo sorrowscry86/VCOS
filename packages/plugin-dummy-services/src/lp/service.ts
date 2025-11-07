@@ -1,4 +1,4 @@
-import { IAgentRuntime, Service, logger } from '@elizaos/core';
+import { IAgentRuntime, Service, logger } from '@voidcatos/core';
 
 // Define LP-specific types locally since they're not in core
 export interface LpPositionDetails {
