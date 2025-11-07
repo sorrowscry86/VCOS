@@ -1,5 +1,5 @@
 {
-  "name": "@elizaos/project-tee-starter",
+  "name": "@voidcatos/project-tee-starter",
   "description": "Project starter for elizaOS with TEE capabilities",
   "version": "1.6.4-alpha.20",
   "type": "module",
@@ -32,11 +32,11 @@
     "GUIDE.md"
   ],
   "dependencies": {
-    "@elizaos/cli": "workspace:*",
-    "@elizaos/core": "workspace:*",
-    "@elizaos/plugin-bootstrap": "workspace:*",
+    "@voidcatos/cli": "workspace:*",
+    "@voidcatos/core": "workspace:*",
+    "@voidcatos/plugin-bootstrap": "workspace:*",
     "@elizaos/plugin-redpill": "1.2.1",
-    "@elizaos/plugin-sql": "workspace:*",
+    "@voidcatos/plugin-sql": "workspace:*",
     "@phala/dstack-sdk": "0.1.11",
     "@solana/web3.js": "1.98.2",
     "@tanstack/react-query": "^5.29.0",

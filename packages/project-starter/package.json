@@ -1,5 +1,5 @@
 {
-  "name": "@elizaos/project-starter",
+  "name": "@voidcatos/project-starter",
   "description": "Project starter for elizaOS",
   "version": "1.6.4-alpha.20",
   "type": "module",
@@ -27,12 +27,12 @@
     "dist"
   ],
   "dependencies": {
-    "@elizaos/cli": "workspace:*",
-    "@elizaos/client": "workspace:*",
-    "@elizaos/core": "workspace:*",
-    "@elizaos/plugin-bootstrap": "workspace:*",
-    "@elizaos/plugin-sql": "workspace:*",
-    "@elizaos/server": "workspace:*",
+    "@voidcatos/cli": "workspace:*",
+    "@voidcatos/client": "workspace:*",
+    "@voidcatos/core": "workspace:*",
+    "@voidcatos/plugin-bootstrap": "workspace:*",
+    "@voidcatos/plugin-sql": "workspace:*",
+    "@voidcatos/server": "workspace:*",
     "@tanstack/react-query": "^5.29.0",
     "clsx": "^2.1.1",
     "react": "^18.3.1",

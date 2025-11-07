@@ -1,7 +1,7 @@
 {
-  "name": "@elizaos/cli",
+  "name": "@voidcatos/cli",
   "version": "1.6.4-alpha.20",
-  "description": "elizaOS CLI - Manage your AI agents and plugins",
+  "description": "VCOS CLI - Manage your AI agents and plugins",
   "publishConfig": {
     "access": "public",
     "workspaces": {
@@ -10,7 +10,7 @@
   },
   "license": "MIT",
   "author": {
-    "name": "elizaOS",
+    "name": "VoidCat OS",
     "url": "https://twitter.com/eliza_OS"
   },
   "repository": {
@@ -84,12 +84,12 @@
   "gitHead": "255e37c0e4a76da0b776219db5ebb9dadf20e89f",
   "dependencies": {
     "@clack/prompts": "^0.11.0",
-    "@elizaos/api-client": "workspace:*",
-    "@elizaos/core": "workspace:*",
-    "@elizaos/plugin-bootstrap": "workspace:*",
+    "@voidcatos/api-client": "workspace:*",
+    "@voidcatos/core": "workspace:*",
+    "@voidcatos/plugin-bootstrap": "workspace:*",
     "@elizaos/plugin-openai": "1.5.15",
-    "@elizaos/plugin-sql": "workspace:*",
-    "@elizaos/server": "workspace:*",
+    "@voidcatos/plugin-sql": "workspace:*",
+    "@voidcatos/server": "workspace:*",
     "bun": "^1.2.21",
     "chalk": "^5.4.1",
     "chokidar": "^4.0.3",

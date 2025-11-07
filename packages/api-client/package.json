@@ -1,5 +1,5 @@
 {
-  "name": "@elizaos/api-client",
+  "name": "@voidcatos/api-client",
   "version": "1.6.4-alpha.20",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,7 +15,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@elizaos/core": "workspace:*"
+    "@voidcatos/core": "workspace:*"
   },
   "devDependencies": {
     "@types/bun": "^1.2.21",

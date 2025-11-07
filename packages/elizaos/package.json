@@ -1,7 +1,7 @@
 {
-  "name": "elizaos",
+  "name": "voidcatos",
   "version": "1.6.4-alpha.20",
-  "description": "Alias package for @elizaos/cli",
+  "description": "Alias package for @voidcatos/cli",
   "publishConfig": {
     "access": "public",
     "workspaces": {
@@ -30,6 +30,6 @@
     "elizaos": "bin/elizaos.js"
   },
   "dependencies": {
-    "@elizaos/cli": "workspace:*"
+    "@voidcatos/cli": "workspace:*"
   }
 }

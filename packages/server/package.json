@@ -1,5 +1,5 @@
 {
-  "name": "@elizaos/server",
+  "name": "@voidcatos/server",
   "version": "1.6.4-alpha.20",
   "description": "ElizaOS Server - Core server infrastructure for ElizaOS agents",
   "publishConfig": {
@@ -44,7 +44,7 @@
     "dev": "bun run build.ts --watch"
   },
   "devDependencies": {
-    "@elizaos/client": "workspace:*",
+    "@voidcatos/client": "workspace:*",
     "@types/node": "^24.0.1",
     "prettier": "3.6.2",
     "tsx": "4.20.6",
@@ -54,8 +54,8 @@
   },
   "gitHead": "255e37c0e4a76da0b776219db5ebb9dadf20e89f",
   "dependencies": {
-    "@elizaos/core": "workspace:*",
-    "@elizaos/plugin-sql": "workspace:*",
+    "@voidcatos/core": "workspace:*",
+    "@voidcatos/plugin-sql": "workspace:*",
     "@sentry/node": "^10.16.0",
     "@types/express": "^5.0.2",
     "@types/helmet": "^4.0.0",
