@@ -1,6 +1,6 @@
 {
   "name": "@voidcatos/app",
-  "version": "1.6.4-alpha.20",
+  "version": "1.6.4-alpha.21",
   "type": "module",
   "scripts": {
     "start": "tauri dev",
@@ -17,11 +17,11 @@
     "lint": "prettier --write ./src"
   },
   "dependencies": {
-    "@voidcatos/api-client": "workspace:*",
-    "@voidcatos/cli": "workspace:*",
     "@tauri-apps/api": "^2.6.0",
     "@tauri-apps/plugin-opener": "^2.4.0",
     "@tauri-apps/plugin-shell": "^2.3.0",
+    "@voidcatos/api-client": "workspace:*",
+    "@voidcatos/cli": "workspace:*",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

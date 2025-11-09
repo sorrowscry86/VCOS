@@ -1,6 +1,6 @@
 {
   "name": "@voidcatos/server",
-  "version": "1.6.4-alpha.20",
+  "version": "1.6.4-alpha.21",
   "description": "ElizaOS Server - Core server infrastructure for ElizaOS agents",
   "publishConfig": {
     "access": "public",
@@ -44,8 +44,8 @@
     "dev": "bun run build.ts --watch"
   },
   "devDependencies": {
-    "@voidcatos/client": "workspace:*",
     "@types/node": "^24.0.1",
+    "@voidcatos/client": "workspace:*",
     "prettier": "3.6.2",
     "tsx": "4.20.6",
     "typescript": "^5.5.4",
@@ -54,12 +54,12 @@
   },
   "gitHead": "255e37c0e4a76da0b776219db5ebb9dadf20e89f",
   "dependencies": {
-    "@voidcatos/core": "workspace:*",
-    "@voidcatos/plugin-sql": "workspace:*",
     "@sentry/node": "^10.16.0",
     "@types/express": "^5.0.2",
     "@types/helmet": "^4.0.0",
     "@types/multer": "^2.0.0",
+    "@voidcatos/core": "workspace:*",
+    "@voidcatos/plugin-sql": "workspace:*",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "express-rate-limit": "^8.1.0",

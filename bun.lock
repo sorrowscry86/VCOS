@@ -23,7 +23,7 @@
     },
     "packages/api-client": {
       "name": "@voidcatos/api-client",
-      "version": "1.6.4-alpha.20",
+      "version": "1.6.4-alpha.21",
       "dependencies": {
         "@voidcatos/core": "workspace:*",
       },
@@ -36,7 +36,7 @@
     },
     "packages/app": {
       "name": "@voidcatos/app",
-      "version": "1.6.4-alpha.20",
+      "version": "1.6.4-alpha.21",
       "dependencies": {
         "@tauri-apps/api": "^2.6.0",
         "@tauri-apps/plugin-opener": "^2.4.0",
@@ -58,7 +58,7 @@
     },
     "packages/cli": {
       "name": "@voidcatos/cli",
-      "version": "1.6.4-alpha.20",
+      "version": "1.6.4-alpha.21",
       "bin": {
         "elizaos": "./dist/index.js",
       },
@@ -114,7 +114,7 @@
     },
     "packages/client": {
       "name": "@voidcatos/client",
-      "version": "1.6.4-alpha.20",
+      "version": "1.6.4-alpha.21",
       "dependencies": {
         "@evilmartians/agent-prism-data": "^0.0.4",
         "@evilmartians/agent-prism-types": "^0.0.4",
@@ -217,7 +217,7 @@
     },
     "packages/config": {
       "name": "@voidcatos/config",
-      "version": "1.6.4-alpha.20",
+      "version": "1.6.4-alpha.21",
       "devDependencies": {
         "prettier": "^3.5.3",
         "typescript": "^5.8.2",
@@ -225,7 +225,7 @@
     },
     "packages/core": {
       "name": "@voidcatos/core",
-      "version": "1.6.4-alpha.20",
+      "version": "1.6.4-alpha.21",
       "dependencies": {
         "adze": "^2.2.5",
         "crypto-browserify": "^3.12.0",
@@ -248,7 +248,7 @@
     },
     "packages/elizaos": {
       "name": "voidcatos",
-      "version": "1.6.4-alpha.20",
+      "version": "1.6.4-alpha.21",
       "bin": {
         "elizaos": "bin/elizaos.js",
       },
@@ -258,7 +258,7 @@
     },
     "packages/plugin-bootstrap": {
       "name": "@voidcatos/plugin-bootstrap",
-      "version": "1.6.4-alpha.20",
+      "version": "1.6.4-alpha.21",
       "dependencies": {
         "@voidcatos/core": "workspace:*",
         "@voidcatos/plugin-sql": "workspace:*",
@@ -277,7 +277,7 @@
     },
     "packages/plugin-dummy-services": {
       "name": "@voidcatos/plugin-dummy-services",
-      "version": "1.6.4-alpha.20",
+      "version": "1.6.4-alpha.21",
       "dependencies": {
         "@voidcatos/core": "workspace:*",
         "uuid": "^9.0.0",
@@ -292,7 +292,7 @@
     },
     "packages/plugin-quick-starter": {
       "name": "@voidcatos/plugin-quick-starter",
-      "version": "1.6.4-alpha.20",
+      "version": "1.6.4-alpha.21",
       "dependencies": {
         "@voidcatos/core": "workspace:*",
         "zod": "4.1.11",
@@ -306,7 +306,7 @@
     },
     "packages/plugin-sql": {
       "name": "@voidcatos/plugin-sql",
-      "version": "1.6.4-alpha.20",
+      "version": "1.6.4-alpha.21",
       "dependencies": {
         "@electric-sql/pglite": "^0.3.3",
         "@voidcatos/core": "workspace:*",
@@ -328,7 +328,7 @@
     },
     "packages/plugin-starter": {
       "name": "@voidcatos/plugin-starter",
-      "version": "1.6.4-alpha.20",
+      "version": "1.6.4-alpha.21",
       "dependencies": {
         "@tanstack/react-query": "^5.80.7",
         "@voidcatos/core": "workspace:*",
@@ -350,7 +350,7 @@
     },
     "packages/project-starter": {
       "name": "@voidcatos/project-starter",
-      "version": "1.6.4-alpha.20",
+      "version": "1.6.4-alpha.21",
       "dependencies": {
         "@tanstack/react-query": "^5.29.0",
         "@voidcatos/cli": "workspace:*",
@@ -377,7 +377,7 @@
     },
     "packages/project-tee-starter": {
       "name": "@voidcatos/project-tee-starter",
-      "version": "1.6.4-alpha.20",
+      "version": "1.6.4-alpha.21",
       "dependencies": {
         "@elizaos/plugin-redpill": "1.2.1",
         "@phala/dstack-sdk": "0.1.11",
@@ -409,7 +409,7 @@
     },
     "packages/server": {
       "name": "@voidcatos/server",
-      "version": "1.6.4-alpha.20",
+      "version": "1.6.4-alpha.21",
       "dependencies": {
         "@sentry/node": "^10.16.0",
         "@types/express": "^5.0.2",
@@ -437,7 +437,7 @@
     },
     "packages/service-interfaces": {
       "name": "@voidcatos/service-interfaces",
-      "version": "1.6.4-alpha.20",
+      "version": "1.6.4-alpha.21",
       "dependencies": {
         "@voidcatos/core": "workspace:*",
       },
@@ -452,7 +452,7 @@
     },
     "packages/test-utils": {
       "name": "@voidcatos/test-utils",
-      "version": "1.6.4-alpha.20",
+      "version": "1.6.4-alpha.21",
       "dependencies": {
         "@voidcatos/core": "workspace:*",
         "zod": "3.24.2",
