@@ -764,10 +764,17 @@ export class AgentServer {
 
       // Optional Authentication Middleware
       const serverAuthToken = process.env.ELIZA_SERVER_AUTH_TOKEN;
+      // Define API rate limiter: e.g., 100 requests per minute per IP for /api endpoints
+      const apiRateLimiter = rateLimit({
+        windowMs: 60 * 1000, // 1 minute
+        max: 100, // max 100 requests per windowMs
+        standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+        legacyHeaders: false, // Disable the `X-RateLimit-*` headers
+      });
       if (serverAuthToken) {
         logger.info('Server authentication enabled. Requires X-API-KEY header for /api routes.');
-        // Apply middleware only to /api paths
-        this.app.use('/api', (req, res, next) => {
+        // Apply rate limiter and authentication middleware only to /api paths
+        this.app.use('/api', apiRateLimiter, (req, res, next) => {
           apiKeyAuthMiddleware(req, res, next);
         });
       } else {
