@@ -1,11 +1,11 @@
-import type { Agent, Character, ElizaOS } from '@elizaos/core';
+import type { Agent, Character, ElizaOS } from '@voidcatos/core';
 import {
   validateUuid,
   logger,
   getSalt,
   encryptObjectValues,
   encryptStringValue,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import express from 'express';
 import type { AgentServer } from '../../index';
 import { sendError, sendSuccess } from '../shared/response-utils';

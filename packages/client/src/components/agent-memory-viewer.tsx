@@ -1,4 +1,4 @@
-import type { Memory, UUID } from '@elizaos/core';
+import type { Memory, UUID } from '@voidcatos/core';
 import { Database, LoaderIcon, Pencil, Search, Brain, User, Bot, Clock, Copy } from 'lucide-react';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useAgentMemories, useAgents } from '@/hooks/use-query-hooks';

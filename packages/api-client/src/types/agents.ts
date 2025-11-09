@@ -1,4 +1,4 @@
-import { UUID } from '@elizaos/core';
+import { UUID } from '@voidcatos/core';
 import { PaginationParams } from './base';
 
 export interface Agent {

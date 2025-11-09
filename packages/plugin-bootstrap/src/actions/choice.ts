@@ -11,7 +11,7 @@ import {
   parseKeyValueXml,
   type State,
   type ActionResult,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 /**
  * Task: Extract selected task and option from user message

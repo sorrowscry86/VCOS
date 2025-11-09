@@ -1,4 +1,4 @@
-import { type IAgentRuntime } from '@elizaos/core';
+import { type IAgentRuntime } from '@voidcatos/core';
 
 /**
  * Base class for E2E test suites that work with the ElizaOS test runner.

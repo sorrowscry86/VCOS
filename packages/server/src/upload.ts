@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import multer from 'multer';
-import { validateUuid, logger } from '@elizaos/core';
+import { validateUuid, logger } from '@voidcatos/core';
 import { createSecureUploadDir, sanitizeFilename } from './api/shared/file-utils.js';
 import {
   MAX_FILE_SIZE,

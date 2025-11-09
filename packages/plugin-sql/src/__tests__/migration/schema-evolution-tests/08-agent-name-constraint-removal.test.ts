@@ -3,7 +3,7 @@ import { pgTable, text, uuid, boolean, timestamp, jsonb, unique } from 'drizzle-
 import { sql, eq } from 'drizzle-orm';
 import { PGlite } from '@electric-sql/pglite';
 import { drizzle } from 'drizzle-orm/pglite';
-import type { MessageExample } from '@elizaos/core';
+import type { MessageExample } from '@voidcatos/core';
 import { v4 as uuidv4 } from 'uuid';
 
 /**

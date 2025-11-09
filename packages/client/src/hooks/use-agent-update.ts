@@ -1,5 +1,5 @@
 import { usePartialUpdate } from '@/hooks/use-partial-update';
-import type { Agent, Character } from '@elizaos/core';
+import type { Agent, Character } from '@voidcatos/core';
 import { useCallback, useRef } from 'react';
 
 /**

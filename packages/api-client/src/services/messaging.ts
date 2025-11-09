@@ -1,4 +1,4 @@
-import { UUID, ChannelType } from '@elizaos/core';
+import { UUID, ChannelType } from '@voidcatos/core';
 import { BaseApiClient } from '../lib/base-client';
 import {
   Message,

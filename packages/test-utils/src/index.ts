@@ -14,7 +14,7 @@
  *
  * @example Real Runtime Testing (Recommended)
  * ```typescript
- * import { createTestRuntime, runIntegrationTest } from '@elizaos/core/test-utils';
+ * import { createTestRuntime, runIntegrationTest } from '@voidcatos/core/test-utils';
  *
  * const result = await runIntegrationTest('Test name', async (runtime) => {
  *   const response = await runtime.processMessage({
@@ -30,7 +30,7 @@
  *
  * @example Legacy Mock Testing (Deprecated)
  * ```typescript
- * import { createMockRuntime, createMockMemory } from '@elizaos/core/test-utils';
+ * import { createMockRuntime, createMockMemory } from '@voidcatos/core/test-utils';
  *
  * const mockRuntime = createMockRuntime({
  *   getSetting: mock().mockReturnValue('test-value')

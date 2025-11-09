@@ -1,4 +1,4 @@
-import { AgentRuntime, type UUID } from '@elizaos/core';
+import { AgentRuntime, type UUID } from '@voidcatos/core';
 import { describe, it, expect, beforeEach, beforeAll, afterAll } from 'bun:test';
 import { PgDatabaseAdapter } from '../../pg/adapter';
 import { PgliteDatabaseAdapter } from '../../pglite/adapter';

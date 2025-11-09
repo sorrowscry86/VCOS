@@ -3,7 +3,7 @@
  * Handles communication with the ElizaOS Cloud backend for deployments
  */
 
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import type {
   ContainerConfig,
   CloudApiResponse,

@@ -12,7 +12,7 @@ mock.module('@elizaos/core', () => ({
 }));
 
 // Import after mocking
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 
 describe('PgliteDatabaseAdapter', () => {
   let adapter: PgliteDatabaseAdapter;

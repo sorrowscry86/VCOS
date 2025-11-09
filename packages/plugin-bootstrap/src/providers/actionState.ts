@@ -5,7 +5,7 @@ import {
   type Provider,
   type State,
   logger,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 /**
  * Provider for sharing action execution state and plan between actions

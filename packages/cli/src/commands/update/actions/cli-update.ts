@@ -1,7 +1,7 @@
 import { bunExecInherit } from '@/src/utils/bun-exec';
 import { isCliInstalledViaNpm, migrateCliToBun } from '@/src/utils/cli-bun-migration';
 import { checkLatestCliVersionForChannel } from '@/src/utils/version-channel';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { GlobalUpdateOptions } from '../types';
 import { checkVersionNeedsUpdate, getVersion } from '../utils/version-utils';
 

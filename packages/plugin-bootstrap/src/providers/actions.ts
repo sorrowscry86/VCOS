@@ -1,5 +1,5 @@
-import type { Action, IAgentRuntime, Memory, Provider, State } from '@elizaos/core';
-import { addHeader, composeActionExamples, formatActionNames, formatActions } from '@elizaos/core';
+import type { Action, IAgentRuntime, Memory, Provider, State } from '@voidcatos/core';
+import { addHeader, composeActionExamples, formatActionNames, formatActions } from '@voidcatos/core';
 
 /**
  * A provider object that fetches possible response actions based on the provided runtime, message, and state.

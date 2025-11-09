@@ -1,5 +1,5 @@
 import { mock, spyOn } from 'bun:test';
-import { Content, IAgentRuntime, Memory, State, logger } from '@elizaos/core';
+import { Content, IAgentRuntime, Memory, State, logger } from '@voidcatos/core';
 import {
   createMockRuntime as createCoreMockRuntime,
   createMockMessage as createCoreMockMessage,

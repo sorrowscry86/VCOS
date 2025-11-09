@@ -3,7 +3,7 @@ import { useAgentManagement } from '@/hooks/use-agent-management';
 import ConfirmationDialog from '@/components/confirmation-dialog';
 import { useConfirmation } from '@/hooks/use-confirmation';
 import clientLogger from '@/lib/logger';
-import type { Agent } from '@elizaos/core';
+import type { Agent } from '@voidcatos/core';
 import { Loader2, Square } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 

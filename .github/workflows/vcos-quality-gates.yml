@@ -187,7 +187,7 @@ jobs:
           echo "Running core tests with coverage..."
           bun run test --coverage > coverage.txt 2>&1 || true
           cat coverage.txt
-          
+
           # Check if coverage meets thresholds
           # This is a placeholder - actual implementation depends on test framework
           echo "⚠️  Coverage validation pending proper test framework setup"

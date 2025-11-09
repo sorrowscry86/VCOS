@@ -1,4 +1,4 @@
-import type { UUID } from '@elizaos/core';
+import type { UUID } from '@voidcatos/core';
 
 export const SERVER_URL = 'http://localhost:7998';
 export const SUPABASE_URL = process.env.SUPABASE_URL || '';

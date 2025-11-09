@@ -1,5 +1,5 @@
 {
-  "name": "@elizaos/test-utils",
+  "name": "@voidcatos/test-utils",
   "description": "Utilities and objects for unit testing",
   "version": "1.6.4-alpha.20",
   "type": "module",
@@ -38,7 +38,7 @@
     "package.json"
   ],
   "dependencies": {
-    "@elizaos/core": "workspace:*",
+    "@voidcatos/core": "workspace:*",
     "zod": "3.24.2"
   },
   "devDependencies": {

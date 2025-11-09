@@ -1,5 +1,5 @@
 import { sql } from 'drizzle-orm';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import type { DrizzleDB } from './types';
 
 export class ExtensionManager {

@@ -1,5 +1,5 @@
-import type { ElizaOS, Room, UUID } from '@elizaos/core';
-import { validateUuid, logger, createUniqueUuid, ChannelType } from '@elizaos/core';
+import type { ElizaOS, Room, UUID } from '@voidcatos/core';
+import { validateUuid, logger, createUniqueUuid, ChannelType } from '@voidcatos/core';
 import express from 'express';
 import type { AgentServer } from '../../index';
 import { sendError, getRuntime } from '../shared';

@@ -5,8 +5,8 @@ import type {
   Memory,
   Provider,
   State,
-} from '@elizaos/core';
-import { addHeader } from '@elizaos/core';
+} from '@voidcatos/core';
+import { addHeader } from '@voidcatos/core';
 import { names, uniqueNamesGenerator } from 'unique-names-generator';
 
 /**

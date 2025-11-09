@@ -13,8 +13,8 @@ import {
   createApiRateLimit,
   createChannelValidationRateLimit,
 } from '../middleware';
-import { logger } from '@elizaos/core';
-import type { IAgentRuntime, UUID } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
+import type { IAgentRuntime, UUID } from '@voidcatos/core';
 
 // Mock dependencies
 mock.module('@elizaos/core', async () => {

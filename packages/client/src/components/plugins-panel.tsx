@@ -18,7 +18,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { usePlugins } from '@/hooks/use-plugins';
 import { useToast } from '@/hooks/use-toast';
-import type { Agent } from '@elizaos/core';
+import type { Agent } from '@voidcatos/core';
 import clsx from 'clsx';
 import { CircleAlert } from 'lucide-react';
 import { useMemo, useState } from 'react';

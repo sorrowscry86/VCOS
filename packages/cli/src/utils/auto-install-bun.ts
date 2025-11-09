@@ -1,4 +1,4 @@
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { bunExec, bunExecInherit, commandExists } from './bun-exec';
 import { homedir } from 'node:os';
 import { join } from 'node:path';

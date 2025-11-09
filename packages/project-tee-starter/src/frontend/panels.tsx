@@ -1,4 +1,4 @@
-import type { Route } from '@elizaos/core';
+import type { Route } from '@voidcatos/core';
 
 /**
  * Export panel routes for TEE status visualization

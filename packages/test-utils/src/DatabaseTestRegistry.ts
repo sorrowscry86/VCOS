@@ -3,7 +3,7 @@
  * Replaces fragile database adapter fallback logic with explicit test database management
  */
 
-import type { IDatabaseAdapter, UUID } from '@elizaos/core';
+import type { IDatabaseAdapter, UUID } from '@voidcatos/core';
 
 export interface DatabaseTestCapabilities {
   isReady: boolean;

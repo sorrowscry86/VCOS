@@ -1,5 +1,5 @@
-import type { IAgentRuntime, Media, Memory, Provider } from '@elizaos/core';
-import { addHeader } from '@elizaos/core';
+import type { IAgentRuntime, Media, Memory, Provider } from '@voidcatos/core';
+import { addHeader } from '@voidcatos/core';
 
 /**
  * Provides a list of attachments in the current conversation.

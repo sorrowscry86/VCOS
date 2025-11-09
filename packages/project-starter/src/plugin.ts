@@ -1,4 +1,4 @@
-import type { Plugin } from '@elizaos/core';
+import type { Plugin } from '@voidcatos/core';
 import {
   type Action,
   type ActionResult,
@@ -13,7 +13,7 @@ import {
   Service,
   type State,
   logger,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import { z } from 'zod';
 
 /**

@@ -8,7 +8,7 @@ import {
   type Room,
   type UUID,
   type World,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import { v4 } from 'uuid';
 import { describe, it, expect, beforeEach, afterEach, beforeAll, afterAll } from 'bun:test';
 import { PgDatabaseAdapter } from '../../pg/adapter';

@@ -1,4 +1,4 @@
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { isQuietMode } from './spinner-utils';
 import dotenv from 'dotenv';
 import path from 'node:path';

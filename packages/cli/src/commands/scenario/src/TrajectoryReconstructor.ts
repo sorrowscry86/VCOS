@@ -5,7 +5,7 @@
  * and memories WITHOUT modifying the core runtime.
  */
 
-import { AgentRuntime, UUID } from '@elizaos/core';
+import { AgentRuntime, UUID } from '@voidcatos/core';
 
 /**
  * Agent trajectory step (matching GitHub ticket #5785 specification)

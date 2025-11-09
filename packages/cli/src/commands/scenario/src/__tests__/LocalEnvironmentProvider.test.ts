@@ -1,8 +1,8 @@
 import { describe, it, expect, beforeEach, afterEach } from 'bun:test';
 import { LocalEnvironmentProvider } from '../LocalEnvironmentProvider';
 import { Scenario } from '../schema';
-import { AgentServer } from '@elizaos/server';
-import { AgentRuntime, UUID } from '@elizaos/core';
+import { AgentServer } from '@voidcatos/server';
+import { AgentRuntime, UUID } from '@voidcatos/core';
 
 /**
  * Focused unit tests for LocalEnvironmentProvider

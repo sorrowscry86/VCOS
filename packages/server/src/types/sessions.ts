@@ -1,5 +1,5 @@
-import type { UUID } from '@elizaos/core';
-import type { MessageMetadata } from '@elizaos/api-client';
+import type { UUID } from '@voidcatos/core';
+import type { MessageMetadata } from '@voidcatos/api-client';
 
 /**
  * Session timeout configuration

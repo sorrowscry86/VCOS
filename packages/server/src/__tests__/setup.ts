@@ -4,7 +4,7 @@
  */
 
 import { beforeAll, afterAll, beforeEach, afterEach, mock } from 'bun:test';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 
 // Mock environment variables for testing
 process.env.NODE_ENV = 'test';

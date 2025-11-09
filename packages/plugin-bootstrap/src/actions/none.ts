@@ -1,4 +1,4 @@
-import type { Action, ActionExample, IAgentRuntime, Memory, ActionResult } from '@elizaos/core';
+import type { Action, ActionExample, IAgentRuntime, Memory, ActionResult } from '@voidcatos/core';
 
 /**
  * Represents the none action.

@@ -1,5 +1,5 @@
 {
-  "name": "@elizaos/plugin-starter",
+  "name": "@voidcatos/plugin-starter",
   "description": "${PLUGINDESCRIPTION}",
   "version": "1.6.4-alpha.20",
   "type": "module",
@@ -39,7 +39,7 @@
     "package.json"
   ],
   "dependencies": {
-    "@elizaos/core": "workspace:*",
+    "@voidcatos/core": "workspace:*",
     "@tanstack/react-query": "^5.80.7",
     "clsx": "^2.1.1",
     "tailwind-merge": "^3.3.1",
@@ -48,7 +48,7 @@
     "zod": "4.1.11"
   },
   "devDependencies": {
-    "@elizaos/cli": "workspace:*",
+    "@voidcatos/cli": "workspace:*",
     "@tailwindcss/vite": "^4.1.10",
     "@vitejs/plugin-react-swc": "^3.10.2",
     "dotenv": "16.4.5",

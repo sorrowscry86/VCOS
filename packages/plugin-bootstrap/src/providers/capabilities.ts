@@ -1,5 +1,5 @@
-import type { IAgentRuntime, Memory, Provider, ProviderResult } from '@elizaos/core';
-import { logger } from '@elizaos/core';
+import type { IAgentRuntime, Memory, Provider, ProviderResult } from '@voidcatos/core';
+import { logger } from '@voidcatos/core';
 
 /**
  * Provider that collects capability descriptions from all registered services

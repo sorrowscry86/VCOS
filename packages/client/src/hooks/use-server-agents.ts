@@ -1,7 +1,7 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { createElizaClient } from '@/lib/api-client-config';
 import { useToast } from '@/hooks/use-toast';
-import type { UUID } from '@elizaos/core';
+import type { UUID } from '@voidcatos/core';
 
 export function useAddAgentToServer() {
   const queryClient = useQueryClient();

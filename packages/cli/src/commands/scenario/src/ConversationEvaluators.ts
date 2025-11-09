@@ -1,7 +1,7 @@
 // File: packages/cli/src/commands/scenario/src/ConversationEvaluators.ts
 // Specialized evaluators for conversation scenarios
 
-import { AgentRuntime, ModelType } from '@elizaos/core';
+import { AgentRuntime, ModelType } from '@voidcatos/core';
 import { ExecutionResult } from './providers';
 import { Evaluator, EvaluationResult } from './EvaluationEngine';
 import { Evaluation as EvaluationSchema } from './schema';

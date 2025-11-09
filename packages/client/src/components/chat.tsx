@@ -41,13 +41,13 @@ import {
   moment,
   randomUUID,
 } from '@/lib/utils';
-import type { Agent, Media, UUID } from '@elizaos/core';
+import type { Agent, Media, UUID } from '@voidcatos/core';
 import {
   AgentStatus,
   ChannelType,
   ContentType as CoreContentType,
   validateUuid,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import { useQueryClient } from '@tanstack/react-query';
 import {
   Trash,

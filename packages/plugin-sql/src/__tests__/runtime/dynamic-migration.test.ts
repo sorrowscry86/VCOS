@@ -9,7 +9,7 @@ import {
   stringToUuid,
   type UUID,
   type World,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import { pgTable, serial, text, uuid } from 'drizzle-orm/pg-core';
 import { v4 as uuidv4 } from 'uuid';
 import { describe, it, expect, beforeAll, afterAll } from 'bun:test';

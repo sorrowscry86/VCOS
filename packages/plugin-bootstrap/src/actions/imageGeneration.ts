@@ -11,7 +11,7 @@ import {
   parseKeyValueXml,
   type ActionResult,
   logger,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import { v4 } from 'uuid';
 
 /**

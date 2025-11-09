@@ -2,7 +2,7 @@ import { Command } from 'commander';
 import * as yaml from 'js-yaml';
 import fs from 'fs';
 import path from 'path';
-import { logger as elizaLogger } from '@elizaos/core';
+import { logger as elizaLogger } from '@voidcatos/core';
 import { ScenarioSchema, Scenario } from '../scenario/src/schema';
 import { LocalEnvironmentProvider } from '../scenario/src/LocalEnvironmentProvider';
 import { E2BEnvironmentProvider } from '../scenario/src/E2BEnvironmentProvider';

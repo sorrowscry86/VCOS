@@ -1,6 +1,6 @@
 import { detectDirectoryType } from '@/src/utils/directory-detection';
 import { handleError } from '@/src/utils';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { bunExecInherit } from '../../../utils/bun-exec.js';
 import { existsSync, rmSync } from 'node:fs';
 import path from 'node:path';

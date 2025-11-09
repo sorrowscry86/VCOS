@@ -1,9 +1,9 @@
 import { loadProject, type Project } from '@/src/project';
 import { buildProject, TestRunner, UserEnvironment } from '@/src/utils';
 import { type DirectoryInfo } from '@/src/utils/directory-detection';
-import { logger, type IAgentRuntime, type ProjectAgent } from '@elizaos/core';
+import { logger, type IAgentRuntime, type ProjectAgent } from '@voidcatos/core';
 import { getDefaultCharacter } from '@/src/characters/eliza';
-import { AgentServer, jsonToCharacter, loadCharacterTryPath } from '@elizaos/server';
+import { AgentServer, jsonToCharacter, loadCharacterTryPath } from '@voidcatos/server';
 import * as dotenv from 'dotenv';
 import * as fs from 'node:fs';
 import path from 'node:path';

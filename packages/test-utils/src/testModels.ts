@@ -1,5 +1,5 @@
-import type { IAgentRuntime, GenerateTextParams, TextEmbeddingParams } from '@elizaos/core';
-import { logger } from '@elizaos/core';
+import type { IAgentRuntime, GenerateTextParams, TextEmbeddingParams } from '@voidcatos/core';
+import { logger } from '@voidcatos/core';
 
 /**
  * Realistic Test Model Provider - Provides configurable but realistic AI model responses

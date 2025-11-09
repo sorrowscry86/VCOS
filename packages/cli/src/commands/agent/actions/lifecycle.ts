@@ -1,11 +1,11 @@
-import { logger, asUUID } from '@elizaos/core';
+import { logger, asUUID } from '@voidcatos/core';
 import type { OptionValues } from 'commander';
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { checkServer, handleError } from '@/src/utils';
 import type { ApiResponse } from '../../shared';
 import { createApiClientConfig } from '../../shared';
-import { AgentsService } from '@elizaos/api-client';
+import { AgentsService } from '@voidcatos/api-client';
 import type { AgentStartPayload } from '../types';
 import { getAgents, resolveAgentId } from '../utils';
 

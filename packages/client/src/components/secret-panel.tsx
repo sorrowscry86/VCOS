@@ -11,8 +11,8 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
-import type { Agent } from '@elizaos/core';
-import { decryptObjectValues, getSalt } from '@elizaos/core';
+import type { Agent } from '@voidcatos/core';
+import { decryptObjectValues, getSalt } from '@voidcatos/core';
 import {
   Check,
   CloudUpload,

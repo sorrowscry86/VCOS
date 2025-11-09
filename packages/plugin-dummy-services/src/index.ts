@@ -1,4 +1,4 @@
-import { type Plugin } from '@elizaos/core';
+import { type Plugin } from '@voidcatos/core';
 import { DummyTokenDataService } from './tokenData/service';
 import { DummyLpService } from './lp/service';
 import { DummyWalletService } from './wallet/service';

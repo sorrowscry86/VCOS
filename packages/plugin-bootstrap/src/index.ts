@@ -29,7 +29,7 @@ import {
   type UUID,
   type WorldPayload,
   getLocalServerUrl,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import { v4 } from 'uuid';
 
 import * as actions from './actions/index.ts';

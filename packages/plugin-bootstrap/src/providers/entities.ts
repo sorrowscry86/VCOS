@@ -1,5 +1,5 @@
-import type { Entity, IAgentRuntime, Memory, Provider } from '@elizaos/core';
-import { addHeader, formatEntities, getEntityDetails } from '@elizaos/core';
+import type { Entity, IAgentRuntime, Memory, Provider } from '@voidcatos/core';
+import { addHeader, formatEntities, getEntityDetails } from '@voidcatos/core';
 
 /**
  * Provider for fetching entities related to the current conversation.

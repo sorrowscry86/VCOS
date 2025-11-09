@@ -85,6 +85,7 @@ console.log('Agent response:', response);
 - Job status tracking and health metrics
 
 Example:
+
 ```typescript
 // Simple ask pattern - returns the response directly
 const response = await client.jobs.ask('user-id', 'What is Bitcoin?');
@@ -103,23 +104,26 @@ if (result.success) {
 }
 
 // Poll with exponential backoff for long-running queries
-const backoffResult = await client.jobs.createAndPollWithBackoff({
-  userId: 'user-id',
-  content: 'Long running task',
-}, {
-  initialInterval: 500,
-  maxInterval: 5000,
-  multiplier: 1.5,
-});
+const backoffResult = await client.jobs.createAndPollWithBackoff(
+  {
+    userId: 'user-id',
+    content: 'Long running task',
+  },
+  {
+    initialInterval: 500,
+    maxInterval: 5000,
+    multiplier: 1.5,
+  }
+);
 
 // Get job status manually
 const job = await client.jobs.getJob('job-id');
 console.log('Status:', job.status);
 
 // List all jobs
-const { jobs } = await client.jobs.list({ 
+const { jobs } = await client.jobs.list({
   status: JobStatus.COMPLETED,
-  limit: 10 
+  limit: 10,
 });
 
 // Check health metrics

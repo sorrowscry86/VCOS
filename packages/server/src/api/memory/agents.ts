@@ -1,6 +1,6 @@
-import type { ElizaOS, UUID, Memory, MemoryMetadata } from '@elizaos/core';
-import { MemoryType, createUniqueUuid } from '@elizaos/core';
-import { validateUuid, logger } from '@elizaos/core';
+import type { ElizaOS, UUID, Memory, MemoryMetadata } from '@voidcatos/core';
+import { MemoryType, createUniqueUuid } from '@voidcatos/core';
+import { validateUuid, logger } from '@voidcatos/core';
 import express from 'express';
 import { sendError, sendSuccess } from '../shared/response-utils';
 

@@ -4,7 +4,7 @@ import { ChatInput } from '@/components/ui/chat/chat-input';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { AudioRecorder } from '@/components/audio-recorder';
 import { Loader2, Paperclip, Send, FileText, X } from 'lucide-react';
-import { Agent, UUID, ChannelType } from '@elizaos/core';
+import { Agent, UUID, ChannelType } from '@voidcatos/core';
 import type { UploadingFile } from '@/hooks/use-file-upload';
 
 interface ChatInputAreaProps {

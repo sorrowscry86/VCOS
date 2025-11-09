@@ -1,5 +1,5 @@
-import type { ElizaOS, UUID } from '@elizaos/core';
-import { validateUuid, logger } from '@elizaos/core';
+import type { ElizaOS, UUID } from '@voidcatos/core';
+import { validateUuid, logger } from '@voidcatos/core';
 
 /**
  * Validates and retrieves an agent runtime from the agents map

@@ -1,11 +1,11 @@
 import { useAgentRuns } from '@/hooks/use-query-hooks';
-import type { UUID } from '@elizaos/core';
+import type { UUID } from '@voidcatos/core';
 import React, { useMemo } from 'react';
 import { elizaSpanAdapter } from '@/lib/eliza-span-adapter';
 import { Loader2 } from 'lucide-react';
 import { useQueries } from '@tanstack/react-query';
 import { createElizaClient } from '@/lib/api-client-config';
-import type { RunDetail } from '@elizaos/api-client';
+import type { RunDetail } from '@voidcatos/api-client';
 import { TraceViewer, type TraceViewerData } from '../agent-prism/TraceViewer';
 
 type AgentRunTimelineProps = {

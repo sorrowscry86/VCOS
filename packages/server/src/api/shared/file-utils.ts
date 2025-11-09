@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { logger, getUploadsAgentsDir, getUploadsChannelsDir } from '@elizaos/core';
+import { logger, getUploadsAgentsDir, getUploadsChannelsDir } from '@voidcatos/core';
 
 /**
  * Safely constructs and validates upload directory paths to prevent path traversal attacks

@@ -1,6 +1,6 @@
 import { getGitHubCredentials, getLocalPackages, resolveEnvFile } from '@/src/utils';
 import { detectDirectoryType } from '@/src/utils/directory-detection';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import dotenv from 'dotenv';
 import { bunExecSimple } from '../bun-exec.js';
 import { HttpsProxyAgent } from 'https-proxy-agent';

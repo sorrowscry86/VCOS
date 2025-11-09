@@ -1,7 +1,7 @@
 import { EnvironmentProvider, ExecutionResult } from './providers';
 import { Scenario } from './schema';
-import { AgentServer } from '@elizaos/server';
-import { UUID, AgentRuntime } from '@elizaos/core';
+import { AgentServer } from '@voidcatos/server';
+import { UUID, AgentRuntime } from '@voidcatos/core';
 import { askAgentViaApi } from './runtime-factory';
 import { TrajectoryReconstructor } from './TrajectoryReconstructor';
 import { ConversationManager } from './ConversationManager';

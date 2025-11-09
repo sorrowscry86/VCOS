@@ -1,4 +1,4 @@
-import type { IAgentRuntime, Memory, Provider } from '@elizaos/core';
+import type { IAgentRuntime, Memory, Provider } from '@voidcatos/core';
 
 /**
  * Time provider function that retrieves the current date and time in UTC

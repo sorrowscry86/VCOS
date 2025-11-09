@@ -2,7 +2,7 @@ import { installPlugin } from '@/src/utils';
 import { fetchPluginRegistry } from '@/src/utils/plugin-discovery';
 import { normalizePluginName } from '@/src/utils/registry';
 import { detectDirectoryType } from '@/src/utils/directory-detection';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { AddPluginOptions } from '../types';
 import { extractPackageName, findPluginPackageName } from '../utils/naming';
 import { promptForPluginEnvVars } from '../utils/env-vars';

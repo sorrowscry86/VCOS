@@ -2,7 +2,7 @@
  * Get Container Logs Action
  */
 
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import * as path from 'node:path';
 import type { ContainerLogsOptions, Container } from '../types';
 

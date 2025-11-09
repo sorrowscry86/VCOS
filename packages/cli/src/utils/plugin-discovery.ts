@@ -1,4 +1,4 @@
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { CachedRegistry } from '../types/plugins';
 
 export async function fetchPluginRegistry(): Promise<CachedRegistry | null> {

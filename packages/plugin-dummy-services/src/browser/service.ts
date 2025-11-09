@@ -1,4 +1,4 @@
-import { IAgentRuntime, Service, ServiceType, logger } from '@elizaos/core';
+import { IAgentRuntime, Service, ServiceType, logger } from '@voidcatos/core';
 
 // Define browser-specific types locally since they're not in core
 export interface BrowserNavigationOptions {

@@ -3,7 +3,7 @@
  */
 
 import { Command } from 'commander';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { handleError } from '@/src/utils';
 import { deployProject } from './actions/deploy';
 import type { DeployOptions } from './types';

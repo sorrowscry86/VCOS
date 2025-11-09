@@ -13,7 +13,7 @@ import type {
   State,
   ActionResult,
   UUID,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import { mock } from './mockUtils';
 
 /**
@@ -30,11 +30,11 @@ export type MockRuntimeOverrides = Partial<IAgentRuntime & IDatabaseAdapter>;
  * @param overrides - Partial object to override specific methods or properties
  * @returns Complete mock implementation of IAgentRuntime
  *
- * @deprecated Use real runtime testing instead: import { createTestRuntime } from '@elizaos/core/test-utils'
+ * @deprecated Use real runtime testing instead: import { createTestRuntime } from '@voidcatos/core/test-utils'
  *
  * @example Legacy Mock Testing (Deprecated)
  * ```typescript
- * import { createMockRuntime } from '@elizaos/core/test-utils';
+ * import { createMockRuntime } from '@voidcatos/core/test-utils';
  *
  * const mockRuntime = createMockRuntime({
  *   getSetting: () => 'test-api-key',

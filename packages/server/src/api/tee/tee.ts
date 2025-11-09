@@ -1,5 +1,5 @@
-// import type { IAgentRuntime } from '@elizaos/core';
-// import { ServiceType, logger } from '@elizaos/core';
+// import type { IAgentRuntime } from '@voidcatos/core';
+// import { ServiceType, logger } from '@voidcatos/core';
 // import express from 'express';
 
 // /**

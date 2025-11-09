@@ -1,5 +1,5 @@
 import ChatComponent from '@/components/chat';
-import { ChannelType, validateUuid, type UUID } from '@elizaos/core';
+import { ChannelType, validateUuid, type UUID } from '@voidcatos/core';
 import { useParams, useSearchParams } from 'react-router-dom';
 
 export default function GroupRoute() {

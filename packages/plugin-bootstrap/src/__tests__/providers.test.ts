@@ -6,7 +6,7 @@ import {
   MockRuntime,
   setupActionTest,
 } from './test-utils';
-import { IAgentRuntime, Memory, State, UUID, ChannelType, Media } from '@elizaos/core';
+import { IAgentRuntime, Memory, State, UUID, ChannelType, Media } from '@voidcatos/core';
 
 // Import providers from source modules
 import choiceProvider from '../providers/choice';

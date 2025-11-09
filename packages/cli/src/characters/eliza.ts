@@ -1,4 +1,4 @@
-import { buildCharacterPlugins, type Character } from '@elizaos/core';
+import { buildCharacterPlugins, type Character } from '@voidcatos/core';
 
 /**
  * Base Eliza character configuration

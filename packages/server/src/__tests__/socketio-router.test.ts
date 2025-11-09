@@ -5,8 +5,8 @@
 import { describe, it, expect, mock, beforeEach, afterEach, jest } from 'bun:test';
 import { SocketIORouter } from '../socketio';
 import { createMockAgentRuntime } from './test-utils/mocks';
-import type { IAgentRuntime, UUID } from '@elizaos/core';
-import { EventType, SOCKET_MESSAGE_TYPE, ChannelType } from '@elizaos/core';
+import type { IAgentRuntime, UUID } from '@voidcatos/core';
+import { EventType, SOCKET_MESSAGE_TYPE, ChannelType } from '@voidcatos/core';
 
 // Mock dependencies
 mock.module('@elizaos/core', async () => {

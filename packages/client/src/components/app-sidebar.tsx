@@ -33,7 +33,7 @@ import {
   ChannelType as CoreChannelType,
   type Agent,
   type UUID,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 import { useDeleteChannel } from '@/hooks/use-query-hooks';
 import clientLogger from '@/lib/logger'; // Added import

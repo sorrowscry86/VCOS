@@ -1,4 +1,4 @@
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { UserEnvironment } from './user-environment';
 import { displayBunInstallationTipCompact } from './bun-installation-helper';
 import { runBunCommand } from './run-bun';

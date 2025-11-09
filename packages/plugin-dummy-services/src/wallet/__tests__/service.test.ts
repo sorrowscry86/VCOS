@@ -1,6 +1,6 @@
 import { describe, expect, it, beforeEach } from 'bun:test';
 import { DummyWalletService } from '../service';
-import { type AgentRuntime } from '@elizaos/core';
+import { type AgentRuntime } from '@voidcatos/core';
 
 describe('DummyWalletService', () => {
   let service: DummyWalletService;

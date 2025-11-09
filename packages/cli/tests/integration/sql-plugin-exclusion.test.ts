@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'bun:test';
 import { TestRunner } from '../../src/utils/test-runner';
-import type { IAgentRuntime, Plugin, ProjectAgent, Character } from '@elizaos/core';
+import type { IAgentRuntime, Plugin, ProjectAgent, Character } from '@voidcatos/core';
 
 describe('SQL Plugin Test Exclusion', () => {
   it('should not run SQL plugin tests when testing another plugin', async () => {

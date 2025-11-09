@@ -7,7 +7,7 @@ import {
   validateUuid,
   type UUID,
   getUploadsChannelsDir,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import { transformMessageAttachments } from '../../utils/media-transformer';
 import express from 'express';
 import internalMessageBus from '../../bus';

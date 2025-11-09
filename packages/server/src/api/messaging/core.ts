@@ -1,4 +1,4 @@
-import { logger, validateUuid, type UUID } from '@elizaos/core';
+import { logger, validateUuid, type UUID } from '@voidcatos/core';
 import express from 'express';
 import internalMessageBus from '../../bus'; // Import the bus
 import type { AgentServer } from '../../index';
@@ -216,7 +216,9 @@ export function createMessagingCoreRouter(serverInstance: AgentServer): express.
     }
     // RLS security: Only allow access to current server's data
     if (server_id && server_id !== serverInstance.serverId) {
-      return res.status(403).json({ success: false, error: 'Forbidden: server_id does not match current server' });
+      return res
+        .status(403)
+        .json({ success: false, error: 'Forbidden: server_id does not match current server' });
     }
 
     try {

@@ -1,7 +1,7 @@
 import CharacterForm from '@/components/character-form';
 import { useToast } from '@/hooks/use-toast';
 import { createElizaClient } from '@/lib/api-client-config';
-import type { Agent } from '@elizaos/core';
+import type { Agent } from '@voidcatos/core';
 import { useQueryClient } from '@tanstack/react-query';
 import { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';

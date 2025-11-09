@@ -1,7 +1,7 @@
 import { detectDirectoryType, type DirectoryInfo } from '@/src/utils/directory-detection';
 import { loadProject } from '@/src/project';
 import { runBunCommand } from '@/src/utils/run-bun';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import * as fs from 'node:fs';
 import path from 'node:path';
 

@@ -70,6 +70,7 @@ VoidCat Operating System (VCOS) is a security-hardened, multi-agent AI platform 
 The AgentRuntime is the heart of VCOS, providing a secure execution environment for AI agents.
 
 #### Key Responsibilities:
+
 - **Agent Lifecycle Management**: Spawn, configure, execute, and terminate agents
 - **Security Context Injection**: Bind permissions and identity to each agent instance
 - **Structured Logging**: Configurable log levels (DEBUG, INFO, WARN, ERROR)
@@ -285,6 +286,7 @@ interface AuditLogEntry {
 ```
 
 **Key Features**:
+
 - OAuth 2.0 authentication with token refresh
 - Response caching with configurable TTL (default 5 minutes)
 - Rate limiting to prevent API abuse
@@ -300,10 +302,12 @@ interface AuditLogEntry {
 **Purpose**: Interact with GitHub repositories, issues, PRs
 
 **Permissions Required**:
+
 - `network:https:api.github.com`
 - `plugin:github:read` or `plugin:github:write`
 
 **API Surface**:
+
 ```typescript
 interface GitHubPlugin {
   getRepository(owner: string, repo: string): Promise<Repository>;
@@ -320,17 +324,20 @@ interface GitHubPlugin {
 **Purpose**: Web automation and scraping with security controls
 
 **Permissions Required**:
+
 - `network:https:<whitelisted-domains>`
 - `plugin:web:navigate`
 - `plugin:web:execute` (for JS execution)
 
 **Security Features**:
+
 - URL whitelist enforcement
 - Content sanitization (XSS prevention)
 - No access to credentials or local storage (unless explicitly permitted)
 - Timeout limits on page loads
 
 **API Surface**:
+
 ```typescript
 interface WebSeleniumPlugin {
   navigate(url: string): Promise<void>;
@@ -348,17 +355,20 @@ interface WebSeleniumPlugin {
 **Purpose**: File system operations within sandboxed directories
 
 **Permissions Required**:
+
 - `filesystem:read:<path-pattern>`
 - `filesystem:write:<path-pattern>`
 - `filesystem:delete:<path-pattern>`
 
 **Security Features**:
+
 - Path traversal prevention
 - Whitelist of accessible directories
 - File size limits
 - Malware scanning integration (optional)
 
 **API Surface**:
+
 ```typescript
 interface FilesystemPlugin {
   readFile(path: string): Promise<string>;
@@ -380,6 +390,7 @@ Blueprints are pre-configured agent templates for common use cases.
 **Purpose**: Security monitoring and compliance enforcement
 
 **Configuration**:
+
 ```yaml
 blueprint: guardian
 description: Monitors system for security violations
@@ -400,6 +411,7 @@ behavior:
 **Purpose**: Documentation generation and maintenance
 
 **Configuration**:
+
 ```yaml
 blueprint: scribe
 description: Generates and updates documentation
@@ -445,16 +457,16 @@ behavior:
 
 ### 5.2 Key Commands
 
-| Command | Description | Example |
-|---------|-------------|---------|
-| `vcos init` | Initialize new VCOS project | `vcos init my-agent-project` |
-| `vcos create` | Create agent from blueprint | `vcos create agent --blueprint guardian` |
-| `vcos start` | Start agent runtime | `vcos start --config agent.yaml` |
-| `vcos status` | Show agent health and metrics | `vcos status --agent-id abc123` |
-| `vcos logs` | View agent logs | `vcos logs --agent-id abc123 --tail 100` |
-| `vcos perms` | Manage permissions | `vcos perms grant --agent abc123 --capability network:https:api.github.com` |
-| `vcos plugins` | List/install plugins | `vcos plugins install plugin-github` |
-| `vcos docs` | Open documentation | `vcos docs --topic permissions` |
+| Command        | Description                   | Example                                                                     |
+| -------------- | ----------------------------- | --------------------------------------------------------------------------- |
+| `vcos init`    | Initialize new VCOS project   | `vcos init my-agent-project`                                                |
+| `vcos create`  | Create agent from blueprint   | `vcos create agent --blueprint guardian`                                    |
+| `vcos start`   | Start agent runtime           | `vcos start --config agent.yaml`                                            |
+| `vcos status`  | Show agent health and metrics | `vcos status --agent-id abc123`                                             |
+| `vcos logs`    | View agent logs               | `vcos logs --agent-id abc123 --tail 100`                                    |
+| `vcos perms`   | Manage permissions            | `vcos perms grant --agent abc123 --capability network:https:api.github.com` |
+| `vcos plugins` | List/install plugins          | `vcos plugins install plugin-github`                                        |
+| `vcos docs`    | Open documentation            | `vcos docs --topic permissions`                                             |
 
 ---
 
@@ -558,17 +570,17 @@ behavior:
 
 ## 8. Technology Stack
 
-| Layer | Technology | Purpose |
-|-------|-----------|---------|
-| Runtime | Bun 1.2+ | Fast JS/TS runtime |
-| Language | TypeScript 5.9 | Type safety, modern JS |
-| Build | Turbo | Monorepo build orchestration |
-| Package Mgmt | Lerna | Monorepo package management |
-| Testing | Bun Test | Unit/integration testing |
-| Linting | ESLint, Prettier | Code quality |
-| Security | CodeQL, Snyk | SAST, dependency scanning |
-| Logging | Winston / Pino | Structured logging |
-| CLI | Commander.js | CLI framework |
+| Layer        | Technology       | Purpose                      |
+| ------------ | ---------------- | ---------------------------- |
+| Runtime      | Bun 1.2+         | Fast JS/TS runtime           |
+| Language     | TypeScript 5.9   | Type safety, modern JS       |
+| Build        | Turbo            | Monorepo build orchestration |
+| Package Mgmt | Lerna            | Monorepo package management  |
+| Testing      | Bun Test         | Unit/integration testing     |
+| Linting      | ESLint, Prettier | Code quality                 |
+| Security     | CodeQL, Snyk     | SAST, dependency scanning    |
+| Logging      | Winston / Pino   | Structured logging           |
+| CLI          | Commander.js     | CLI framework                |
 
 ---
 
@@ -586,10 +598,10 @@ behavior:
 
 ```typescript
 interface ResourceLimits {
-  maxMemoryMB: number;        // Default: 512MB
-  maxCPUPercent: number;      // Default: 50%
+  maxMemoryMB: number; // Default: 512MB
+  maxCPUPercent: number; // Default: 50%
   maxExecutionTimeMs: number; // Default: 300000 (5 min)
-  maxConcurrentOps: number;   // Default: 10
+  maxConcurrentOps: number; // Default: 10
 }
 ```
 
@@ -607,13 +619,13 @@ interface ResourceLimits {
 
 ### 10.2 Threat Model
 
-| Threat | Mitigation |
-|--------|------------|
-| Malicious Agent | Permission system limits damage; audit trail for forensics |
-| Compromised Plugin | Sandboxing prevents lateral movement; dependency scanning |
-| Credential Leakage | No hardcoded secrets; environment variables; rotation |
-| Injection Attacks | Input validation; parameterized queries; content sanitization |
-| DoS | Rate limiting; resource limits; timeout enforcement |
+| Threat             | Mitigation                                                    |
+| ------------------ | ------------------------------------------------------------- |
+| Malicious Agent    | Permission system limits damage; audit trail for forensics    |
+| Compromised Plugin | Sandboxing prevents lateral movement; dependency scanning     |
+| Credential Leakage | No hardcoded secrets; environment variables; rotation         |
+| Injection Attacks  | Input validation; parameterized queries; content sanitization |
+| DoS                | Rate limiting; resource limits; timeout enforcement           |
 
 ---
 
@@ -621,12 +633,12 @@ interface ResourceLimits {
 
 ### 11.1 Compatibility Matrix
 
-| ElizaOS Feature | VCOS Equivalent | Compatibility |
-|----------------|-----------------|---------------|
-| Agent config | Agent config + security context | 90% compatible |
-| Plugin API | MCP + permissions | Adapter layer needed |
-| CLI commands | VoidCat RDC commands | Mostly preserved |
-| Environment vars | VCOS_* variables | Mapping provided |
+| ElizaOS Feature  | VCOS Equivalent                 | Compatibility        |
+| ---------------- | ------------------------------- | -------------------- |
+| Agent config     | Agent config + security context | 90% compatible       |
+| Plugin API       | MCP + permissions               | Adapter layer needed |
+| CLI commands     | VoidCat RDC commands            | Mostly preserved     |
+| Environment vars | VCOS\_\* variables              | Mapping provided     |
 
 ### 11.2 Migration Path
 
@@ -671,8 +683,9 @@ interface ResourceLimits {
 
 ---
 
-**Document Control**  
-- **Created**: 2025-11-04  
-- **Last Updated**: 2025-11-04  
-- **Version**: 1.0 (Draft)  
+**Document Control**
+
+- **Created**: 2025-11-04
+- **Last Updated**: 2025-11-04
+- **Version**: 1.0 (Draft)
 - **Next Review**: Upon Phase 1 completion

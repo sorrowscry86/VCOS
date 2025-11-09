@@ -1,4 +1,4 @@
-import { type UUID, type World } from '@elizaos/core';
+import { type UUID, type World } from '@voidcatos/core';
 import { v4 as uuidv4 } from 'uuid';
 import { describe, it, expect, beforeEach, beforeAll, afterAll } from 'bun:test';
 import { PgDatabaseAdapter } from '../../pg/adapter';

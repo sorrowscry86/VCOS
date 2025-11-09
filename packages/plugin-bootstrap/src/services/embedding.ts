@@ -6,7 +6,7 @@ import {
   ModelType,
   type EmbeddingGenerationPayload,
   logger,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 interface EmbeddingQueueItem {
   memory: Memory;

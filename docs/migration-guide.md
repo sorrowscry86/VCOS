@@ -19,23 +19,27 @@ This guide will help you migrate existing ElizaOS projects to VoidCat Operating 
 ### What Changes
 
 #### 1. **Branding & Naming**
+
 - Package names: `@elizaos/*` → `@voidcatos/*`
 - CLI command: `elizaos` → `vcos` (or `voidcatos`)
 - Environment variables: `ELIZA_*` → `VCOS_*`
 - Module imports and references
 
 #### 2. **Security Model**
+
 - **New**: Security context injection for all agents
 - **New**: Capability-based permissions system
 - **New**: Audit logging for security events
 - **Enhanced**: Plugin sandboxing
 
 #### 3. **Runtime Enhancements**
+
 - **New**: Structured logging with configurable levels
 - **New**: Centralized error handling
 - **Enhanced**: Plugin architecture (Model Context Protocol)
 
 #### 4. **Documentation & Tooling**
+
 - **New**: VoidCat RDC Command Center (enhanced CLI)
 - **New**: Agent blueprints for common patterns
 - **Enhanced**: Developer documentation
@@ -57,10 +61,12 @@ Choose your migration path based on your use case:
 ### Path A: Fresh VCOS Installation (Recommended for New Projects)
 
 **Best for:**
+
 - New projects starting from scratch
 - Projects wanting full VCOS features from day one
 
 **Steps:**
+
 1. Install VCOS CLI
 2. Create new VCOS project
 3. Configure with VCOS standards (security, permissions)
@@ -69,11 +75,13 @@ Choose your migration path based on your use case:
 ### Path B: In-Place Migration (Existing Projects)
 
 **Best for:**
+
 - Existing ElizaOS projects
 - Projects requiring gradual migration
 - Projects with custom plugins
 
 **Steps:**
+
 1. Audit current ElizaOS usage
 2. Update dependencies to VCOS packages
 3. Rename imports and references
@@ -85,11 +93,13 @@ Choose your migration path based on your use case:
 ### Path C: Hybrid (Run Both)
 
 **Best for:**
+
 - Large deployments
 - Projects requiring zero downtime
 - Risk-averse migrations
 
 **Steps:**
+
 1. Deploy VCOS alongside ElizaOS
 2. Migrate agents incrementally
 3. Maintain both systems during transition
@@ -115,6 +125,7 @@ cat .env | grep ELIZA
 ```
 
 Create an inventory:
+
 - Which ElizaOS packages are you using?
 - Do you have custom plugins?
 - What ElizaOS APIs are you calling?
@@ -155,6 +166,7 @@ vcos --version
 #### 3.1 Update package.json
 
 **Before (ElizaOS):**
+
 ```json
 {
   "dependencies": {
@@ -166,6 +178,7 @@ vcos --version
 ```
 
 **After (VCOS):**
+
 ```json
 {
   "dependencies": {
@@ -194,18 +207,21 @@ bun install
 #### 4.1 Update Import Statements
 
 **Before:**
+
 ```typescript
 import { AgentRuntime } from '@elizaos/core';
 import { startServer } from '@elizaos/server';
 ```
 
 **After:**
+
 ```typescript
 import { AgentRuntime } from '@voidcatos/core';
 import { startServer } from '@voidcatos/server';
 ```
 
 **Automated approach:**
+
 ```bash
 # Use find and replace (carefully!)
 find ./src -type f -name "*.ts" -exec sed -i 's/@elizaos/@voidcatos/g' {} +
@@ -217,6 +233,7 @@ git diff
 #### 4.2 Update CLI Commands in Scripts
 
 **package.json - Before:**
+
 ```json
 {
   "scripts": {
@@ -227,6 +244,7 @@ git diff
 ```
 
 **package.json - After:**
+
 ```json
 {
   "scripts": {
@@ -241,6 +259,7 @@ git diff
 #### 5.1 Update Environment Variables
 
 **Before (.env):**
+
 ```env
 ELIZA_DATABASE_URL=postgresql://...
 ELIZA_LOG_LEVEL=info
@@ -248,6 +267,7 @@ ELIZA_PORT=3000
 ```
 
 **After (.env):**
+
 ```env
 VCOS_DATABASE_URL=postgresql://...
 VCOS_LOG_LEVEL=info
@@ -260,6 +280,7 @@ ELIZA_DATABASE_URL=postgresql://...
 #### 5.2 Update Agent Configuration
 
 **Before (agent.json):**
+
 ```json
 {
   "name": "my-agent",
@@ -270,6 +291,7 @@ ELIZA_DATABASE_URL=postgresql://...
 ```
 
 **After (agent.json):**
+
 ```json
 {
   "name": "my-agent",
@@ -277,10 +299,7 @@ ELIZA_DATABASE_URL=postgresql://...
     "type": "vcos"
   },
   "security": {
-    "permissions": [
-      "network:https:api.example.com",
-      "filesystem:read:/data/*"
-    ]
+    "permissions": ["network:https:api.example.com", "filesystem:read:/data/*"]
   }
 }
 ```
@@ -298,23 +317,20 @@ const securityContext: SecurityContext = {
     id: 'agent-123',
     name: 'MyAgent',
     type: 'chatbot',
-    createdAt: new Date()
+    createdAt: new Date(),
   },
   permissionToken: {
-    capabilities: [
-      'network:https:api.example.com',
-      'plugin:invoke:plugin-github'
-    ],
+    capabilities: ['network:https:api.example.com', 'plugin:invoke:plugin-github'],
     expiresAt: new Date(Date.now() + 24 * 60 * 60 * 1000), // 24 hours
-    issuedBy: 'admin@example.com'
+    issuedBy: 'admin@example.com',
   },
-  auditLogger: console // or custom logger
+  auditLogger: console, // or custom logger
 };
 
 // Initialize runtime with security context
 const runtime = new AgentRuntime({
   ...config,
-  securityContext
+  securityContext,
 });
 ```
 
@@ -326,7 +342,7 @@ import { AgentRuntime } from '@voidcatos/core';
 const runtime = new AgentRuntime({
   logLevel: 'INFO', // DEBUG, INFO, WARN, ERROR
   logFormat: 'json', // or 'text'
-  logTransports: ['console', 'file']
+  logTransports: ['console', 'file'],
 });
 ```
 
@@ -335,14 +351,13 @@ const runtime = new AgentRuntime({
 #### 7.1 Add Plugin Manifest (New Requirement)
 
 **Create `plugin-manifest.json`:**
+
 ```json
 {
   "name": "my-custom-plugin",
   "version": "1.0.0",
   "mcpVersion": "1.0",
-  "requiredPermissions": [
-    "network:https:myapi.example.com"
-  ],
+  "requiredPermissions": ["network:https:myapi.example.com"],
   "capabilities": [
     {
       "method": "doSomething",
@@ -368,7 +383,7 @@ export class MyPlugin implements Plugin {
   async mcpHandshake(): Promise<MCPHandshakeResponse> {
     return {
       version: '1.0',
-      capabilities: this.manifest.capabilities
+      capabilities: this.manifest.capabilities,
     };
   }
 
@@ -445,14 +460,14 @@ elizaos start  # Revert to ElizaOS
 
 ## API Compatibility Matrix
 
-| ElizaOS API | VCOS Equivalent | Compatibility | Notes |
-|-------------|-----------------|---------------|-------|
-| `AgentRuntime` | `AgentRuntime` | ✅ 100% | Enhanced with security context |
-| `Plugin` interface | `Plugin` + MCP | ⚠️ 90% | Requires MCP implementation |
-| `elizaos start` | `vcos start` | ✅ 100% | Command renamed |
-| `elizaos create` | `vcos create` | ✅ 100% | Command renamed |
-| Environment vars | `VCOS_*` | ⚠️ 90% | Legacy `ELIZA_*` supported temporarily |
-| Character files | Same | ✅ 100% | No changes |
+| ElizaOS API        | VCOS Equivalent | Compatibility | Notes                                  |
+| ------------------ | --------------- | ------------- | -------------------------------------- |
+| `AgentRuntime`     | `AgentRuntime`  | ✅ 100%       | Enhanced with security context         |
+| `Plugin` interface | `Plugin` + MCP  | ⚠️ 90%        | Requires MCP implementation            |
+| `elizaos start`    | `vcos start`    | ✅ 100%       | Command renamed                        |
+| `elizaos create`   | `vcos create`   | ✅ 100%       | Command renamed                        |
+| Environment vars   | `VCOS_*`        | ⚠️ 90%        | Legacy `ELIZA_*` supported temporarily |
+| Character files    | Same            | ✅ 100%       | No changes                             |
 
 ---
 
@@ -461,6 +476,7 @@ elizaos start  # Revert to ElizaOS
 ### Issue 1: Import Errors
 
 **Error:**
+
 ```
 Cannot find module '@elizaos/core'
 ```
@@ -471,12 +487,14 @@ Update all imports from `@elizaos/*` to `@voidcatos/*`
 ### Issue 2: Missing Permissions
 
 **Error:**
+
 ```
 PermissionError: Agent lacks capability 'network:https:api.example.com'
 ```
 
 **Solution:**
 Grant required permissions:
+
 ```bash
 vcos perms grant --agent <agent-id> --capability network:https:api.example.com
 ```
@@ -484,6 +502,7 @@ vcos perms grant --agent <agent-id> --capability network:https:api.example.com
 ### Issue 3: Plugin Not Loading
 
 **Error:**
+
 ```
 Plugin 'my-plugin' does not implement MCP handshake
 ```
@@ -494,6 +513,7 @@ Update plugin to implement `mcpHandshake()` method.
 ### Issue 4: Environment Variables Not Found
 
 **Error:**
+
 ```
 Environment variable ELIZA_DATABASE_URL not set
 ```
@@ -508,6 +528,7 @@ Update to `VCOS_DATABASE_URL` or set both for transition period.
 Use this checklist to track your migration progress:
 
 ### Pre-Migration
+
 - [ ] Audit current ElizaOS usage
 - [ ] Review breaking changes
 - [ ] Create backup branch
@@ -515,12 +536,14 @@ Use this checklist to track your migration progress:
 - [ ] Backup .env file
 
 ### Dependencies
+
 - [ ] Update package.json dependencies
 - [ ] Remove ElizaOS packages
 - [ ] Install VCOS packages
 - [ ] Run `bun install`
 
 ### Code Updates
+
 - [ ] Update import statements
 - [ ] Update CLI commands in scripts
 - [ ] Update environment variables
@@ -529,23 +552,27 @@ Use this checklist to track your migration progress:
 - [ ] Enable structured logging
 
 ### Plugin Updates
+
 - [ ] Create plugin manifests
 - [ ] Implement MCP in custom plugins
 - [ ] Test plugin permission enforcement
 
 ### Testing
+
 - [ ] Build passes
 - [ ] All tests pass
 - [ ] Integration tests pass
 - [ ] Permission tests pass
 
 ### Deployment
+
 - [ ] Deploy to staging
 - [ ] Run smoke tests
 - [ ] Deploy to production
 - [ ] Monitor for issues
 
 ### Post-Migration
+
 - [ ] Update documentation
 - [ ] Train team on VCOS features
 - [ ] Archive ElizaOS backup

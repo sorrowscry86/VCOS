@@ -5,7 +5,7 @@ import type {
   Memory,
   HandlerCallback,
   State,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 /**
  * Action representing the IGNORE action. This action is used when ignoring the user in a conversation.

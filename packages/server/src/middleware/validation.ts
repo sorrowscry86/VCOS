@@ -1,6 +1,6 @@
-import type { ElizaOS, UUID } from '@elizaos/core';
+import type { ElizaOS, UUID } from '@voidcatos/core';
 import express from 'express';
-import { validateUuid, logger } from '@elizaos/core';
+import { validateUuid, logger } from '@voidcatos/core';
 import { sendError } from '../api/shared/response-utils';
 import { validateChannelId } from '../api/shared/validation';
 

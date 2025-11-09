@@ -1,4 +1,4 @@
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import express from 'express';
 import { existsSync, writeFileSync } from 'fs';
 import path from 'path';

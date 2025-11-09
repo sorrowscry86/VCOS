@@ -1,7 +1,7 @@
 import { mock } from 'bun:test';
-import { composeActionExamples, formatActionNames, formatActions } from '@elizaos/core';
-import type { Action, Content, IAgentRuntime, Memory, State } from '@elizaos/core';
-import { logger } from '@elizaos/core';
+import { composeActionExamples, formatActionNames, formatActions } from '@voidcatos/core';
+import type { Action, Content, IAgentRuntime, Memory, State } from '@voidcatos/core';
+import { logger } from '@voidcatos/core';
 import { v4 as uuidv4 } from 'uuid';
 
 /**

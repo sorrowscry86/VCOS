@@ -1,4 +1,4 @@
-import type { Agent } from '@elizaos/core';
+import type { Agent } from '@voidcatos/core';
 
 export interface ExportResult {
   success: boolean;

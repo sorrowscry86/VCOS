@@ -57,7 +57,7 @@ import { publishToGitHub } from '../../../src/utils/publisher';
 
 // Import mocked modules
 import { getFileContent, updateFile, createPullRequest } from '../../../src/utils/github';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 
 interface PackageJson {
   name: string;

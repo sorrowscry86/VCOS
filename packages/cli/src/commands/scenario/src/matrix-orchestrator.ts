@@ -22,8 +22,8 @@ import { processManager } from './process-manager';
 import { MatrixCombination } from './matrix-types';
 // import { applyParameterOverrides } from './parameter-override'; // unused
 import { MatrixConfig } from './matrix-schema';
-import { IAgentRuntime, UUID } from '@elizaos/core';
-import { AgentServer } from '@elizaos/server';
+import { IAgentRuntime, UUID } from '@voidcatos/core';
+import { AgentServer } from '@voidcatos/server';
 import { Scenario } from './schema';
 
 /**

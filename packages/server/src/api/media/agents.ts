@@ -3,7 +3,7 @@ import {
   logger,
   getContentTypeFromMimeType,
   getUploadsAgentsDir,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import express from 'express';
 import { sendError, sendSuccess } from '../shared/response-utils';
 import { ALLOWED_MEDIA_MIME_TYPES, MAX_FILE_SIZE } from '../shared/constants';

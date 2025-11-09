@@ -1,5 +1,5 @@
-import type { ElizaOS } from '@elizaos/core';
-import { validateUuid, logger } from '@elizaos/core';
+import type { ElizaOS } from '@voidcatos/core';
+import { validateUuid, logger } from '@voidcatos/core';
 import express from 'express';
 import type { AgentServer } from '../../index';
 import { sendError, sendSuccess } from '../shared/response-utils';

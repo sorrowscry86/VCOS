@@ -2,7 +2,7 @@
  * List Containers Action
  */
 
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import type { ContainersOptions, Container } from '../types';
 
 export async function listContainersAction(options: ContainersOptions) {

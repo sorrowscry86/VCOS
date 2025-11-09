@@ -1,4 +1,4 @@
-import { Character, Content } from '@elizaos/core';
+import { Character, Content } from '@voidcatos/core';
 import { usePlugins } from '@/hooks/use-plugins';
 
 const PROVIDER_PLUGIN_MAPPINGS: Record<string, string> = {

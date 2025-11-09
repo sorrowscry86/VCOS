@@ -1,5 +1,5 @@
 {
-  "name": "@elizaos/app",
+  "name": "@voidcatos/app",
   "version": "1.6.4-alpha.20",
   "type": "module",
   "scripts": {
@@ -17,8 +17,8 @@
     "lint": "prettier --write ./src"
   },
   "dependencies": {
-    "@elizaos/api-client": "workspace:*",
-    "@elizaos/cli": "workspace:*",
+    "@voidcatos/api-client": "workspace:*",
+    "@voidcatos/cli": "workspace:*",
     "@tauri-apps/api": "^2.6.0",
     "@tauri-apps/plugin-opener": "^2.4.0",
     "@tauri-apps/plugin-shell": "^2.3.0",

@@ -20,7 +20,7 @@ import {
 import { useAgents, useServers } from '@/hooks/use-query-hooks';
 import { useToast } from '@/hooks/use-toast';
 import { createElizaClient } from '@/lib/api-client-config';
-import type { UUID } from '@elizaos/core';
+import type { UUID } from '@voidcatos/core';
 import { Loader2, Plus, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 

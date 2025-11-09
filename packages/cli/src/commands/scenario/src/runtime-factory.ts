@@ -1,8 +1,8 @@
-import { Character, UUID, IAgentRuntime, stringToUuid } from '@elizaos/core';
-import { AgentServer } from '@elizaos/server';
-import { ElizaClient } from '@elizaos/api-client';
-import type { Message } from '@elizaos/api-client';
-import { ChannelType, stringToUuid as stringToUuidCore } from '@elizaos/core';
+import { Character, UUID, IAgentRuntime, stringToUuid } from '@voidcatos/core';
+import { AgentServer } from '@voidcatos/server';
+import { ElizaClient } from '@voidcatos/api-client';
+import type { Message } from '@voidcatos/api-client';
+import { ChannelType, stringToUuid as stringToUuidCore } from '@voidcatos/core';
 import fs from 'node:fs';
 import path from 'node:path';
 import { createServer } from 'node:net';

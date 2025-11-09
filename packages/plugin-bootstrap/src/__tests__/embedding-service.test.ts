@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeEach, afterEach, mock } from 'bun:test';
-import { EventType, ModelType, type Memory, type UUID } from '@elizaos/core';
+import { EventType, ModelType, type Memory, type UUID } from '@voidcatos/core';
 import { EmbeddingGenerationService } from '../services/embedding.ts';
 import { createMockRuntime } from './test-utils.ts';
 

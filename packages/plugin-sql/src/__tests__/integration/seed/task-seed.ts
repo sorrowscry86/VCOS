@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { Task, UUID } from '@elizaos/core';
+import { Task, UUID } from '@voidcatos/core';
 
 // Test IDs
 export const taskTestAgentId = uuidv4() as UUID;

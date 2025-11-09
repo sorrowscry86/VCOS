@@ -1,4 +1,4 @@
-import { IAgentRuntime, Service } from '@elizaos/core';
+import { IAgentRuntime, Service } from '@voidcatos/core';
 
 // Define wallet-specific types locally since they're not in core
 export interface WalletPortfolio {

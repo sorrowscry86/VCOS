@@ -8,7 +8,7 @@ import { AVATAR_IMAGE_MAX_SIZE, FIELD_REQUIREMENT_TYPE, FIELD_REQUIREMENTS } fro
 import { useToast } from '@/hooks/use-toast';
 import { exportCharacterAsJson } from '@/lib/export-utils';
 import { compressImage } from '@/lib/utils';
-import type { Agent, Character } from '@elizaos/core';
+import type { Agent, Character } from '@voidcatos/core';
 import type React from 'react';
 import {
   type FormEvent,

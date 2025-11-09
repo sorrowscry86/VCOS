@@ -1,6 +1,6 @@
 import { checkServer, displayAgent, handleError } from '@/src/utils';
-import { AgentsService, MemoryService } from '@elizaos/api-client';
-import { asUUID, UUID } from '@elizaos/core';
+import { AgentsService, MemoryService } from '@voidcatos/api-client';
+import { asUUID, UUID } from '@voidcatos/core';
 import type { OptionValues } from 'commander';
 import { readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';

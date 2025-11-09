@@ -1,7 +1,7 @@
 // File: packages/cli/src/commands/scenario/src/conversation-types.ts
 // TypeScript interfaces for dynamic prompting and conversation management
 
-import { UUID } from '@elizaos/core';
+import { UUID } from '@voidcatos/core';
 import { ExecutionResult } from './providers';
 import { TrajectoryStep } from './TrajectoryReconstructor';
 import { EnhancedEvaluationResult } from './schema';

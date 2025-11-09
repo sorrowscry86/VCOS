@@ -1,7 +1,7 @@
 import { describe, expect, it, beforeEach, afterAll, beforeAll } from 'bun:test';
 import { starterPlugin, StarterService } from '../index';
 import { createMockRuntime, setupLoggerSpies, MockRuntime } from './test-utils';
-import { HandlerCallback, IAgentRuntime, Memory, State, UUID, logger } from '@elizaos/core';
+import { HandlerCallback, IAgentRuntime, Memory, State, UUID, logger } from '@voidcatos/core';
 
 /**
  * Integration tests demonstrate how multiple components of the plugin work together.

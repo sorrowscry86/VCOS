@@ -9,7 +9,7 @@ import {
   type IAgentRuntime,
   type TestSuite,
   logger,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import { v4 as uuidv4 } from 'uuid';
 
 // Define proper interfaces for E2E testing

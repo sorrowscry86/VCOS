@@ -8,7 +8,7 @@
  */
 
 import { describe, it, expect, beforeEach, mock, jest } from 'bun:test';
-import type { Character } from '@elizaos/core';
+import type { Character } from '@voidcatos/core';
 
 // Type for plugins (string or object with name)
 type PluginType = string | { name: string };

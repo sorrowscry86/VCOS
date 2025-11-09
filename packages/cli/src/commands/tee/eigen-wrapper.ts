@@ -1,5 +1,5 @@
 import { Command } from 'commander';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { emoji } from '../../utils/emoji-handler';
 import { bunExecInherit, commandExists } from '../../utils/bun-exec';
 import readline from 'node:readline/promises';

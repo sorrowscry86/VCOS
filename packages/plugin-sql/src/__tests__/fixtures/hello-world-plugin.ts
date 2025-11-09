@@ -1,5 +1,5 @@
 import { pgTable, uuid, varchar, timestamp } from 'drizzle-orm/pg-core';
-import { Plugin } from '@elizaos/core';
+import { Plugin } from '@voidcatos/core';
 
 // Define the hello world table schema
 export const helloWorldTable = pgTable('hello_world', {

@@ -1,6 +1,6 @@
 import { buildProject, UserEnvironment } from '@/src/utils';
 import { type DirectoryInfo } from '@/src/utils/directory-detection';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { bunExecInherit } from '@/src/utils/bun-exec';
 import path from 'node:path';
 import { ComponentTestOptions, TestResult } from '../types';

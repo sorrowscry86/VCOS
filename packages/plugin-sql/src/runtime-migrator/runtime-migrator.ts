@@ -1,5 +1,5 @@
 import { sql } from 'drizzle-orm';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import type { DrizzleDB, RuntimeMigrationOptions, SchemaSnapshot } from './types';
 import { MigrationTracker } from './storage/migration-tracker';
 import { JournalStorage } from './storage/journal-storage';

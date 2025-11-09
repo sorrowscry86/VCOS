@@ -11,7 +11,7 @@ import {
   MessagePayload,
   ModelType,
   UUID,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import { afterEach, beforeEach, describe, expect, it, mock } from 'bun:test';
 import { bootstrapPlugin } from '../index';
 import { MockRuntime, setupActionTest } from './test-utils';

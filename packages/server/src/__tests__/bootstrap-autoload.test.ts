@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach, afterEach } from 'bun:test';
 import { AgentServer } from '../index';
-import type { Character } from '@elizaos/core';
+import type { Character } from '@voidcatos/core';
 
 describe('Bootstrap Auto-Loading', () => {
   let server: AgentServer;

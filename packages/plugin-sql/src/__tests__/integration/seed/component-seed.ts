@@ -1,7 +1,7 @@
 /**
  * Seed data for component integration tests
  */
-import { type UUID, type Component, ChannelType, AgentStatus, type Agent } from '@elizaos/core';
+import { type UUID, type Component, ChannelType, AgentStatus, type Agent } from '@voidcatos/core';
 import { v4 } from 'uuid';
 
 /**

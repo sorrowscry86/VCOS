@@ -1,6 +1,6 @@
-import { IAgentRuntime } from '@elizaos/core';
-import { TestCase, TestSuite } from '@elizaos/core';
-import { logger } from '@elizaos/core';
+import { IAgentRuntime } from '@voidcatos/core';
+import { TestCase, TestSuite } from '@voidcatos/core';
+import { logger } from '@voidcatos/core';
 
 export const dummyServicesScenariosSuite: TestSuite = {
   name: 'Dummy Services E2E Tests',

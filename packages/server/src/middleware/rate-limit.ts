@@ -1,5 +1,5 @@
 import rateLimit from 'express-rate-limit';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { validateChannelId } from '../api/shared/validation';
 
 /**

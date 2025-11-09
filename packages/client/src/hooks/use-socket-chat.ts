@@ -8,7 +8,7 @@ import type {
   ChannelClearedData,
   ChannelDeletedData,
 } from '@/lib/socketio-manager';
-import { UUID, Agent, ChannelType } from '@elizaos/core';
+import { UUID, Agent, ChannelType } from '@voidcatos/core';
 import type { UiMessage } from './use-query-hooks';
 import { randomUUID } from '@/lib/utils';
 import clientLogger from '@/lib/logger';

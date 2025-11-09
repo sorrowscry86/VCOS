@@ -3,7 +3,7 @@
  */
 
 import path from 'node:path';
-import { getGeneratedDir, getUploadsAgentsDir, getUploadsChannelsDir } from '@elizaos/core';
+import { getGeneratedDir, getUploadsAgentsDir, getUploadsChannelsDir } from '@voidcatos/core';
 import type {
   AttachmentInput,
   MessageWithAttachments,

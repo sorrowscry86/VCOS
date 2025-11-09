@@ -13,7 +13,7 @@ import {
   loadCharacters,
   hasValidRemoteUrls,
 } from '../loader';
-import { logger, UUID } from '@elizaos/core';
+import { logger, UUID } from '@voidcatos/core';
 
 const TEST_CHARACTER_URL =
   'https://raw.githubusercontent.com/elizaOS/eliza/refs/heads/develop/packages/cli/tests/test-characters/shaw.json';

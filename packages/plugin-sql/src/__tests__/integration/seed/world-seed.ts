@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { Agent, Entity, World, UUID, Role } from '@elizaos/core';
+import { Agent, Entity, World, UUID, Role } from '@voidcatos/core';
 
 // Test IDs
 export const worldTestAgentId = uuidv4() as UUID;

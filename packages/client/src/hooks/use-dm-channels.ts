@@ -1,7 +1,7 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { createElizaClient } from '@/lib/api-client-config';
 import { useToast } from '@/hooks/use-toast';
-import { type UUID, ChannelType } from '@elizaos/core';
+import { type UUID, ChannelType } from '@voidcatos/core';
 import type { MessageChannel } from '@/types';
 import { mapApiChannelToClient } from '@/lib/api-type-mappers';
 import clientLogger from '@/lib/logger';
@@ -145,7 +145,7 @@ export function useCreateDmChannel() {
     mutationFn: async ({
       agentId,
       channelName,
-      serverId = '00000000-0000-0000-0000-000000000000' as UUID
+      serverId = '00000000-0000-0000-0000-000000000000' as UUID,
     }: {
       agentId: UUID;
       channelName: string;
@@ -187,7 +187,9 @@ export function useCreateDmChannel() {
       });
       // Invalidate queries to refresh the DM channel list for this agent
       // Include serverId in the invalidation to match the query key
-      queryClient.invalidateQueries({ queryKey: ['dmChannels', variables.agentId, currentUserId, variables.serverId] });
+      queryClient.invalidateQueries({
+        queryKey: ['dmChannels', variables.agentId, currentUserId, variables.serverId],
+      });
       // Also invalidate general channels list if it might show DMs (though less likely)
       queryClient.invalidateQueries({ queryKey: ['channels'] });
     },

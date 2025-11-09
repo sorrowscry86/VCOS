@@ -1,6 +1,6 @@
 import type React from 'react';
 import { useUpdateMemory, useDeleteMemory } from '@/hooks/use-query-hooks';
-import type { Memory, UUID } from '@elizaos/core';
+import type { Memory, UUID } from '@voidcatos/core';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';

@@ -1,5 +1,5 @@
 import * as clack from '@clack/prompts';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 
 export const NAV_BACK = '__back__';
 export const NAV_NEXT = '__next__';

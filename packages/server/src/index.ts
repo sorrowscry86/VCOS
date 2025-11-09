@@ -9,7 +9,7 @@ import {
   getGeneratedDir,
   getUploadsAgentsDir,
   ElizaOS,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import cors from 'cors';
 import express, { Request, Response } from 'express';
 import rateLimit from 'express-rate-limit';
@@ -23,7 +23,11 @@ import { fileURLToPath } from 'node:url';
 import { Server as SocketIOServer } from 'socket.io';
 import { createApiRouter, createPluginRouteHandler, setupSocketIO } from './api/index.js';
 import { apiKeyAuthMiddleware } from './middleware/index.js';
-import { messageBusConnectorPlugin, setGlobalElizaOS, setGlobalAgentServer } from './services/message.js';
+import {
+  messageBusConnectorPlugin,
+  setGlobalElizaOS,
+  setGlobalAgentServer,
+} from './services/message.js';
 import { loadCharacterTryPath, jsonToCharacter } from './loader.js';
 import * as Sentry from '@sentry/node';
 import sqlPlugin, {
@@ -35,8 +39,8 @@ import sqlPlugin, {
   assignAgentToOwner,
   applyRLSToNewTables,
   uninstallRLS,
-} from '@elizaos/plugin-sql';
-import { encryptedCharacter, stringToUuid, type Plugin } from '@elizaos/core';
+} from '@voidcatos/plugin-sql';
+import { encryptedCharacter, stringToUuid, type Plugin } from '@voidcatos/core';
 import { sql } from 'drizzle-orm';
 
 import internalMessageBus from './bus.js';
@@ -380,7 +384,9 @@ export class AgentServer {
 
       if (rlsEnabled) {
         if (!config?.postgresUrl) {
-          logger.error('[RLS] ENABLE_RLS_ISOLATION requires PostgreSQL (not compatible with PGLite)');
+          logger.error(
+            '[RLS] ENABLE_RLS_ISOLATION requires PostgreSQL (not compatible with PGLite)'
+          );
           throw new Error('RLS isolation requires PostgreSQL database');
         }
 
@@ -393,7 +399,9 @@ export class AgentServer {
         const owner_id = stringToUuid(rlsOwnerIdString);
 
         logger.info('[INIT] Initializing RLS multi-tenant isolation...');
-        logger.info(`[RLS] Tenant ID: ${owner_id.slice(0, 8)}… (from RLS_OWNER_ID="${rlsOwnerIdString}")`);
+        logger.info(
+          `[RLS] Tenant ID: ${owner_id.slice(0, 8)}… (from RLS_OWNER_ID="${rlsOwnerIdString}")`
+        );
         logger.warn('[RLS] Ensure your PostgreSQL user is NOT a superuser!');
         logger.warn('[RLS] Superusers bypass ALL RLS policies, defeating isolation.');
 
@@ -477,12 +485,14 @@ export class AgentServer {
     try {
       // When RLS is enabled, create a server per owner instead of a shared default server
       const rlsEnabled = process.env.ENABLE_RLS_ISOLATION === 'true';
-      this.serverId = rlsEnabled && this.rlsOwnerId
-        ? (this.rlsOwnerId as UUID)
-        : '00000000-0000-0000-0000-000000000000';
-      const serverName = rlsEnabled && this.rlsOwnerId
-        ? `Server ${this.rlsOwnerId.substring(0, 8)}`
-        : 'Default Server';
+      this.serverId =
+        rlsEnabled && this.rlsOwnerId
+          ? (this.rlsOwnerId as UUID)
+          : '00000000-0000-0000-0000-000000000000';
+      const serverName =
+        rlsEnabled && this.rlsOwnerId
+          ? `Server ${this.rlsOwnerId.substring(0, 8)}`
+          : 'Default Server';
 
       logger.info(`[AgentServer] Checking for server ${this.serverId}...`);
       const servers = await (this.database as any).getMessageServers();
@@ -703,46 +713,68 @@ export class AgentServer {
         skip: (req) => {
           // Skip rate limiting for internal/private IPs (Docker, Kubernetes)
           const ip = req.ip || '';
-          return ip === '127.0.0.1' || ip === '::1' || ip.startsWith('10.') ||
-                 ip.startsWith('172.') || ip.startsWith('192.168.');
+          return (
+            ip === '127.0.0.1' ||
+            ip === '::1' ||
+            ip.startsWith('10.') ||
+            ip.startsWith('172.') ||
+            ip.startsWith('192.168.')
+          );
         },
       });
 
       // Lightweight health check - always returns 200 OK
-      this.app.get('/healthz', healthCheckRateLimiter, (_req: express.Request, res: express.Response) => {
-        res.json({
-          status: 'ok',
-          timestamp: new Date().toISOString()
-        });
-      });
+      this.app.get(
+        '/healthz',
+        healthCheckRateLimiter,
+        (_req: express.Request, res: express.Response) => {
+          res.json({
+            status: 'ok',
+            timestamp: new Date().toISOString(),
+          });
+        }
+      );
 
       // Comprehensive health check - returns 200 if healthy, 503 if no agents
       // Response format matches /api/server/health for consistency
-      this.app.get('/health', healthCheckRateLimiter, (_req: express.Request, res: express.Response) => {
-        const agents = this.elizaOS?.getAgents() || [];
-        const isHealthy = agents.length > 0;
+      this.app.get(
+        '/health',
+        healthCheckRateLimiter,
+        (_req: express.Request, res: express.Response) => {
+          const agents = this.elizaOS?.getAgents() || [];
+          const isHealthy = agents.length > 0;
 
-        const healthcheck = {
-          status: isHealthy ? 'OK' : 'DEGRADED',
-          version: process.env.APP_VERSION || 'unknown',
-          timestamp: new Date().toISOString(),
-          dependencies: {
-            agents: isHealthy ? 'healthy' : 'no_agents',
-          },
-          agentCount: agents.length,
-        };
+          const healthcheck = {
+            status: isHealthy ? 'OK' : 'DEGRADED',
+            version: process.env.APP_VERSION || 'unknown',
+            timestamp: new Date().toISOString(),
+            dependencies: {
+              agents: isHealthy ? 'healthy' : 'no_agents',
+            },
+            agentCount: agents.length,
+          };
 
-        res.status(isHealthy ? 200 : 503).json(healthcheck);
-      });
+          res.status(isHealthy ? 200 : 503).json(healthcheck);
+        }
+      );
 
-      logger.info('Public health check endpoints enabled: /healthz and /health (rate limited: 100 req/min)');
+      logger.info(
+        'Public health check endpoints enabled: /healthz and /health (rate limited: 100 req/min)'
+      );
 
       // Optional Authentication Middleware
       const serverAuthToken = process.env.ELIZA_SERVER_AUTH_TOKEN;
+      // Define API rate limiter: e.g., 100 requests per minute per IP for /api endpoints
+      const apiRateLimiter = rateLimit({
+        windowMs: 60 * 1000, // 1 minute
+        max: 100, // max 100 requests per windowMs
+        standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+        legacyHeaders: false, // Disable the `X-RateLimit-*` headers
+      });
       if (serverAuthToken) {
         logger.info('Server authentication enabled. Requires X-API-KEY header for /api routes.');
-        // Apply middleware only to /api paths
-        this.app.use('/api', (req, res, next) => {
+        // Apply rate limiter and authentication middleware only to /api paths
+        this.app.use('/api', apiRateLimiter, (req, res, next) => {
           apiKeyAuthMiddleware(req, res, next);
         });
       } else {
@@ -1855,4 +1887,4 @@ export {
 export * from './types';
 
 // Export ElizaOS from core (re-export for convenience)
-export { ElizaOS } from '@elizaos/core';
+export { ElizaOS } from '@voidcatos/core';

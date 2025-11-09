@@ -1,4 +1,4 @@
-import { logger, type Plugin } from '@elizaos/core';
+import { logger, type Plugin } from '@voidcatos/core';
 import { RuntimeMigrator } from './runtime-migrator';
 import type { DrizzleDatabase } from './types';
 

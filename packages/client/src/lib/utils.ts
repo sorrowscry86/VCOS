@@ -1,10 +1,10 @@
 import { AVATAR_IMAGE_MAX_SIZE } from '@/constants';
-import type { UUID } from '@elizaos/core';
+import type { UUID } from '@voidcatos/core';
 import { type ClassValue, clsx } from 'clsx';
 import dayjs from 'dayjs';
 import localizedFormat from 'dayjs/plugin/localizedFormat';
 import { twMerge } from 'tailwind-merge';
-import type { Agent, UUID as CoreUUID } from '@elizaos/core';
+import type { Agent, UUID as CoreUUID } from '@voidcatos/core';
 import type { MessageChannel as ClientMessageChannel } from '@/types';
 
 /**

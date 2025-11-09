@@ -1,4 +1,4 @@
-import { IAgentRuntime } from '@elizaos/core';
+import { IAgentRuntime } from '@voidcatos/core';
 import { Keypair } from '@solana/web3.js';
 import { describe, expect, it, beforeEach } from 'bun:test';
 import { DummyLpService } from '../service';

@@ -1,5 +1,5 @@
 {
-  "name": "@elizaos/config",
+  "name": "@voidcatos/config",
   "description": "Shared configuration for ElizaOS projects and plugins",
   "version": "1.6.4-alpha.20",
   "type": "module",

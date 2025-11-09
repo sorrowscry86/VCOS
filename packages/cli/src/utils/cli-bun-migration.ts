@@ -1,4 +1,4 @@
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 import { bunExec, bunExecInherit, bunExecSimple } from '@/src/utils/bun-exec';
 
 /**

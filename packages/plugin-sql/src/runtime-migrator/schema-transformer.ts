@@ -1,6 +1,6 @@
 import { pgSchema } from 'drizzle-orm/pg-core';
 import { getTableConfig } from 'drizzle-orm/pg-core';
-import { logger } from '@elizaos/core';
+import { logger } from '@voidcatos/core';
 
 /**
  * Transform a plugin's schema to use the appropriate namespace

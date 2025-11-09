@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { Room, Entity, Agent, World, UUID, ChannelType } from '@elizaos/core';
+import { Room, Entity, Agent, World, UUID, ChannelType } from '@voidcatos/core';
 
 // Test IDs
 export const roomTestAgentId = uuidv4() as UUID;

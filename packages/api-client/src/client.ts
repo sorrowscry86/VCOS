@@ -10,7 +10,7 @@ import { SessionsService } from './services/sessions';
 import { RunsService } from './services/runs';
 import { JobsService } from './services/jobs';
 
-export class ElizaClient {
+export class VoidCatClient {
   public readonly agents: AgentsService;
   public readonly messaging: MessagingService;
   public readonly memory: MemoryService;
@@ -37,9 +37,9 @@ export class ElizaClient {
   }
 
   /**
-   * Create a new ElizaClient instance
+   * Create a new VoidCatClient instance
    */
-  static create(config: ApiClientConfig): ElizaClient {
-    return new ElizaClient(config);
+  static create(config: ApiClientConfig): VoidCatClient {
+    return new VoidCatClient(config);
   }
 }

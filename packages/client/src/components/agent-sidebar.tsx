@@ -1,6 +1,6 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useAgentPanels, useAgent, type AgentPanel } from '@/hooks/use-query-hooks';
-import type { UUID, Agent } from '@elizaos/core';
+import type { UUID, Agent } from '@voidcatos/core';
 import { Columns3, Database, Eye, Code, InfoIcon, Loader2, Activity } from 'lucide-react';
 import { JSX, useMemo } from 'react';
 import { AgentActionViewer } from './agent-action-viewer';

@@ -6,7 +6,7 @@
  */
 
 import { describe, expect, it, beforeEach, mock } from 'bun:test';
-import { TrajectoryStep, ThoughtStep, ActionStep, ObservationStep } from '@elizaos/core';
+import { TrajectoryStep, ThoughtStep, ActionStep, ObservationStep } from '@voidcatos/core';
 import { ScenarioRunResultSchema, TrajectoryStep as LocalTrajectoryStep } from '../schema';
 
 describe('Trajectory Integration - Scenario Runner', () => {

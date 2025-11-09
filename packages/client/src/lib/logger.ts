@@ -1,4 +1,4 @@
-import { elizaLogger } from '@elizaos/core';
+import { elizaLogger } from '@voidcatos/core';
 
 // Add client-specific context to logs
 const clientLogger = {

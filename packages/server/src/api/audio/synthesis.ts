@@ -1,5 +1,5 @@
-import type { ElizaOS } from '@elizaos/core';
-import { validateUuid, logger, ModelType } from '@elizaos/core';
+import type { ElizaOS } from '@voidcatos/core';
+import { validateUuid, logger, ModelType } from '@voidcatos/core';
 import express from 'express';
 import { sendError } from '../shared/response-utils';
 import { convertToAudioBuffer } from './audioBuffer';

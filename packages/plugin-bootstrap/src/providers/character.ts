@@ -1,5 +1,5 @@
-import type { IAgentRuntime, Memory, Provider, State } from '@elizaos/core';
-import { addHeader, ChannelType } from '@elizaos/core';
+import type { IAgentRuntime, Memory, Provider, State } from '@voidcatos/core';
+import { addHeader, ChannelType } from '@voidcatos/core';
 
 /**
  * Character provider object.

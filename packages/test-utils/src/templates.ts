@@ -5,7 +5,7 @@
  * to ensure testing consistency across all packages.
  */
 
-import { Character, Content, IAgentRuntime, logger, Memory, Plugin } from '@elizaos/core';
+import { Character, Content, IAgentRuntime, logger, Memory, Plugin } from '@voidcatos/core';
 import { createTestRuntime } from './realRuntime';
 
 /**

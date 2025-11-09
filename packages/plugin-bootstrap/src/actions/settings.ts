@@ -17,7 +17,7 @@ import {
   type State,
   type WorldSettings,
   type ActionResult,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 import dedent from 'dedent';
 
 /**

@@ -1,5 +1,5 @@
 {
-  "name": "@elizaos/plugin-quick-starter",
+  "name": "@voidcatos/plugin-quick-starter",
   "description": "Quick backend-only plugin template for ElizaOS",
   "version": "1.6.4-alpha.20",
   "type": "module",
@@ -39,11 +39,11 @@
     "package.json"
   ],
   "dependencies": {
-    "@elizaos/core": "workspace:*",
+    "@voidcatos/core": "workspace:*",
     "zod": "4.1.11"
   },
   "devDependencies": {
-    "@elizaos/cli": "workspace:*",
+    "@voidcatos/cli": "workspace:*",
     "dotenv": "16.4.5",
     "prettier": "3.5.3",
     "typescript": "5.8.2"

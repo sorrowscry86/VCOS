@@ -1,4 +1,4 @@
-import type { IAgentRuntime } from '@elizaos/core';
+import type { IAgentRuntime } from '@voidcatos/core';
 import { beforeEach, describe, expect, it, mock, afterEach } from 'bun:test';
 import { plugin, createDatabaseAdapter } from '../../index';
 import fs from 'node:fs';

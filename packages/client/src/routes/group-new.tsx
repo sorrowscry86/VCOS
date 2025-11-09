@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 // import { CreateGroupDialog } from '@/components/create-group-dialog'; // To be removed
 import GroupPanel from '@/components/group-panel'; // Import GroupPanel
 // import { useAgentsWithDetails, useServers } from '@/hooks/use-query-hooks'; // No longer needed if GroupPanel fetches its own agents
-import type { UUID } from '@elizaos/core';
+import type { UUID } from '@voidcatos/core';
 
 export default function GroupNew() {
   const navigate = useNavigate();

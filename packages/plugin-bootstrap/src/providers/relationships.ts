@@ -1,4 +1,4 @@
-import type { Entity, IAgentRuntime, Memory, Provider, Relationship, UUID } from '@elizaos/core';
+import type { Entity, IAgentRuntime, Memory, Provider, Relationship, UUID } from '@voidcatos/core';
 /**
  * Formats the provided relationships based on interaction strength and returns a string.
  * @param {IAgentRuntime} runtime - The runtime object to interact with the agent.

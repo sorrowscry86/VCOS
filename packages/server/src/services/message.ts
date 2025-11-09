@@ -10,8 +10,8 @@ import {
   type Plugin,
   type UUID,
   ElizaOS,
-} from '@elizaos/core';
-import type { MessageMetadata } from '@elizaos/api-client';
+} from '@voidcatos/core';
+import type { MessageMetadata } from '@voidcatos/api-client';
 import type { AgentServer } from '../index.js';
 import internalMessageBus from '../bus'; // Import the bus
 

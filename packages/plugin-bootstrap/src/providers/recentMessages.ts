@@ -11,7 +11,7 @@ import {
   type Provider,
   type UUID,
   logger,
-} from '@elizaos/core';
+} from '@voidcatos/core';
 
 // Move getRecentInteractions outside the provider
 /**

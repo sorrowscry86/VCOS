@@ -1,7 +1,7 @@
 import { describe, expect, it, spyOn, beforeAll, afterAll } from 'bun:test';
 import plugin from '../plugin';
-import { ModelType, logger } from '@elizaos/core';
-import type { IAgentRuntime } from '@elizaos/core';
+import { ModelType, logger } from '@voidcatos/core';
+import type { IAgentRuntime } from '@voidcatos/core';
 import dotenv from 'dotenv';
 import { documentTestResult, createMockRuntime } from './utils/core-test-utils';
 
