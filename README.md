@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>ElizaOS</h1>
+  <h1>VCOS</h1>
   <p><strong>The Open-Source Framework for Multi-Agent AI Development</strong></p>
   <p>Build, deploy, and manage autonomous AI agents with a modern, extensible, and full-featured platform.</p>
 </div>
