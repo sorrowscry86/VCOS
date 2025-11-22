@@ -23,7 +23,7 @@
     },
     "packages/api-client": {
       "name": "@voidcatos/api-client",
-      "version": "1.6.4-alpha.21",
+      "version": "1.6.4-alpha.22",
       "dependencies": {
         "@voidcatos/core": "workspace:*",
       },
@@ -36,7 +36,7 @@
     },
     "packages/app": {
       "name": "@voidcatos/app",
-      "version": "1.6.4-alpha.21",
+      "version": "1.6.4-alpha.22",
       "dependencies": {
         "@tauri-apps/api": "^2.6.0",
         "@tauri-apps/plugin-opener": "^2.4.0",
@@ -58,7 +58,7 @@
     },
     "packages/cli": {
       "name": "@voidcatos/cli",
-      "version": "1.6.4-alpha.21",
+      "version": "1.6.4-alpha.22",
       "bin": {
         "elizaos": "./dist/index.js",
       },
@@ -114,7 +114,7 @@
     },
     "packages/client": {
       "name": "@voidcatos/client",
-      "version": "1.6.4-alpha.21",
+      "version": "1.6.4-alpha.22",
       "dependencies": {
         "@evilmartians/agent-prism-data": "^0.0.4",
         "@evilmartians/agent-prism-types": "^0.0.4",
@@ -217,7 +217,7 @@
     },
     "packages/config": {
       "name": "@voidcatos/config",
-      "version": "1.6.4-alpha.21",
+      "version": "1.6.4-alpha.22",
       "devDependencies": {
         "prettier": "^3.5.3",
         "typescript": "^5.8.2",
@@ -225,7 +225,7 @@
     },
     "packages/core": {
       "name": "@voidcatos/core",
-      "version": "1.6.4-alpha.21",
+      "version": "1.6.4-alpha.22",
       "dependencies": {
         "adze": "^2.2.5",
         "crypto-browserify": "^3.12.0",
@@ -248,7 +248,7 @@
     },
     "packages/elizaos": {
       "name": "voidcatos",
-      "version": "1.6.4-alpha.21",
+      "version": "1.6.4-alpha.22",
       "bin": {
         "elizaos": "bin/elizaos.js",
       },
@@ -258,7 +258,7 @@
     },
     "packages/plugin-bootstrap": {
       "name": "@voidcatos/plugin-bootstrap",
-      "version": "1.6.4-alpha.21",
+      "version": "1.6.4-alpha.22",
       "dependencies": {
         "@voidcatos/core": "workspace:*",
         "@voidcatos/plugin-sql": "workspace:*",
@@ -277,7 +277,7 @@
     },
     "packages/plugin-dummy-services": {
       "name": "@voidcatos/plugin-dummy-services",
-      "version": "1.6.4-alpha.21",
+      "version": "1.6.4-alpha.22",
       "dependencies": {
         "@voidcatos/core": "workspace:*",
         "uuid": "^9.0.0",
@@ -292,7 +292,7 @@
     },
     "packages/plugin-quick-starter": {
       "name": "@voidcatos/plugin-quick-starter",
-      "version": "1.6.4-alpha.21",
+      "version": "1.6.4-alpha.22",
       "dependencies": {
         "@voidcatos/core": "workspace:*",
         "zod": "4.1.11",
@@ -306,7 +306,7 @@
     },
     "packages/plugin-sql": {
       "name": "@voidcatos/plugin-sql",
-      "version": "1.6.4-alpha.21",
+      "version": "1.6.4-alpha.22",
       "dependencies": {
         "@electric-sql/pglite": "^0.3.3",
         "@voidcatos/core": "workspace:*",
@@ -328,7 +328,7 @@
     },
     "packages/plugin-starter": {
       "name": "@voidcatos/plugin-starter",
-      "version": "1.6.4-alpha.21",
+      "version": "1.6.4-alpha.22",
       "dependencies": {
         "@tanstack/react-query": "^5.80.7",
         "@voidcatos/core": "workspace:*",
@@ -350,7 +350,7 @@
     },
     "packages/project-starter": {
       "name": "@voidcatos/project-starter",
-      "version": "1.6.4-alpha.21",
+      "version": "1.6.4-alpha.22",
       "dependencies": {
         "@tanstack/react-query": "^5.29.0",
         "@voidcatos/cli": "workspace:*",
@@ -377,7 +377,7 @@
     },
     "packages/project-tee-starter": {
       "name": "@voidcatos/project-tee-starter",
-      "version": "1.6.4-alpha.21",
+      "version": "1.6.4-alpha.22",
       "dependencies": {
         "@elizaos/plugin-redpill": "1.2.1",
         "@phala/dstack-sdk": "0.1.11",
@@ -409,7 +409,7 @@
     },
     "packages/server": {
       "name": "@voidcatos/server",
-      "version": "1.6.4-alpha.21",
+      "version": "1.6.4-alpha.22",
       "dependencies": {
         "@sentry/node": "^10.16.0",
         "@types/express": "^5.0.2",
@@ -437,7 +437,7 @@
     },
     "packages/service-interfaces": {
       "name": "@voidcatos/service-interfaces",
-      "version": "1.6.4-alpha.21",
+      "version": "1.6.4-alpha.22",
       "dependencies": {
         "@voidcatos/core": "workspace:*",
       },
@@ -452,7 +452,7 @@
     },
     "packages/test-utils": {
       "name": "@voidcatos/test-utils",
-      "version": "1.6.4-alpha.21",
+      "version": "1.6.4-alpha.22",
       "dependencies": {
         "@voidcatos/core": "workspace:*",
         "zod": "3.24.2",
@@ -4288,19 +4288,19 @@
 
     "@unrs/resolver-binding-wasm32-wasi/@napi-rs/wasm-runtime": ["@napi-rs/wasm-runtime@0.2.12", "", { "dependencies": { "@emnapi/core": "^1.4.3", "@emnapi/runtime": "^1.4.3", "@tybys/wasm-util": "^0.10.0" } }, "sha512-ZVWUcfwY4E/yPitQJl481FjFo3K22D6qF0DuFH6Y/nbnE11GY5uguDxZMGXPQ8WQ0128MXQD7TnfHyK4oWoIJQ=="],
 
-    "@voidcatos/api-client/@types/node": ["@types/node@24.10.0", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-qzQZRBqkFsYyaSWXuEHc2WR9c0a0CXwiE5FWUvn7ZM+vdy1uZLfCunD38UzhuB7YN/J11ndbDBcTmOdxJo9Q7A=="],
+    "@voidcatos/api-client/@types/node": ["@types/node@24.10.1", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ=="],
 
     "@voidcatos/app/@vitejs/plugin-react": ["@vitejs/plugin-react@4.7.0", "", { "dependencies": { "@babel/core": "^7.28.0", "@babel/plugin-transform-react-jsx-self": "^7.27.1", "@babel/plugin-transform-react-jsx-source": "^7.27.1", "@rolldown/pluginutils": "1.0.0-beta.27", "@types/babel__core": "^7.20.5", "react-refresh": "^0.17.0" }, "peerDependencies": { "vite": "^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0" } }, "sha512-gUu9hwfWvvEDBBmgtAowQCojwZmJ5mcLn3aufeCsitijs3+f2NsrPtlAWIR6OPiqljl96GVCUbLe0HyqIpVaoA=="],
 
     "@voidcatos/app/typescript": ["typescript@5.8.2", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ=="],
 
-    "@voidcatos/cli/@types/node": ["@types/node@24.10.0", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-qzQZRBqkFsYyaSWXuEHc2WR9c0a0CXwiE5FWUvn7ZM+vdy1uZLfCunD38UzhuB7YN/J11ndbDBcTmOdxJo9Q7A=="],
+    "@voidcatos/cli/@types/node": ["@types/node@24.10.1", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ=="],
 
     "@voidcatos/cli/prettier": ["prettier@3.6.2", "", { "bin": { "prettier": "bin/prettier.cjs" } }, "sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ=="],
 
     "@voidcatos/cli/vite": ["vite@7.1.12", "", { "dependencies": { "esbuild": "^0.25.0", "fdir": "^6.5.0", "picomatch": "^4.0.3", "postcss": "^8.5.6", "rollup": "^4.43.0", "tinyglobby": "^0.2.15" }, "optionalDependencies": { "fsevents": "~2.3.3" }, "peerDependencies": { "@types/node": "^20.19.0 || >=22.12.0", "jiti": ">=1.21.0", "less": "^4.0.0", "lightningcss": "^1.21.0", "sass": "^1.70.0", "sass-embedded": "^1.70.0", "stylus": ">=0.54.8", "sugarss": "^5.0.0", "terser": "^5.16.0", "tsx": "^4.8.1", "yaml": "^2.4.2" }, "optionalPeers": ["@types/node", "jiti", "less", "lightningcss", "sass", "sass-embedded", "stylus", "sugarss", "terser", "tsx", "yaml"], "bin": { "vite": "bin/vite.js" } }, "sha512-ZWyE8YXEXqJrrSLvYgrRP7p62OziLW7xI5HYGWFzOvupfAlrLvURSzv/FyGyy0eidogEM3ujU+kUG1zuHgb6Ug=="],
 
-    "@voidcatos/client/@types/node": ["@types/node@24.10.0", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-qzQZRBqkFsYyaSWXuEHc2WR9c0a0CXwiE5FWUvn7ZM+vdy1uZLfCunD38UzhuB7YN/J11ndbDBcTmOdxJo9Q7A=="],
+    "@voidcatos/client/@types/node": ["@types/node@24.10.1", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ=="],
 
     "@voidcatos/client/prettier": ["prettier@3.6.2", "", { "bin": { "prettier": "bin/prettier.cjs" } }, "sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ=="],
 
@@ -4308,7 +4308,7 @@
 
     "@voidcatos/config/prettier": ["prettier@3.6.2", "", { "bin": { "prettier": "bin/prettier.cjs" } }, "sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ=="],
 
-    "@voidcatos/core/@types/node": ["@types/node@24.10.0", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-qzQZRBqkFsYyaSWXuEHc2WR9c0a0CXwiE5FWUvn7ZM+vdy1uZLfCunD38UzhuB7YN/J11ndbDBcTmOdxJo9Q7A=="],
+    "@voidcatos/core/@types/node": ["@types/node@24.10.1", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ=="],
 
     "@voidcatos/core/prettier": ["prettier@3.6.2", "", { "bin": { "prettier": "bin/prettier.cjs" } }, "sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ=="],
 
@@ -4326,7 +4326,7 @@
 
     "@voidcatos/plugin-quick-starter/typescript": ["typescript@5.8.2", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ=="],
 
-    "@voidcatos/plugin-sql/@types/node": ["@types/node@24.10.0", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-qzQZRBqkFsYyaSWXuEHc2WR9c0a0CXwiE5FWUvn7ZM+vdy1uZLfCunD38UzhuB7YN/J11ndbDBcTmOdxJo9Q7A=="],
+    "@voidcatos/plugin-sql/@types/node": ["@types/node@24.10.1", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ=="],
 
     "@voidcatos/plugin-sql/dotenv": ["dotenv@16.6.1", "", {}, "sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow=="],
 
@@ -4352,7 +4352,7 @@
 
     "@voidcatos/project-starter/tailwind-merge": ["tailwind-merge@2.6.0", "", {}, "sha512-P+Vu1qXfzediirmHOC3xKGAYeZtPcV9g76X+xg2FD4tYgR71ewMA35Y3sCz3zhiN/dwefRpJX0yBcgwi1fXNQA=="],
 
-    "@voidcatos/project-tee-starter/@types/node": ["@types/node@24.10.0", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-qzQZRBqkFsYyaSWXuEHc2WR9c0a0CXwiE5FWUvn7ZM+vdy1uZLfCunD38UzhuB7YN/J11ndbDBcTmOdxJo9Q7A=="],
+    "@voidcatos/project-tee-starter/@types/node": ["@types/node@24.10.1", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ=="],
 
     "@voidcatos/project-tee-starter/@types/react": ["@types/react@18.3.26", "", { "dependencies": { "@types/prop-types": "*", "csstype": "^3.0.2" } }, "sha512-RFA/bURkcKzx/X9oumPG9Vp3D3JUgus/d0b67KB0t5S/raciymilkOa66olh78MUI92QLbEJevO7rvqU/kjwKA=="],
 
@@ -4368,7 +4368,7 @@
 
     "@voidcatos/project-tee-starter/tailwind-merge": ["tailwind-merge@2.6.0", "", {}, "sha512-P+Vu1qXfzediirmHOC3xKGAYeZtPcV9g76X+xg2FD4tYgR71ewMA35Y3sCz3zhiN/dwefRpJX0yBcgwi1fXNQA=="],
 
-    "@voidcatos/server/@types/node": ["@types/node@24.10.0", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-qzQZRBqkFsYyaSWXuEHc2WR9c0a0CXwiE5FWUvn7ZM+vdy1uZLfCunD38UzhuB7YN/J11ndbDBcTmOdxJo9Q7A=="],
+    "@voidcatos/server/@types/node": ["@types/node@24.10.1", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ=="],
 
     "@voidcatos/server/prettier": ["prettier@3.6.2", "", { "bin": { "prettier": "bin/prettier.cjs" } }, "sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ=="],
 

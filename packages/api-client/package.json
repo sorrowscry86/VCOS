@@ -1,6 +1,6 @@
 {
   "name": "@voidcatos/api-client",
-  "version": "1.6.4-alpha.21",
+  "version": "1.6.4-alpha.22",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "module": "dist/index.js",

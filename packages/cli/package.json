@@ -1,6 +1,6 @@
 {
   "name": "@voidcatos/cli",
-  "version": "1.6.4-alpha.21",
+  "version": "1.6.4-alpha.22",
   "description": "VCOS CLI - Manage your AI agents and plugins",
   "publishConfig": {
     "access": "public",

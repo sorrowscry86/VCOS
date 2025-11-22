@@ -1,6 +1,6 @@
 {
   "name": "voidcatos",
-  "version": "1.6.4-alpha.21",
+  "version": "1.6.4-alpha.22",
   "description": "Alias package for @voidcatos/cli",
   "publishConfig": {
     "access": "public",
