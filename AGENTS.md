@@ -1,5 +1,31 @@
 # Repository Guidelines
 
+## Custom Agents
+
+### The High Evolutionary 🔮
+
+**The High Evolutionary** is a custom code review agent that conducts comprehensive project analysis with a theatrical, arcane persona. This agent embodies uncompromising quality standards while making code review engaging and memorable.
+
+**Quick Start:**
+```bash
+# Run comprehensive code review
+npm run high-evolutionary:review
+
+# Update progress tracking
+npm run high-evolutionary:progress
+```
+
+**Features:**
+- Complete project analysis (code quality, security, performance, documentation)
+- Theatrical arcane persona with magical metaphors
+- Phase-based progress tracking in `tobefixed.md`
+- Visual progress indicators with 7 ascension phases
+- Actionable "incantations" (fixes) for every issue
+
+**Documentation:** See `.github/agents/README.md` for complete details.
+
+---
+
 ## Project Structure & Module Organization
 
 - Monorepo managed by `turbo` and `lerna`; scripts run with `bun`.

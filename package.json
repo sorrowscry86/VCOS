@@ -40,7 +40,10 @@
     "test:client": "turbo run test --filter=./packages/client",
     "test:core": "turbo run test --filter=./packages/core",
     "test:app": "turbo run test --concurrency 5 --filter=./packages/app",
-    "prepare": "husky"
+    "prepare": "husky",
+    "high-evolutionary:review": "node scripts/high-evolutionary-review.js",
+    "high-evolutionary:progress": "node scripts/update-progress.js",
+    "high-evolutionary:mark-complete": "node scripts/mark-complete.js"
   },
   "packageManager": "bun@1.2.21",
   "workspaces": [
